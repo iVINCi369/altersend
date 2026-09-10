@@ -52,6 +52,19 @@ MARK_ICON = {
     "accent_to": 4,
 }
 
+# Tray sits at 16 px, where the flat runs of MARK_ICON collapse into mush. This
+# variant drops them: two nodes, one zigzag, thicker stroke, single colour -
+# macOS template images must be monochrome anyway.
+MARK_TRAY = {
+    "nodes": [(14, 60, 13), (106, 60, 13)],
+    "line": [(28, 60), (52, 34), (70, 86), (92, 60)],
+    "width": 13,
+    "accent_from": 0,
+    "accent_to": 3,
+}
+
+TRAY_BLACK = (0, 0, 0, 255)
+
 
 def _bounds(mark):
     xs, ys = [], []
@@ -320,6 +333,23 @@ def main():
     for base in (("assets",), ("apps", "web", "src", "assets")):
         save(draw_lockup(1641, 400, INK_LIGHT, ACCENT_LIGHT), *base, "ruqa-logo.png")
         save(draw_lockup(1641, 400, INK_DARK, ACCENT_DARK), *base, "ruqa-logo-dark.png")
+
+    # Tray icons. macOS wants a black template image it inverts itself; Windows
+    # and Linux want a ready-made light or dark version, picked at runtime from
+    # nativeTheme.shouldUseDarkColors.
+    def tray(px, colour):
+        return draw_mark(px, MARK_TRAY, colour, colour, fill=0.88)
+
+    for name, colour in [("trayTemplate", TRAY_BLACK), ("tray-light", INK_LIGHT), ("tray-dark", INK_DARK)]:
+        save(tray(16, colour), "apps", "desktop", "build", "tray", name + ".png")
+        save(tray(32, colour), "apps", "desktop", "build", "tray", name + "@2x.png")
+
+    for name, colour in [("tray-light", INK_LIGHT), ("tray-dark", INK_DARK)]:
+        path = out("apps", "desktop", "build", "tray", name + ".ico")
+        tray(32, colour).save(
+            path, format="ICO", sizes=[(16, 16), (20, 20), (24, 24), (32, 32)]
+        )
+        written.append("apps/desktop/build/tray/" + name + ".ico")
 
     # Interface state illustrations.
     for name, (w, h, body) in SCENES.items():
