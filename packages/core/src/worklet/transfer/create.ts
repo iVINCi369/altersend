@@ -14,6 +14,12 @@ export interface TransportOptions {
    * Не задан — работает только hyperswarm, как раньше.
    */
   irohBridgePort?: number
+  /**
+   * Имя сессии в сайдкаре. Сайдкар держит по Endpoint'у на сессию, и join
+   * закрывает только свою: иначе сопряжение устройств выбивало бы активную
+   * передачу и наоборот.
+   */
+  irohSession?: string
 }
 
 export function createTransferTransport(
@@ -26,7 +32,11 @@ export function createTransferTransport(
   if (!options.irohBridgePort) return swarmFactory(callbacks)
 
   const irohFactory: TransportFactory = (cb) =>
-    new IrohTransport(cb, { bridgePort: options.irohBridgePort as number, drive: options.drive })
+    new IrohTransport(cb, {
+      bridgePort: options.irohBridgePort as number,
+      session: options.irohSession,
+      drive: options.drive
+    })
 
   return new RacingTransport(callbacks, [irohFactory, swarmFactory])
 }

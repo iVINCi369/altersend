@@ -12,6 +12,12 @@
 //!   {"op":"open"}                           — открыть новый bi-stream к пиру
 //!   {"op":"attach","id":N}                  — принять входящий bi-stream N
 //! Сервер отвечает одной строкой {"ok":true,...}, дальше — сырой поток.
+//!
+//! У каждой операции есть необязательное поле `"session"` (по умолчанию
+//! "default"). Сессия — это отдельный Endpoint со своей личностью и своим
+//! набором стримов: передача файлов и сопряжение устройств идут одновременно и
+//! не должны выбивать друг друга. Все события несут то же поле `session`,
+//! клиент обязан отбирать свои.
 
 use std::collections::HashMap;
 use std::sync::Arc;
@@ -82,13 +88,19 @@ struct Node {
     pending: Pending,
 }
 
-type Shared = Arc<Mutex<Option<Node>>>;
+/// Сессии по имени: у каждой свой Endpoint. Идентификаторы стримов нумеруются
+/// внутри сессии, поэтому совпадение номеров между сессиями безопасно.
+type Shared = Arc<Mutex<HashMap<String, Node>>>;
+
+fn session_of(req: &serde_json::Value) -> String {
+    req["session"].as_str().unwrap_or("default").to_string()
+}
 
 #[tokio::main]
 async fn main() -> Result<()> {
     let args = parse_args()?;
     let (events_tx, _) = broadcast::channel::<String>(256);
-    let node: Shared = Arc::new(Mutex::new(None));
+    let node: Shared = Arc::new(Mutex::new(HashMap::new()));
 
     let bridge = TcpListener::bind(("127.0.0.1", args.bridge_port)).await?;
     let bridge_port = bridge.local_addr()?.port();
@@ -165,10 +177,16 @@ fn channel_binding(conn: &Connection) -> Option<String> {
     Some(to_hex(&out))
 }
 
-fn announce_peer(events: &broadcast::Sender<String>, conn: &Connection, direction: &str) {
+fn announce_peer(
+    events: &broadcast::Sender<String>,
+    session: &str,
+    conn: &Connection,
+    direction: &str,
+) {
     let _ = events.send(
         serde_json::json!({
             "event": "peer",
+            "session": session,
             "direction": direction,
             "endpointId": conn.remote_id().to_string(),
             "binding": channel_binding(conn),
@@ -179,6 +197,7 @@ fn announce_peer(events: &broadcast::Sender<String>, conn: &Connection, directio
 
 /// Принимать входящие bi-stream'ы и складывать до `attach`.
 fn spawn_stream_acceptor(
+    session: String,
     mut conn_rx: watch::Receiver<Option<Connection>>,
     pending: Pending,
     events: broadcast::Sender<String>,
@@ -198,11 +217,16 @@ fn spawn_stream_acceptor(
                 Ok((send, recv)) => {
                     let id = next_id.fetch_add(1, Ordering::Relaxed);
                     pending.lock().await.insert(id, (send, recv));
-                    let _ = events.send(serde_json::json!({"event":"stream","id":id}).to_string());
+                    let _ = events.send(
+                        serde_json::json!({"event":"stream","session":session,"id":id}).to_string(),
+                    );
                 }
                 Err(e) => {
                     let _ = events.send(
-                        serde_json::json!({"event":"closed","message": e.to_string()}).to_string(),
+                        serde_json::json!({
+                            "event": "closed", "session": session, "message": e.to_string()
+                        })
+                        .to_string(),
                     );
                     return;
                 }
@@ -215,11 +239,12 @@ async fn join(
     cfg: &Args,
     node: &Shared,
     events: &broadcast::Sender<String>,
+    session: &str,
     topic: &str,
     role: &str,
     hints: Vec<std::net::SocketAddr>,
 ) -> Result<serde_json::Value> {
-    leave(node).await;
+    leave(node, Some(session)).await;
 
     // ВНИМАНИЕ: join-код здесь напрямую становится секретным ключом хоста, поэтому
     // гость выводит EndpointId из кода без всякого обмена. Для продакшена так нельзя —
@@ -233,22 +258,25 @@ async fn join(
 
     let (conn_tx, conn_rx) = watch::channel::<Option<Connection>>(None);
     let pending: Pending = Arc::new(Mutex::new(HashMap::new()));
-    spawn_stream_acceptor(conn_rx.clone(), pending.clone(), events.clone());
+    spawn_stream_acceptor(session.to_string(), conn_rx.clone(), pending.clone(), events.clone());
 
     if role == "host" {
         let ep = endpoint.clone();
         let events = events.clone();
+        let session = session.to_string();
         tokio::spawn(async move {
             while let Some(incoming) = ep.accept().await {
                 match incoming.await {
                     Ok(conn) => {
-                        announce_peer(&events, &conn, "in");
+                        announce_peer(&events, &session, &conn, "in");
                         let _ = conn_tx.send(Some(conn));
                     }
                     Err(e) => {
                         let _ = events.send(
-                            serde_json::json!({"event":"error","message": e.to_string()})
-                                .to_string(),
+                            serde_json::json!({
+                                "event": "error", "session": session, "message": e.to_string()
+                            })
+                            .to_string(),
                         );
                     }
                 }
@@ -257,6 +285,7 @@ async fn join(
     } else {
         let ep = endpoint.clone();
         let events = events.clone();
+        let session = session.to_string();
         tokio::spawn(async move {
             // Известные адреса — это «запомненное устройство» или узел тейлнета:
             // с ними соединение встаёт за один RTT, без всякого обнаружения.
@@ -267,12 +296,15 @@ async fn join(
             };
             match ep.connect(target, ALPN).await {
                 Ok(conn) => {
-                    announce_peer(&events, &conn, "out");
+                    announce_peer(&events, &session, &conn, "out");
                     let _ = conn_tx.send(Some(conn));
                 }
                 Err(e) => {
                     let _ = events.send(
-                        serde_json::json!({"event":"error","message": e.to_string()}).to_string(),
+                        serde_json::json!({
+                            "event": "error", "session": session, "message": e.to_string()
+                        })
+                        .to_string(),
                     );
                 }
             }
@@ -280,14 +312,23 @@ async fn join(
     }
 
     let endpoint_id = endpoint.id().to_string();
-    *node.lock().await = Some(Node { endpoint, conn_rx, pending });
+    node.lock()
+        .await
+        .insert(session.to_string(), Node { endpoint, conn_rx, pending });
 
     Ok(serde_json::json!({ "ok": true, "endpointId": endpoint_id, "addrs": addrs }))
 }
 
-async fn leave(node: &Shared) {
-    let taken = node.lock().await.take();
-    if let Some(n) = taken {
+/// `session = Some(name)` — закрыть одну сессию, `None` — все.
+async fn leave(node: &Shared, session: Option<&str>) {
+    let taken: Vec<Node> = {
+        let mut guard = node.lock().await;
+        match session {
+            Some(name) => guard.remove(name).into_iter().collect(),
+            None => guard.drain().map(|(_, n)| n).collect(),
+        }
+    };
+    for n in taken {
         n.endpoint.close().await;
     }
 }
@@ -328,20 +369,20 @@ async fn handle_bridge(
                         .collect()
                 })
                 .unwrap_or_default();
-            let reply = join(&cfg, &node, &events_tx, topic, role, addrs).await?;
+            let reply = join(&cfg, &node, &events_tx, &session_of(&req), topic, role, addrs).await?;
             w.write_all(reply.to_string().as_bytes()).await?;
             w.write_all(b"\n").await?;
             Ok(())
         }
         "leave" => {
-            leave(&node).await;
+            leave(&node, Some(&session_of(&req))).await;
             w.write_all(b"{\"ok\":true}\n").await?;
             Ok(())
         }
         "open" => {
             let mut rx = {
                 let guard = node.lock().await;
-                guard.as_ref().context("open before join")?.conn_rx.clone()
+                guard.get(&session_of(&req)).context("open before join")?.conn_rx.clone()
             };
             let conn = loop {
                 if let Some(c) = rx.borrow_and_update().clone() {
@@ -357,7 +398,7 @@ async fn handle_bridge(
             let id = req["id"].as_u64().context("attach needs id")?;
             let pending = {
                 let guard = node.lock().await;
-                guard.as_ref().context("attach before join")?.pending.clone()
+                guard.get(&session_of(&req)).context("attach before join")?.pending.clone()
             };
             let (send, recv) = {
                 let mut guard = pending.lock().await;

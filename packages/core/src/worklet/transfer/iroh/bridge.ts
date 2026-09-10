@@ -28,6 +28,8 @@ export interface BridgeStream {
 
 export interface BridgeEvent {
   event: string
+  /** Имя сессии сайдкара; события чужих сессий отбрасываются. */
+  session?: string
   id?: number
   endpointId?: string
   direction?: string
@@ -55,19 +57,27 @@ function parseJson(line: string): Record<string, unknown> | null {
 
 export class IrohBridge {
   private readonly port: number
+  private readonly session: string
   private controlSocket: BridgeSocket | null = null
   private readonly handlers: ((event: BridgeEvent) => void)[] = []
   private readonly history: BridgeEvent[] = []
   private destroyed = false
 
-  constructor(port: number) {
+  /**
+   * `session` разводит независимые Endpoint'ы в одном сайдкаре: передача файлов
+   * и сопряжение устройств идут одновременно, и join одного не должен закрывать
+   * другой. Канал событий у сайдкара общий, поэтому чужие события отбрасываем.
+   */
+  constructor(port: number, session = 'default') {
     this.port = port
+    this.session = session
   }
 
   /** Открыть соединение с мостом и прочитать однострочный ответ. */
   private dial(op: Record<string, unknown>): Promise<BridgeStream> {
     return new Promise((resolve, reject) => {
       const socket = createConnection(this.port, '127.0.0.1') as unknown as BridgeSocket
+      const request = { session: this.session, ...op }
       let buf: Uint8Array = b4a.alloc(0)
       let settled = false
 
@@ -93,7 +103,7 @@ export class IrohBridge {
         settled = true
         reject(err)
       })
-      socket.write(JSON.stringify(op) + '\n')
+      socket.write(JSON.stringify(request) + '\n')
     })
   }
 
@@ -134,6 +144,7 @@ export class IrohBridge {
         if (!line) continue
         const parsed = parseJson(line)
         if (!parsed || typeof parsed.event !== 'string') continue
+        if (typeof parsed.session === 'string' && parsed.session !== this.session) continue
         const event = parsed as unknown as BridgeEvent
         this.history.push(event)
         for (const handler of this.handlers) handler(event)

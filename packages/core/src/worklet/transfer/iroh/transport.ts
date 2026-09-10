@@ -9,6 +9,8 @@ import { IrohDrive } from './drive'
 export interface IrohTransportOptions {
   /** Порт локального моста; сайдкар поднимает хост-процесс и сообщает порт воркл ету. */
   bridgePort: number
+  /** Имя сессии в сайдкаре: у передачи и сопряжения они разные. */
+  session?: string
   drive?: boolean
 }
 
@@ -33,6 +35,8 @@ export class IrohTransport implements TransferTransport {
   private readonly callbacks: TransferTransportCallbacks
   private readonly driveEnabled: boolean
   private readonly bridgePort: number
+  /** Имя сессии в сайдкаре, не путать с `session` — активным пиром. */
+  private readonly sessionName: string
 
   private bridge: IrohBridge | null = null
   private session: IrohSession | null = null
@@ -44,11 +48,12 @@ export class IrohTransport implements TransferTransport {
     this.callbacks = callbacks
     this.driveEnabled = options.drive ?? false
     this.bridgePort = options.bridgePort
+    this.sessionName = options.session ?? 'default'
   }
 
   private ensureBridge(): IrohBridge {
     if (!this.bridge) {
-      this.bridge = new IrohBridge(this.bridgePort)
+      this.bridge = new IrohBridge(this.bridgePort, this.sessionName)
     }
     return this.bridge
   }

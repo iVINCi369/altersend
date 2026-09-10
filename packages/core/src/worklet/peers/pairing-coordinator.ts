@@ -25,6 +25,8 @@ export interface PairingCoordinatorDeps {
   rememberedStore: RememberedPeerStore
   emit: (event: TransferIPCMessage) => void
   onRememberConfirmed: () => void
+  /** Без него сопряжение идёт только по hyperswarm — на сетях с DPI оно не встаёт. */
+  irohBridgePort?: number
 }
 
 export class PairingCoordinator {
@@ -42,7 +44,11 @@ export class PairingCoordinator {
         onPeerDisconnected: (peerKey) => this.onPeerDisconnected(peerKey),
         onControlMessage: (message, session) => this.onControlMessage(message, session)
       },
-      { identityStore: deps.identityStore }
+      {
+        identityStore: deps.identityStore,
+        irohBridgePort: deps.irohBridgePort,
+        irohSession: 'pairing'
+      }
     )
     this.remember = new RememberCoordinator({
       deviceIdentityStore: deps.deviceIdentityStore,
