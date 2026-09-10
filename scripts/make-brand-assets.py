@@ -114,34 +114,40 @@ def draw_mark(size, mark, ink, accent, ground=None, fill=0.68):
     return img.resize((size, size), Image.LANCZOS)
 
 
-def draw_lockup(width, height, ink, accent, ground=None):
-    """Mark plus the wordmark, centred as one group."""
-    canvas_w, canvas_h = width * SS, height * SS
-    img = Image.new("RGBA", (canvas_w, canvas_h), ground if ground else (0, 0, 0, 0))
+def draw_lockup(height, ink, accent):
+    """Марка и слово, обрезанные по содержимому.
 
-    cap = int(canvas_h * 0.46)
+    В интерфейсе логотип задаётся высотой (h-6, h-8), поэтому пустые
+    поля внутри файла съедают кегль: чем больше воздуха, тем мельче
+    буквы на экране. Поэтому рисуем с запасом и обрезаем по альфе.
+    """
+    work = height * SS
     font_path = os.path.join(ROOT, "assets", "fonts", "NotoSans-JP-Bold.ttf")
-    font = ImageFont.truetype(font_path, cap)
+    font = ImageFont.truetype(font_path, int(work * 0.72))
 
-    probe = ImageDraw.Draw(img)
-    tb = probe.textbbox((0, 0), "Ruqa", font=font)
-    text_w, text_h = tb[2] - tb[0], tb[3] - tb[1]
+    tmp = Image.new("RGBA", (work * 10, work * 3), (0, 0, 0, 0))
+    d = ImageDraw.Draw(tmp)
+    tb = d.textbbox((0, 0), "Ruqa", font=font)
 
-    mark_size = int(canvas_h * 0.62)
-    mark = draw_mark(mark_size, MARK_WIDE, ink, accent, fill=0.94)
+    mark_px = int(work * 1.1)
+    mark = draw_mark(mark_px, MARK_WIDE, ink, accent, fill=0.98)
+    gap = int(work * 0.24)
 
-    gap = int(canvas_h * 0.16)
-    group_w = mark_size + gap + text_w
-    left = (canvas_w - group_w) // 2
+    x, y = work, int(work * 1.5)
+    tmp.alpha_composite(mark, (x, y - mark_px // 2))
+    d.text((x + mark_px + gap - tb[0], y - (tb[1] + tb[3]) // 2), "Ruqa", font=font, fill=ink)
 
-    img.alpha_composite(mark, (left, (canvas_h - mark_size) // 2))
-    probe.text(
-        (left + mark_size + gap - tb[0], (canvas_h - text_h) // 2 - tb[1]),
-        "Ruqa",
-        font=font,
-        fill=ink,
+    bbox = tmp.getbbox()
+    margin = int(work * 0.05)
+    box = (
+        max(0, bbox[0] - margin),
+        max(0, bbox[1] - margin),
+        min(tmp.width, bbox[2] + margin),
+        min(tmp.height, bbox[3] + margin)
     )
-    return img.resize((width, height), Image.LANCZOS)
+    cropped = tmp.crop(box)
+    width = max(1, round(cropped.width * height / cropped.height))
+    return cropped.resize((width, height), Image.LANCZOS)
 
 
 # ------------------------------------------------------------------- icns ---
@@ -318,21 +324,24 @@ def main():
     ]:
         save(icon(px).convert("RGB"), "apps", "desktop", "build", "msix-assets", name)
 
-    # Standalone marks on transparent grounds.
-    save(draw_mark(512, MARK_ICON, INK_LIGHT, ACCENT_LIGHT), "assets", "logo.png")
+    # Квадратные логотипы ложатся на фон приложения в обеих темах, поэтому это
+    # иконка с подложкой, а не прозрачная марка одним цветом.
+    save(icon(512), "assets", "logo.png")
+    save(icon(512), "assets", "01-logo-icon-logo-icon-512x512.png")
+    save(icon(1024), "assets", "logo-ruqa.png")
+    save(icon(1080), "assets", "ruqa-full-logo.png")
+
+    # BrandMark в вебе кладёт марку на белую плитку — значит тёмные чернила.
     save(
         draw_mark(512, MARK_ICON, INK_LIGHT, ACCENT_LIGHT),
-        "assets",
-        "01-logo-icon-logo-icon-512x512.png",
+        "apps", "web", "src", "assets", "ruqa-mark.png"
     )
-    save(draw_mark(1024, MARK_ICON, INK_LIGHT, ACCENT_LIGHT), "assets", "logo-ruqa.png")
-    save(draw_mark(1080, MARK_ICON, INK_LIGHT, ACCENT_LIGHT), "assets", "ruqa-full-logo.png")
-    save(draw_mark(512, MARK_ICON, INK_LIGHT, ACCENT_LIGHT), "apps", "web", "src", "assets", "ruqa-mark.png")
 
-    # Horizontal lockups, light and dark.
+    # Имена достались от AlterSend и означают цвет самих чернил, а не фона:
+    # ruqa-logo-dark берут для светлой темы, ruqa-logo — для тёмной.
     for base in (("assets",), ("apps", "web", "src", "assets")):
-        save(draw_lockup(1641, 400, INK_LIGHT, ACCENT_LIGHT), *base, "ruqa-logo.png")
-        save(draw_lockup(1641, 400, INK_DARK, ACCENT_DARK), *base, "ruqa-logo-dark.png")
+        save(draw_lockup(400, INK_LIGHT, ACCENT_LIGHT), *base, "ruqa-logo-dark.png")
+        save(draw_lockup(400, INK_DARK, ACCENT_DARK), *base, "ruqa-logo.png")
 
     # Tray icons. macOS wants a black template image it inverts itself; Windows
     # and Linux want a ready-made light or dark version, picked at runtime from
