@@ -8,10 +8,14 @@ import { PeerDrive } from './drive'
 import { relayThrough, isRelayHost } from '../relay/config'
 import { attachProAnnounce } from '../relay/announce'
 import { whenRelayConfReady } from '../relay/conf'
+import type {
+  ConnectionType,
+  TransferTransport,
+  TransferTransportCallbacks,
+  TransportSession
+} from './transport'
 
-type ConnectionType = 'direct' | 'relay'
-
-export interface PeerSession {
+export interface PeerSession extends TransportSession {
   socket: PeerSocket
   peerKey: string
   controlChannel: PeerControlChannel
@@ -19,19 +23,16 @@ export interface PeerSession {
   drive: PeerDrive | null
 }
 
-export interface TransferSwarmCallbacks {
-  onPeerConnected: (session: PeerSession) => void
-  onPeerDisconnected: (peerKey: string | null, remainingCount: number) => void
-  onControlMessage: (message: PeerControlMessage, session: PeerSession) => void
-  onConnectionType?: (peerKey: string, connectionType: ConnectionType) => void
-}
+export type TransferSwarmCallbacks = TransferTransportCallbacks
 
 export interface TransferSwarmOptions {
   identityStore?: PeerIdentityStore
   drive?: boolean
 }
 
-export class TransferSwarm {
+export class TransferSwarm implements TransferTransport {
+  readonly name = 'hyperswarm'
+
   private swarm: Hyperswarm | null
   private readonly peerSessions: Map<PeerSocket, PeerSession>
   private readonly callbacks: TransferSwarmCallbacks
@@ -214,11 +215,15 @@ export class TransferSwarm {
     if (this.hostedTopicHex) {
       return this.hostedTopicHex
     }
-    const topic = crypto.randomBytes(32)
-    const topicHex = b4a.toString(topic, 'hex')
-    this.joinTopic(topic)
-    this.hostedTopicHex = topicHex
+    const topicHex = b4a.toString(crypto.randomBytes(32), 'hex')
+    void this.host(topicHex)
     return topicHex
+  }
+
+  async host(topicHex: string): Promise<void> {
+    if (this.hostedTopicHex === topicHex && this.joinedAny) return
+    this.hostedTopicHex = topicHex
+    this.joinTopic(b4a.from(topicHex, 'hex'))
   }
 
   broadcast(message: PeerControlMessage): void {
