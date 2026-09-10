@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 import { enqueueExternalPaths, extractFilePaths, readShareManifest } from './externalFiles.js'
 import { initSentry } from './sentry.js'
 import { registerIpcHandlers } from './ipc.js'
+import { irohRequested, startIrohBridge, stopIrohBridge } from './irohBridge.js'
 import { cliArgs, createDesktopRuntime } from './runtime.js'
 import { updateSendToShortcut } from './sendToShortcut.js'
 import { createMainWindow, sendToAllWindows, showOrCreateMainWindow } from './window.js'
@@ -73,13 +74,17 @@ if (squirrelStartup) {
 
     app.on('activate', revealWindow)
 
-    app.whenReady().then(() => {
+    app.whenReady().then(async () => {
       takeFileArgs(cliArgs)
+      // Сайдкар поднимаем до первого воркл ета: порт моста уезжает в его аргументы.
+      if (irohRequested(cliArgs)) await startIrohBridge()
       createMainWindow(runtime.getPear()).catch((err) => {
         console.error('Failed to create window:', err)
         app.quit()
       })
     })
+
+    app.on('before-quit', stopIrohBridge)
 
     app.on('window-all-closed', () => {
       if (process.platform !== 'darwin') {

@@ -82,10 +82,17 @@ if (relayKeyArg || relayEnabledArg) {
   })
 }
 
-const orchestrator = new TransferOrchestrator(sendTransferEvent, identityRoot, {
-  displayName,
-  deviceType
-})
+// Порт локального моста iroh; передаёт хост-процесс, поднявший сайдкар.
+const irohBridgeArg = Number(readArg('--iroh-bridge=') ?? '')
+const irohBridgePort =
+  Number.isInteger(irohBridgeArg) && irohBridgeArg > 0 ? irohBridgeArg : undefined
+
+const orchestrator = new TransferOrchestrator(
+  sendTransferEvent,
+  identityRoot,
+  { displayName, deviceType },
+  { irohBridgePort }
+)
 const rpc = createTransferWorkerRPCServer(ipc, orchestrator, sendTransferEvent, () =>
   orchestrator.abortInFlight()
 )
