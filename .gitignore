@@ -79,3 +79,6 @@ build-dir/
 .flatpak-builder/
 test-repo/
 .electron-dist/
+
+# Rust sidecar build artifacts
+native/iroh-bridge/target/
