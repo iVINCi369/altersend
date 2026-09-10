@@ -38,6 +38,7 @@ export class IrohTransport implements TransferTransport {
   private session: IrohSession | null = null
   private hostedTopicHex: string | null = null
   private role: 'host' | 'guest' | null = null
+  private subscribed = false
 
   constructor(callbacks: TransferTransportCallbacks, options: IrohTransportOptions) {
     this.callbacks = callbacks
@@ -56,7 +57,14 @@ export class IrohTransport implements TransferTransport {
     const bridge = this.ensureBridge()
     this.role = role
     await bridge.connectEvents()
-    bridge.onEvent((event) => this.onBridgeEvent(event))
+    // Подписываемся один раз: onEvent проигрывает историю новому подписчику, и
+    // вторая подписка заставила бы attach'ить стримы, уже разобранные первой.
+    if (!this.subscribed) {
+      bridge.onEvent((event) => this.onBridgeEvent(event))
+      this.subscribed = true
+    }
+    // История прошлой сессии больше не нужна, а её id стримов уже мертвы.
+    bridge.forgetHistory()
     await bridge.command({ op: 'join', topic: topicHex, role })
   }
 
@@ -129,7 +137,7 @@ export class IrohTransport implements TransferTransport {
       }
       stream.socket.destroy()
     } catch (err) {
-      console.error('IrohTransport: не удалось принять стрим', err)
+      console.warn('IrohTransport: не удалось принять стрим', err)
     }
   }
 
@@ -209,5 +217,6 @@ export class IrohTransport implements TransferTransport {
     await this.endSession()
     this.bridge?.close()
     this.bridge = null
+    this.subscribed = false
   }
 }
