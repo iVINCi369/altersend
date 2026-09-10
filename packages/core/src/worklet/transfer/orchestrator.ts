@@ -61,7 +61,8 @@ import type { DriveChannel } from '@altersend/drive'
 import { PeerIdentityStore } from './peer-identity-store'
 import { TransferSender } from './sender'
 import { TransferReceiver } from './receiver'
-import { TransferSwarm, type PeerSession } from './swarm'
+import { createTransferTransport } from './create'
+import type { TransferTransport, TransportSession } from './transport'
 import { isValidHexKey } from './utils'
 import {
   DeviceIdentityStore,
@@ -108,13 +109,18 @@ const AUTH_TIMEOUT_MS = 10000
 const LIFECYCLE_TEARDOWN_TIMEOUT_MS = 5000
 const SESSION_END_FLUSH_MS = 150
 
+export interface TransferOrchestratorOptions {
+  /** Порт локального моста iroh; без него транспорт остаётся один — hyperswarm. */
+  irohBridgePort?: number
+}
+
 export class TransferOrchestrator implements TransferRPC {
   private readonly emitIPC: (message: TransferIPCMessage | PeerControlMessage) => void
   private readonly sender = new TransferSender()
   private readonly receiver = new TransferReceiver()
   private readonly offerPeers = new Map<string, string>()
 
-  private readonly swarm: TransferSwarm
+  private readonly swarm: TransferTransport
 
   private activeTransfer: TransferStart | null = null
   private activeTransferReady: TransferReady | null = null
@@ -140,13 +146,14 @@ export class TransferOrchestrator implements TransferRPC {
   constructor(
     emitIPC: (message: TransferIPCMessage | PeerControlMessage) => void,
     identityRoot: string,
-    identityDefaults: DeviceIdentityDefaults = {}
+    identityDefaults: DeviceIdentityDefaults = {},
+    options: TransferOrchestratorOptions = {}
   ) {
     this.emitIPC = emitIPC
     this.deviceIdentityStore = new DeviceIdentityStore(identityRoot, identityDefaults)
     this.rememberedStore = new RememberedPeerStore(identityRoot)
     const identityStore = new PeerIdentityStore(identityRoot)
-    this.swarm = new TransferSwarm(
+    this.swarm = createTransferTransport(
       {
         onPeerConnected: (session) => {
           if (this.suspended) return
@@ -165,7 +172,7 @@ export class TransferOrchestrator implements TransferRPC {
           this.sendStatus('connection-type', { peer: peerKey, connectionType })
         }
       },
-      { identityStore, drive: true }
+      { identityStore, drive: true, irohBridgePort: options.irohBridgePort }
     )
     this.discovery = new DiscoveryCoordinator({
       deviceIdentityStore: this.deviceIdentityStore,
@@ -211,7 +218,7 @@ export class TransferOrchestrator implements TransferRPC {
     return this.pairing.join(topic)
   }
 
-  private onPeerConnected(session: PeerSession): void {
+  private onPeerConnected(session: TransportSession): void {
     this.sendStatus('peer-connected', { peer: session.peerKey, peers: this.swarm.peerCount })
     this.recognition.onPeerConnected(session.peerKey)
     if (this.role !== 'sender') return
@@ -295,7 +302,7 @@ export class TransferOrchestrator implements TransferRPC {
     this.sendStatus(remainingCount > 0 ? 'peer-connected' : 'joined', { peers: remainingCount })
   }
 
-  private onControlMessage(message: PeerControlMessage, session: PeerSession): void {
+  private onControlMessage(message: PeerControlMessage, session: TransportSession): void {
     if (message.type === 'hello') {
       this.sendStatus('peer-client', { peer: session.peerKey, client: message.client })
       return
@@ -376,7 +383,7 @@ export class TransferOrchestrator implements TransferRPC {
     }
   }
 
-  private serve(message: DownloadRequest, session: PeerSession): void {
+  private serve(message: DownloadRequest, session: TransportSession): void {
     if (!this.authedPeers.has(session.peerKey)) {
       if (!this.pendingNonce.has(session.peerKey)) {
         console.warn('TransferOrchestrator: refused download from unauthenticated peer')
@@ -423,7 +430,7 @@ export class TransferOrchestrator implements TransferRPC {
   private forwardPeerDownloadStatus(
     state: PeerDownloadStatus,
     message: DownloadRequest | DownloadProgress | DownloadComplete | DownloadFailed,
-    session: PeerSession
+    session: TransportSession
   ): void {
     this.sendStatus(state, createPeerDownloadStatusEvent(message, session))
   }
@@ -579,7 +586,7 @@ export class TransferOrchestrator implements TransferRPC {
     }
   }
 
-  private verifyAuth(proof: string, session: PeerSession): void {
+  private verifyAuth(proof: string, session: TransportSession): void {
     if (this.role !== 'sender') return
     const nonce = this.pendingNonce.get(session.peerKey)
     if (!nonce || !this.currentTopic) return
@@ -597,7 +604,7 @@ export class TransferOrchestrator implements TransferRPC {
     this.releaseOffers(session)
   }
 
-  private releaseOffers(session: PeerSession): void {
+  private releaseOffers(session: TransportSession): void {
     if (this.authedPeers.has(session.peerKey)) return
     this.authedPeers.add(session.peerKey)
     if (this.activeTransfer) session.controlChannel.send(this.activeTransfer)
@@ -608,7 +615,7 @@ export class TransferOrchestrator implements TransferRPC {
     for (const request of queued ?? []) this.serve(request, session)
   }
 
-  private offerTo(session: PeerSession): void {
+  private offerTo(session: TransportSession): void {
     if (!this.authedPeers.has(session.peerKey)) return
     if (this.activeTransferReady) session.controlChannel.send(this.activeTransferReady)
   }
