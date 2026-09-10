@@ -1,6 +1,6 @@
-import { Button, Input, Modal } from '@altersend/components'
-import { useDeviceRenameForm } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Button, Input, Modal } from '@ruqa/components'
+import { useDeviceRenameForm } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 
 interface DeviceRenameModalProps {
   open: boolean

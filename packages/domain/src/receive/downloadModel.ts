@@ -1,4 +1,4 @@
-import type { DownloadFileRequest, IncomingFileOffer, RendererTransferEvent } from '@altersend/core'
+import type { DownloadFileRequest, IncomingFileOffer, RendererTransferEvent } from '@ruqa/core'
 import { formatFileSize } from '../format'
 import {
   sumTransferRates,

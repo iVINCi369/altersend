@@ -1,4 +1,4 @@
-const KEY = 'altersend.sidebar.collapsed'
+const KEY = 'ruqa.sidebar.collapsed'
 
 export function isSidebarCollapsed(): boolean {
   try {

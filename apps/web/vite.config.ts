@@ -84,43 +84,43 @@ export default defineConfig(async ({ mode }) => {
           replacement: resolve(workspaceRoot, 'node_modules/react-dom/client.js')
         },
         {
-          find: /^@altersend\/core\/protocol$/,
+          find: /^@ruqa\/core\/protocol$/,
           replacement: resolve(__dirname, '../../packages/core/src/worklet/transfer/protocol.ts')
         },
         {
-          find: /^@altersend\/core\/topic-auth$/,
+          find: /^@ruqa\/core\/topic-auth$/,
           replacement: resolve(__dirname, '../../packages/core/src/worklet/transfer/topic-auth.ts')
         },
         {
-          find: /^@altersend\/core$/,
-          replacement: resolve(__dirname, 'src/stubs/altersend-core.ts')
+          find: /^@ruqa\/core$/,
+          replacement: resolve(__dirname, 'src/stubs/ruqa-core.ts')
         },
         {
-          find: /^@altersend\/drive\/transport$/,
+          find: /^@ruqa\/drive\/transport$/,
           replacement: resolve(__dirname, '../../packages/drive/src/transport.ts')
         },
         {
-          find: /^@altersend\/drive$/,
+          find: /^@ruqa\/drive$/,
           replacement: resolve(__dirname, '../../packages/drive/src/index.ts')
         },
         {
-          find: /^@altersend\/components\/theme$/,
+          find: /^@ruqa\/components\/theme$/,
           replacement: resolve(__dirname, '../../packages/components/src/theme/index.ts')
         },
         {
-          find: /^@altersend\/components\/icons$/,
+          find: /^@ruqa\/components\/icons$/,
           replacement: resolve(__dirname, '../../packages/components/src/icons/index.ts')
         },
         {
-          find: /^@altersend\/components$/,
+          find: /^@ruqa\/components$/,
           replacement: resolve(__dirname, '../../packages/components/src/index.ts')
         },
         {
-          find: /^@altersend\/domain$/,
+          find: /^@ruqa\/domain$/,
           replacement: resolve(__dirname, '../../packages/domain/src/index.ts')
         },
         {
-          find: /^@altersend\/locales$/,
+          find: /^@ruqa\/locales$/,
           replacement: resolve(__dirname, '../../packages/locales/src/index.ts')
         }
       ],

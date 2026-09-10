@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Spinner } from '@altersend/components'
+import { Spinner } from '@ruqa/components'
 
 interface TransferCardProps {
   title: string

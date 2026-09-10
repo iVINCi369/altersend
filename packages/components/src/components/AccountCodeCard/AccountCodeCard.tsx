@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { html } from 'react-strict-dom'
-import { formatAccountCode, maskAccountCode } from '@altersend/domain'
+import { formatAccountCode, maskAccountCode } from '@ruqa/domain'
 import { CheckIcon, CopyIcon, DownloadIcon, EyeIcon, EyeOffIcon } from '../../icons'
 import { Button } from '../Button'
 import { styles } from './styles'

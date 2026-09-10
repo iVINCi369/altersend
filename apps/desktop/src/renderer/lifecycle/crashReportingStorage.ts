@@ -1,4 +1,4 @@
-const KEY = 'altersend.crash-reporting.enabled'
+const KEY = 'ruqa.crash-reporting.enabled'
 
 export function isCrashReportingEnabled(): boolean {
   try {

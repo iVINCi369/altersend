@@ -1,9 +1,9 @@
 import { useCallback, useEffect } from 'react'
 import { View, StyleSheet, Pressable } from 'react-native'
 import { Paths } from 'expo-file-system'
-import { Button, useTheme } from '@altersend/components'
-import { DownloadIcon, InfoIcon, PlayIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, useTheme } from '@ruqa/components'
+import { DownloadIcon, InfoIcon, PlayIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { useRouter } from 'expo-router'
 import { uriToPath } from '@/src/api/mobileApi'
 import { ConfirmDialog, Layout, IllustrationLayout } from '@/src/components'
@@ -26,8 +26,8 @@ import {
   useReceiveActions,
   useReceiveDownloads,
   useTransferStore
-} from '@altersend/domain'
-import { clearSession } from '@altersend/domain'
+} from '@ruqa/domain'
+import { clearSession } from '@ruqa/domain'
 import { Text } from '@/src/components/ThemedText'
 
 export default function ReceiveIncomingScreen() {

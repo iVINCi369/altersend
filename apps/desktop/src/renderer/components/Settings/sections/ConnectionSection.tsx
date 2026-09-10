@@ -1,13 +1,13 @@
 import { useMemo } from 'react'
-import { RelaySettingsCard } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { RelaySettingsCard } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import {
   relayErrorText,
   relaySettingsLabels,
   relayTestText,
   selfHostSetupUrl,
   useRelaySettings
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { bridgeApi } from '../../../api/bridgeApi'
 import { relayStoragePort } from '../../../lifecycle/relayStorage'
 import { SectionShell } from './SectionShell'

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Platform, Pressable, StyleSheet } from 'react-native'
-import { getFileKind, useTheme } from '@altersend/components'
-import { formatFileSize, type DownloadItemState } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { getFileKind, useTheme } from '@ruqa/components'
+import { formatFileSize, type DownloadItemState } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { Text } from '@/src/components/ThemedText'
 
 type Translate = ReturnType<typeof useTranslation>['t']
@@ -18,7 +18,7 @@ function getDestinationLabel(state: DownloadItemState | undefined, t: Translate)
   if (!state || state.destination === undefined) return ''
   if (state.destination === 'photos') return t('common:files.photos')
   if (state.destination === 'downloads') return t('common:files.downloads')
-  return Platform.OS === 'ios' ? t('common:files.alterSendFolder') : t('common:files.files')
+  return Platform.OS === 'ios' ? t('common:files.ruqaFolder') : t('common:files.files')
 }
 
 export function getFileMeta(

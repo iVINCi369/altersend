@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { linkifyText } from '@altersend/domain'
+import { linkifyText } from '@ruqa/domain'
 import { CheckIcon, CopyIcon, MessageSquareIcon } from '../../icons'
 import { useTheme } from '../../theme'
 import { Button } from '../Button'

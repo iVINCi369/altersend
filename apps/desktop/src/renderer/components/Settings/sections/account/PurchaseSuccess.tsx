@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import { AccountCodeCard, Button, SuccessBurst, useTheme } from '@altersend/components'
-import { CheckIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { AccountCodeCard, Button, SuccessBurst, useTheme } from '@ruqa/components'
+import { CheckIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import {
   ACCOUNT_CODE_FILE_NAME,
   accountCodeFile,
   formatAccountCode,
   useCopiedFlag
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { bridgeApi } from '../../../../api/bridgeApi'
 import { ConfirmDialog } from '../../../ConfirmDialog'
 import { SectionShell } from '../SectionShell'

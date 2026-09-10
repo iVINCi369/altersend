@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "崩潰報告",
-    "description": "共享匿名崩潰資料以幫助改進AlterSend"
+    "description": "共享匿名崩潰資料以幫助改進Ruqa"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "AlterSend 中繼",
-        "caption": "當直連失敗時，傳輸會透過 AlterSend 的中繼進行。檔案仍維持端對端加密。"
+      "ruqa": {
+        "label": "Ruqa 中繼",
+        "caption": "當直連失敗時，傳輸會透過 Ruqa 的中繼進行。檔案仍維持端對端加密。"
       },
       "custom": {
         "label": "自架中繼",
-        "caption": "使用你自己的中繼伺服器，而不是 AlterSend 的。"
+        "caption": "使用你自己的中繼伺服器，而不是 Ruqa 的。"
       },
       "off": {
         "label": "不使用中繼",
@@ -43,8 +43,8 @@
           "label": "只用我的中繼",
           "caption": "如果無法連上你的中繼，傳輸將等待。"
         },
-        "altersend": {
-          "label": "必要時使用 AlterSend 中繼",
+        "ruqa": {
+          "label": "必要時使用 Ruqa 中繼",
           "caption": "你的中繼無法使用時，傳輸仍能繼續。"
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "加入社區",
     "github": "GitHub",
-    "sponsor": "支持 AlterSend",
+    "sponsor": "支持 Ruqa",
     "privacyPolicy": "隱私權政策",
-    "privacyPolicyHint": "AlterSend 如何處理您的數據",
+    "privacyPolicyHint": "Ruqa 如何處理您的數據",
     "terms": "服務條款",
-    "termsHint": "AlterSend 使用規則",
+    "termsHint": "Ruqa 使用規則",
     "website": "網站",
     "connection": "中繼"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "請確認邀請碼仍然有效。",
     "couldNotJoinQrHint": "請確認另一台裝置上的 QR 碼仍開啟。",
     "unsupportedQr": "不支援的 QR 碼",
-    "unsupportedQrHint": "請掃描 AlterSend 配對碼。",
+    "unsupportedQrHint": "請掃描 Ruqa 配對碼。",
     "noQrFound": "找不到 QR 碼",
-    "noQrFoundHint": "請選擇包含 AlterSend 配對碼的圖片。",
+    "noQrFoundHint": "請選擇包含 Ruqa 配對碼的圖片。",
     "importFromImage": "從圖片匯入",
     "cameraAccessNeeded": "需要相機權限",
     "cameraAccessText": "請允許相機權限以掃描配對 QR 碼。",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "將照片和影片儲存到相簿",
     "destinationPhotos": "照片和影片儲存到「照片」",
     "destinationFiles": "照片和影片儲存到「檔案」",
-    "mediaToPhotosDescription": "關閉後，將儲存到「檔案」中的 AlterSend 資料夾。",
+    "mediaToPhotosDescription": "關閉後，將儲存到「檔案」中的 Ruqa 資料夾。",
     "mediaToGalleryDescription": "關閉後，將儲存到下載資料夾。",
     "destinationGallery": "照片和影片儲存到相簿",
     "destinationDownloads": "照片和影片儲存到下載"
@@ -177,10 +177,10 @@
     "copied": "已複製",
     "copyFailed": "無法複製你的代碼，請在登出前手動複製。",
     "saveCode": "將代碼儲存為檔案",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "帳號代碼",
     "codeFileSaved": "已儲存",
-    "codeFileWarning": "這組代碼就是你的訂閱。在任何裝置的 AlterSend 中輸入即可回復 Pro。我們從未儲存，也無法為你找回。",
+    "codeFileWarning": "這組代碼就是你的訂閱。在任何裝置的 Ruqa 中輸入即可回復 Pro。我們從未儲存，也無法為你找回。",
     "subscriptionRow": "訂閱",
     "manageSubscription": "管理",
     "untilDate": "至 {{date}}",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "分享選單",
-    "description": "將 AlterSend 加入 macOS 分享選單"
+    "description": "將 Ruqa 加入 macOS 分享選單"
   }
 }

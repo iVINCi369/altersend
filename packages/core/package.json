@@ -1,5 +1,5 @@
 {
-  "name": "@altersend/core",
+  "name": "@ruqa/core",
   "version": "2.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,10 +16,10 @@
   },
   "private": true,
   "license": "Apache-2.0",
-  "author": "AlterSend",
+  "author": "Ruqa",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denislupookov/altersend.git"
+    "url": "git+https://github.com/iVINCi369/altersend.git"
   },
   "scripts": {
     "test": "vitest run",
@@ -30,7 +30,7 @@
     "schema": "node schema/build.cjs"
   },
   "dependencies": {
-    "@altersend/drive": "2.0.0",
+    "@ruqa/drive": "2.0.0",
     "b4a": "^1.8.0",
     "bare-buffer": "^3.6.0",
     "bare-crypto": "^1.14.0",

@@ -24,7 +24,7 @@ if [ -n "$matches" ]; then
   echo
   echo "$matches"
   echo
-  echo "Use tokens from @altersend/components/theme instead."
+  echo "Use tokens from @ruqa/components/theme instead."
   echo "  - Web (Tailwind): bg-success/12, border-info, etc."
   echo "  - StyleX (css.create): tokens.colorXxx"
   echo "  - RN inline: theme.colors.colorXxx — and withAlpha(color, alpha) for opacity"

@@ -1,6 +1,6 @@
-import type { WhatsNewStorage } from '@altersend/domain'
+import type { WhatsNewStorage } from '@ruqa/domain'
 
-const KEY = 'altersend.whatsNew.lastSeenVersion'
+const KEY = 'ruqa.whatsNew.lastSeenVersion'
 
 function getLastSeenRelease(): string | null {
   try {

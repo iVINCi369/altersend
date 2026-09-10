@@ -1,4 +1,4 @@
-import { useTheme } from '@altersend/components'
+import { useTheme } from '@ruqa/components'
 import { Host, Icon, IconButton as ComposeIconButton } from '@expo/ui/jetpack-compose'
 import type { ImageSourcePropType } from 'react-native'
 import arrowLeftIcon from '@/assets/icons/arrow-left.xml'

@@ -4,12 +4,12 @@ import {
   PanelLeftOpenIcon,
   SendIcon,
   SlidersHorizontalIcon
-} from '@altersend/components/icons'
-import { useTransferStore } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
-import logoMarkOnLight from '../../../../../../assets/altersend-logo-dark.png'
-import logoMarkOnDark from '../../../../../../assets/altersend-logo.png'
-import { Button, ListItem, ThemeType, useTheme } from '@altersend/components'
+} from '@ruqa/components/icons'
+import { useTransferStore } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
+import logoMarkOnLight from '../../../../../../assets/ruqa-logo-dark.png'
+import logoMarkOnDark from '../../../../../../assets/ruqa-logo.png'
+import { Button, ListItem, ThemeType, useTheme } from '@ruqa/components'
 import { openSettingsPanel } from '../Settings'
 
 export type TransferTab = 'send' | 'receive'
@@ -47,7 +47,7 @@ export function Sidebar({
         }`}
       >
         {!collapsed && (
-          <img src={logoMark} alt='AlterSend' className='h-6 w-auto shrink-0 object-contain' />
+          <img src={logoMark} alt='Ruqa' className='h-6 w-auto shrink-0 object-contain' />
         )}
         {collapsed ? (
           <ListItem

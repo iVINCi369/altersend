@@ -7,7 +7,7 @@ const SCHEMA_DIR = path.join(__dirname, 'spec/hyperschema')
 const DB_DIR = path.join(__dirname, 'spec/hyperdb')
 
 const schema = Hyperschema.from(SCHEMA_DIR)
-const ns = schema.namespace('altersend')
+const ns = schema.namespace('ruqa')
 
 ns.register({
   name: 'remembered-peer',
@@ -27,11 +27,11 @@ ns.register({
 Hyperschema.toDisk(schema, { esm: true })
 
 const db = HyperDB.from(SCHEMA_DIR, DB_DIR)
-const dbns = db.namespace('altersend')
+const dbns = db.namespace('ruqa')
 
 dbns.collections.register({
   name: 'remembered-peers',
-  schema: '@altersend/remembered-peer',
+  schema: '@ruqa/remembered-peer',
   key: ['remoteDevicePubkey']
 })
 

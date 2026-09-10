@@ -4,7 +4,7 @@ import {
   firstFreePath,
   type Bitmap,
   type DriveChannel
-} from '@altersend/drive'
+} from '@ruqa/drive'
 import {
   type AbortLike,
   getDirname,

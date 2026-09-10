@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useEffect } from 'react'
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import { IllustrationLayout } from '@/src/components'
 import { errorTap } from '@/src/haptics'
 import { ReceiveIncomingView } from './ReceiveIncomingView'

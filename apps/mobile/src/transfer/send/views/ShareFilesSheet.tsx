@@ -1,14 +1,14 @@
 import { ScrollView, StyleSheet } from 'react-native'
-import { LinkRow, useTheme } from '@altersend/components'
-import { MessageSquareIcon } from '@altersend/components/icons'
+import { LinkRow, useTheme } from '@ruqa/components'
+import { MessageSquareIcon } from '@ruqa/components/icons'
 import {
   formatFileSize,
   formatItemsCount,
   formatTextSnippetPreview,
   type FileRow,
   type TextRow
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { BottomSheet } from '@/src/components'
 
 interface ShareFilesSheetProps {

@@ -6,7 +6,7 @@ import { version, getEncoding, setVersion } from './messages.js'
 
 const versions = { schema: version, db: 1 }
 
-// '@altersend/remembered-peers' collection key
+// '@ruqa/remembered-peers' collection key
 const collection0_key = new IndexEncoder([IndexEncoder.STRING], { prefix: 0 })
 
 function collection0_indexify(record) {
@@ -14,10 +14,10 @@ function collection0_indexify(record) {
   return a === undefined ? [] : [a]
 }
 
-// '@altersend/remembered-peers' value encoding
-const collection0_enc = getEncoding('@altersend/remembered-peer/hyperdb#0')
+// '@ruqa/remembered-peers' value encoding
+const collection0_enc = getEncoding('@ruqa/remembered-peer/hyperdb#0')
 
-// '@altersend/remembered-peers' reconstruction function
+// '@ruqa/remembered-peers' reconstruction function
 function collection0_reconstruct(schemaVersion, keyBuf, valueBuf) {
   const key = collection0_key.decode(keyBuf)
   setVersion(schemaVersion)
@@ -29,7 +29,7 @@ function collection0_reconstruct(schemaVersion, keyBuf, valueBuf) {
   record.remoteDevicePubkey = key[0]
   return record
 }
-// '@altersend/remembered-peers' key reconstruction function
+// '@ruqa/remembered-peers' key reconstruction function
 function collection0_reconstruct_key(keyBuf) {
   const key = collection0_key.decode(keyBuf)
   return {
@@ -37,9 +37,9 @@ function collection0_reconstruct_key(keyBuf) {
   }
 }
 
-// '@altersend/remembered-peers'
+// '@ruqa/remembered-peers'
 const collection0 = {
-  name: '@altersend/remembered-peers',
+  name: '@ruqa/remembered-peers',
   id: 0,
   version: 1,
   encodeKey(record) {
@@ -79,7 +79,7 @@ export default { versions, collections, indexes, resolveCollection, resolveIndex
 
 function resolveCollection(name) {
   switch (name) {
-    case '@altersend/remembered-peers':
+    case '@ruqa/remembered-peers':
       return collection0
     default:
       return null

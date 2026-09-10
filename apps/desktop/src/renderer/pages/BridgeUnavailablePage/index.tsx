@@ -1,4 +1,4 @@
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import logo from '../../../../../../assets/logo.png'
 
 export default function BridgeUnavailablePage() {
@@ -26,12 +26,8 @@ export default function BridgeUnavailablePage() {
       >
         <div className='mx-auto flex h-8 w-full select-none items-center justify-between gap-3 px-3 text-[11px] text-text-muted'>
           <div className='flex min-w-0 items-center gap-2'>
-            <img
-              src={logo}
-              alt='AlterSend'
-              className='h-3.5 w-3.5 shrink-0 object-contain opacity-85'
-            />
-            <span className='truncate font-medium text-text-secondary'>AlterSend</span>
+            <img src={logo} alt='Ruqa' className='h-3.5 w-3.5 shrink-0 object-contain opacity-85' />
+            <span className='truncate font-medium text-text-secondary'>Ruqa</span>
           </div>
           <div className='flex min-w-0 items-center justify-center gap-2 text-text-secondary'>
             <div className='h-1.5 w-1.5 shrink-0 rounded-full bg-danger' />

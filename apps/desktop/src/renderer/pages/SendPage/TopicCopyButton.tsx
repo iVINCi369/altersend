@@ -1,6 +1,6 @@
-import { useTranslation } from '@altersend/locales'
-import { Button, Input } from '@altersend/components'
-import { CheckIcon, CopyIcon } from '@altersend/components/icons'
+import { useTranslation } from '@ruqa/locales'
+import { Button, Input } from '@ruqa/components'
+import { CheckIcon, CopyIcon } from '@ruqa/components/icons'
 
 interface TopicCopyButtonProps {
   topic: string

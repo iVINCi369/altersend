@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Button, Input, Modal } from '@altersend/components'
-import { ClipboardIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, Input, Modal } from '@ruqa/components'
+import { ClipboardIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi } from '../../api/bridgeApi'
 
 interface PairingJoinModalProps {

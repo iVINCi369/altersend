@@ -1,5 +1,5 @@
-import { useTheme } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { useTheme } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { PropsWithChildren } from 'react'
 import { View, StyleSheet, ScrollView, Platform } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'

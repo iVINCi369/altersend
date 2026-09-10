@@ -13,26 +13,26 @@ const latinFontThemeStyle = css.createTheme(fontTokens, {
 })
 
 const japaneseFontThemeStyle = css.createTheme(fontTokens, {
-  fontFamilySans: 'AlterSend Sans JP',
-  fontFamilyDisplay: 'AlterSend Sans JP',
+  fontFamilySans: 'Ruqa Sans JP',
+  fontFamilyDisplay: 'Ruqa Sans JP',
   fontFamilyMono: 'monospace'
 })
 
 const koreanFontThemeStyle = css.createTheme(fontTokens, {
-  fontFamilySans: 'AlterSend Sans KR',
-  fontFamilyDisplay: 'AlterSend Sans KR',
+  fontFamilySans: 'Ruqa Sans KR',
+  fontFamilyDisplay: 'Ruqa Sans KR',
   fontFamilyMono: 'monospace'
 })
 
 const simplifiedChineseFontThemeStyle = css.createTheme(fontTokens, {
-  fontFamilySans: 'AlterSend Sans SC',
-  fontFamilyDisplay: 'AlterSend Sans SC',
+  fontFamilySans: 'Ruqa Sans SC',
+  fontFamilyDisplay: 'Ruqa Sans SC',
   fontFamilyMono: 'monospace'
 })
 
 const traditionalChineseFontThemeStyle = css.createTheme(fontTokens, {
-  fontFamilySans: 'AlterSend Sans TC',
-  fontFamilyDisplay: 'AlterSend Sans TC',
+  fontFamilySans: 'Ruqa Sans TC',
+  fontFamilyDisplay: 'Ruqa Sans TC',
   fontFamilyMono: 'monospace'
 })
 

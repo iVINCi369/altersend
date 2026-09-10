@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import { useTranslation } from '@altersend/locales'
-import type { AccountPhase } from '@altersend/domain'
+import { useTranslation } from '@ruqa/locales'
+import type { AccountPhase } from '@ruqa/domain'
 import { useRouter } from 'expo-router'
 import {
   ApprovalWaiting,

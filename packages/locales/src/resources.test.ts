@@ -35,8 +35,8 @@ function isPlaceholderOnly(value: string): boolean {
 }
 
 const identicalValueAllowList = new Set([
-  'AlterSend',
-  'AlterSend Pro',
+  'Ruqa',
+  'Ruqa Pro',
   'Pro',
   'Upgrade',
   'Discord',

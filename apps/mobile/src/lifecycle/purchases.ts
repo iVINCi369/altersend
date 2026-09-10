@@ -5,7 +5,7 @@ import Purchases, {
   type CustomerInfo,
   type PurchasesPackage
 } from 'react-native-purchases'
-import type { BillingPlan, PlanOffer, PurchaseAdapter, PurchaseOutcome } from '@altersend/domain'
+import type { BillingPlan, PlanOffer, PurchaseAdapter, PurchaseOutcome } from '@ruqa/domain'
 
 const PRO_ENTITLEMENT = 'pro'
 

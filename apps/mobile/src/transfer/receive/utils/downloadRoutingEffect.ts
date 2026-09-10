@@ -4,8 +4,8 @@ import {
   type DownloadItemState,
   type SaveDestination,
   type TransferAction
-} from '@altersend/domain'
-import type { IncomingFileOffer } from '@altersend/core'
+} from '@ruqa/domain'
+import type { IncomingFileOffer } from '@ruqa/core'
 import { handleDownloadedFile } from './downloadHandlers'
 import { buildCompletionToast } from './completionToast'
 import { pushToast } from '@/src/components/Toast'

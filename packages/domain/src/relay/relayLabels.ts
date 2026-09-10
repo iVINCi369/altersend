@@ -16,7 +16,7 @@ export interface RelaySettingsLabels {
   clear: string
   fallbackTitle: string
   fallbackStay: RelayModeLabel
-  fallbackAltersend: RelayModeLabel
+  fallbackRuqa: RelayModeLabel
   setupGuide: string
   commitFailed: string
 }
@@ -30,7 +30,7 @@ export function relaySettingsLabels(t: Translate): RelaySettingsLabels {
   return {
     groupLabel: t('settings:rows.connection'),
     modes: {
-      altersend: mode('altersend'),
+      ruqa: mode('ruqa'),
       custom: mode('custom'),
       off: mode('off')
     },
@@ -44,9 +44,9 @@ export function relaySettingsLabels(t: Translate): RelaySettingsLabels {
       label: t('settings:relay.selfhost.fallback.stay.label'),
       caption: t('settings:relay.selfhost.fallback.stay.caption')
     },
-    fallbackAltersend: {
-      label: t('settings:relay.selfhost.fallback.altersend.label'),
-      caption: t('settings:relay.selfhost.fallback.altersend.caption')
+    fallbackRuqa: {
+      label: t('settings:relay.selfhost.fallback.ruqa.label'),
+      caption: t('settings:relay.selfhost.fallback.ruqa.caption')
     },
     setupGuide: t('settings:relay.selfhost.setupGuide'),
     commitFailed: t('settings:relay.selfhost.failed')

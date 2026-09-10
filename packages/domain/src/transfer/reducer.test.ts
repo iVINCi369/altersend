@@ -5,7 +5,7 @@ import {
   transferSessionReducer
 } from './reducer'
 import type { TransferAction, TransferSessionState } from './types'
-import type { IncomingFileOffer, RememberedPeer } from '@altersend/core'
+import type { IncomingFileOffer, RememberedPeer } from '@ruqa/core'
 
 const make = (overrides: Partial<TransferSessionState> = {}): TransferSessionState => ({
   ...initialTransferSessionState,

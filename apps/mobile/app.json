@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "AlterSend",
-    "slug": "altersend",
+    "name": "Ruqa",
+    "slug": "ruqa",
     "version": "2.0.0",
     "newArchEnabled": true,
     "orientation": "portrait",
-    "scheme": "altersend",
+    "scheme": "ruqa",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -15,17 +15,17 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.altersend.mobile",
+      "bundleIdentifier": "com.ruqa.mobile",
       "infoPlist": {
-        "NSLocalNetworkUsageDescription": "AlterSend uses your local network to discover nearby devices for peer-to-peer file transfer.",
-        "NSBonjourServices": ["_altersend._udp", "_altersend._tcp"],
+        "NSLocalNetworkUsageDescription": "Ruqa uses your local network to discover nearby devices for peer-to-peer file transfer.",
+        "NSBonjourServices": ["_ruqa._udp", "_ruqa._tcp"],
         "UIFileSharingEnabled": true,
         "LSSupportsOpeningDocumentsInPlace": true,
         "ITSAppUsesNonExemptEncryption": false,
         "CFBundleAllowMixedLocalizations": true,
         "UIViewControllerBasedStatusBarAppearance": true,
         "UIBackgroundModes": ["processing"],
-        "BGTaskSchedulerPermittedIdentifiers": ["com.altersend.mobile.transfer"]
+        "BGTaskSchedulerPermittedIdentifiers": ["com.ruqa.mobile.transfer"]
       },
       "privacyManifests": {
         "NSPrivacyTracking": false,
@@ -64,14 +64,14 @@
           }
         ]
       },
-      "associatedDomains": ["applinks:altersend.com", "applinks:app.altersend.com"]
+      "associatedDomains": ["applinks:ruqa.app", "applinks:app.ruqa.app"]
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.altersend.mobile",
+      "package": "com.ruqa.mobile",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
         "android.permission.ACCESS_WIFI_STATE",
@@ -95,12 +95,12 @@
           "data": [
             {
               "scheme": "https",
-              "host": "altersend.com",
+              "host": "ruqa.app",
               "pathPrefix": "/r"
             },
             {
               "scheme": "https",
-              "host": "app.altersend.com",
+              "host": "app.ruqa.app",
               "pathPrefix": "/r"
             }
           ],
@@ -113,8 +113,8 @@
       [
         "@sentry/react-native/expo",
         {
-          "organization": "altersend",
-          "project": "altersend"
+          "organization": "ruqa",
+          "project": "ruqa"
         }
       ],
       [
@@ -131,7 +131,7 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "AlterSend uses your camera to scan connection QR codes.",
+          "cameraPermission": "Ruqa uses your camera to scan connection QR codes.",
           "microphonePermission": false,
           "recordAudioAndroid": false,
           "barcodeScannerEnabled": true
@@ -141,15 +141,15 @@
       [
         "expo-media-library",
         {
-          "photosPermission": "AlterSend reads your photo library so you can pick photos and videos to send to another device.",
-          "savePhotosPermission": "AlterSend saves received images and videos to your photo library.",
+          "photosPermission": "Ruqa reads your photo library so you can pick photos and videos to send to another device.",
+          "savePhotosPermission": "Ruqa saves received images and videos to your photo library.",
           "isAccessMediaLocationEnabled": false
         }
       ],
       [
         "expo-share-intent",
         {
-          "iosAppGroupIdentifier": "group.com.altersend.mobile",
+          "iosAppGroupIdentifier": "group.com.ruqa.mobile",
           "iosActivationRules": {
             "NSExtensionActivationSupportsImageWithMaxCount": 100,
             "NSExtensionActivationSupportsMovieWithMaxCount": 100,
@@ -213,7 +213,7 @@
           "android": {
             "fonts": [
               {
-                "fontFamily": "AlterSend Sans JP",
+                "fontFamily": "Ruqa Sans JP",
                 "fontDefinitions": [
                   {
                     "path": "../../assets/fonts/NotoSans-JP-Regular.ttf",
@@ -226,7 +226,7 @@
                 ]
               },
               {
-                "fontFamily": "AlterSend Sans KR",
+                "fontFamily": "Ruqa Sans KR",
                 "fontDefinitions": [
                   {
                     "path": "../../assets/fonts/NotoSans-KR-Regular.ttf",
@@ -239,7 +239,7 @@
                 ]
               },
               {
-                "fontFamily": "AlterSend Sans SC",
+                "fontFamily": "Ruqa Sans SC",
                 "fontDefinitions": [
                   {
                     "path": "../../assets/fonts/NotoSans-SC-Regular.ttf",
@@ -252,7 +252,7 @@
                 ]
               },
               {
-                "fontFamily": "AlterSend Sans TC",
+                "fontFamily": "Ruqa Sans TC",
                 "fontDefinitions": [
                   {
                     "path": "../../assets/fonts/NotoSans-TC-Regular.ttf",

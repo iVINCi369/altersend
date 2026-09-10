@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native'
-import { MenuItem, useTheme } from '@altersend/components'
-import { PencilIcon, TrashIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { MenuItem, useTheme } from '@ruqa/components'
+import { PencilIcon, TrashIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { BottomSheet } from '../BottomSheet'
 
 interface DeviceActionsSheetProps {

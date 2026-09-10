@@ -2,7 +2,7 @@ import Protomux from 'protomux'
 import c from 'compact-encoding'
 import { proTokenFor } from './config'
 
-const PROTOCOL = 'altersend-pro'
+const PROTOCOL = 'ruqa-pro'
 
 export function announceProToken(
   socket: unknown,

@@ -22,7 +22,7 @@ assignees: ''
 
 ## Environment
 
-- AlterSend version:
+- Ruqa version:
 - Platform: <!-- macOS / Windows / Linux / iOS / Android -->
 - OS version:
 - Other peer's platform (if relevant):

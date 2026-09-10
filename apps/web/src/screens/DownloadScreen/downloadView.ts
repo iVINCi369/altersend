@@ -1,4 +1,4 @@
-import { formatFileSize, getOfferKey, type DownloadItemState } from '@altersend/domain'
+import { formatFileSize, getOfferKey, type DownloadItemState } from '@ruqa/domain'
 import type { Translate, TransferFile } from '../../types'
 import type { DownloadSummary } from './useDownloadSummary'
 

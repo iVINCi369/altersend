@@ -1,7 +1,7 @@
-import { ThemeType, useTheme } from '@altersend/components'
-import { websiteUrl } from '@altersend/domain'
-import logoOnLight from '../../assets/altersend-logo-dark.png'
-import logoOnDark from '../../assets/altersend-logo.png'
+import { ThemeType, useTheme } from '@ruqa/components'
+import { websiteUrl } from '@ruqa/domain'
+import logoOnLight from '../../assets/ruqa-logo-dark.png'
+import logoOnDark from '../../assets/ruqa-logo.png'
 import { AppearanceToggle } from '../AppearanceToggle'
 import { LanguageSelect } from '../LanguageSelect'
 
@@ -12,8 +12,8 @@ export function PageHeader() {
   return (
     <>
       <div className='mb-6 flex w-full max-w-[620px] items-center justify-between sm:hidden'>
-        <a href={websiteUrl} aria-label='AlterSend'>
-          <img src={logo} alt='AlterSend' className='h-7 w-auto object-contain' />
+        <a href={websiteUrl} aria-label='Ruqa'>
+          <img src={logo} alt='Ruqa' className='h-7 w-auto object-contain' />
         </a>
         <div className='flex items-center gap-2'>
           <AppearanceToggle />
@@ -26,8 +26,8 @@ export function PageHeader() {
         <LanguageSelect />
       </div>
 
-      <a href={websiteUrl} aria-label='AlterSend' className='mb-[30px] hidden sm:block'>
-        <img src={logo} alt='AlterSend' className='h-8 w-auto object-contain' />
+      <a href={websiteUrl} aria-label='Ruqa' className='mb-[30px] hidden sm:block'>
+        <img src={logo} alt='Ruqa' className='h-8 w-auto object-contain' />
       </a>
     </>
   )

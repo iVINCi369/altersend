@@ -1,7 +1,7 @@
 {
   "app": {
-    "name": "AlterSend",
-    "welcome": "歡迎使用 AlterSend",
+    "name": "Ruqa",
+    "welcome": "歡迎使用 Ruqa",
     "loadingTagline": "文件会在你的设备之间直接传输。\n没有服务器、没有副本、没有中间人。"
   },
   "actions": {
@@ -56,8 +56,8 @@
     "photos": "照片",
     "files": "檔案",
     "downloads": "檔案 › 下載",
-    "photosAndAlterSend": "照片 + AlterSend 資料夾",
-    "alterSendFolder": "AlterSend 資料夾",
+    "photosAndRuqa": "照片 + Ruqa 資料夾",
+    "ruqaFolder": "Ruqa 資料夾",
     "text": "文字",
     "items_one": "{{count}} 項",
     "items_other": "{{count}} 項",
@@ -76,7 +76,7 @@
     "notNow": "稍後再說"
   },
   "whatsNew": {
-    "heading": "AlterSend {{version}} 全新功能",
+    "heading": "Ruqa {{version}} 全新功能",
     "subtitle_one": "有 1 件事值得了解。",
     "subtitle_other": "有 {{count}} 件事值得了解。",
     "releases": {

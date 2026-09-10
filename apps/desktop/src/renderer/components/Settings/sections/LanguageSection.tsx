@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { LinkCard, LinkRow, getFontFamilyCssVariables, useTheme } from '@altersend/components'
-import { CheckIcon } from '@altersend/components/icons'
+import { LinkCard, LinkRow, getFontFamilyCssVariables, useTheme } from '@ruqa/components'
+import { CheckIcon } from '@ruqa/components/icons'
 import {
   LOCALE_OPTIONS,
   changeI18nLanguage,
@@ -10,7 +10,7 @@ import {
   useTranslation,
   type LocaleOption,
   type LocalePreference
-} from '@altersend/locales'
+} from '@ruqa/locales'
 import {
   getSavedLocalePreference,
   setSavedLocalePreference

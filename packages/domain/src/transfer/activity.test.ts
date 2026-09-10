@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { IncomingFileOffer } from '@altersend/core'
+import type { IncomingFileOffer } from '@ruqa/core'
 import { getTransferActivity } from './activity'
 import { initialTransferSessionState } from './reducer'
 import type { TransferSessionState } from './types'

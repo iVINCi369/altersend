@@ -1,4 +1,4 @@
-import { appStoreUrl, downloadUrl, playStoreUrl } from '@altersend/domain'
+import { appStoreUrl, downloadUrl, playStoreUrl } from '@ruqa/domain'
 import { platform, type OS } from './platform'
 
 const STORE_URL: Partial<Record<OS, string>> = {

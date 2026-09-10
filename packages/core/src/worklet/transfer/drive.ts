@@ -1,13 +1,8 @@
 import Protomux, { type ProtomuxMessage } from 'protomux'
 import c from 'compact-encoding'
 import type { PeerSocket } from 'hyperswarm'
-import {
-  sendFile,
-  type ChunkHeader,
-  type ControlMessage,
-  type DriveChannel
-} from '@altersend/drive'
-import { DRIVE_PROTOCOL, chunkEncoding, type ChunkFrame } from '@altersend/drive/transport'
+import { sendFile, type ChunkHeader, type ControlMessage, type DriveChannel } from '@ruqa/drive'
+import { DRIVE_PROTOCOL, chunkEncoding, type ChunkFrame } from '@ruqa/drive/transport'
 
 interface Session {
   onMessage?: (message: ControlMessage) => void

@@ -1,11 +1,5 @@
-import {
-  CrashScreen,
-  ErrorBoundary,
-  ThemeProvider,
-  ThemeType,
-  useTheme
-} from '@altersend/components'
-import type { Theme, ThemePreference } from '@altersend/components'
+import { CrashScreen, ErrorBoundary, ThemeProvider, ThemeType, useTheme } from '@ruqa/components'
+import type { Theme, ThemePreference } from '@ruqa/components'
 import {
   bindTransferApi,
   startBackgroundReconnectEffect,
@@ -14,14 +8,14 @@ import {
   useSimulatedLoading,
   useSubscriptionStore,
   useWhatsNew
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import {
   getLocaleFontFamily,
   initI18n,
   isSupportedLocaleCode,
   resolveLocalePreference,
   useTranslation
-} from '@altersend/locales'
+} from '@ruqa/locales'
 import Constants from 'expo-constants'
 import { Stack } from 'expo-router'
 import { Platform, StyleSheet, View } from 'react-native'
@@ -36,7 +30,7 @@ import { AccountProvider } from '../src/account'
 import { UpdateBanner } from '../src/components/UpdateBanner'
 import { PairRequestBanner } from '../src/components/PairRequestBanner'
 import { InviteBanner } from '../src/components/InviteBanner'
-import { useAlterSendFonts } from '../src/theme/useAlterSendFonts'
+import { useRuqaFonts } from '../src/theme/useRuqaFonts'
 import { startAppStateBridge } from '../src/lifecycle/appStateBridge'
 import { startBackgroundTransferService } from '../src/lifecycle/backgroundTransferService'
 import { startDeepLinkHandler } from '../src/lifecycle/deepLinkHandler'
@@ -264,7 +258,7 @@ function AppShell() {
 
 export default function RootLayout() {
   const [preferencesReady, setPreferencesReady] = useState(false)
-  const [fontsLoaded, fontError] = useAlterSendFonts()
+  const [fontsLoaded, fontError] = useRuqaFonts()
 
   useEffect(() => {
     let mounted = true

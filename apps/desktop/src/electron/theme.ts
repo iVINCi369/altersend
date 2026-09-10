@@ -1,5 +1,5 @@
 import { nativeTheme } from 'electron'
-import { rawTokens } from '@altersend/components/theme/raw'
+import { rawTokens } from '@ruqa/components/theme/raw'
 import { createJsonStore } from './store/index.js'
 
 export type ThemeSource = Electron.NativeTheme['themeSource']

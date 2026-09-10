@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="assets/altersend-logo.png" alt="AlterSend" width="280" />
+  <img src="assets/ruqa-logo.png" alt="Ruqa" width="280" />
   <br />
   <br />
 
@@ -11,11 +11,11 @@ Files go directly between your devices — end-to-end encrypted, no accounts, no
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux%20%7C%20iOS%20%7C%20Android-lightgrey)](#download)
 
-[Website](https://altersend.com) · [Download](https://altersend.com/download) · [Discord](https://discord.gg/R6tmrk85Vx) · [X](https://x.com/altersend_app)
+[Website](https://ruqa.app) · [Download](https://ruqa.app/download) · [Discord](https://discord.gg/R6tmrk85Vx) · [X](https://x.com/ruqa_app)
 
   <br/>
 
-  <img src="assets/altersend_demo.gif" alt="Sending a file from desktop to mobile with AlterSend" width="820" />
+  <img src="assets/ruqa_demo.gif" alt="Sending a file from desktop to mobile with Ruqa" width="820" />
 
 </div>
 
@@ -46,7 +46,7 @@ Files go directly between your devices — end-to-end encrypted, no accounts, no
 
 ## About
 
-AlterSend is a free, open-source app for sending files directly between your devices, with no cloud storage and no uploads. Files transfer P2P with no size limit and are end-to-end encrypted.
+Ruqa is a free, open-source app for sending files directly between your devices, with no cloud storage and no uploads. Files transfer P2P with no size limit and are end-to-end encrypted.
 
 Why use WeTransfer, Dropbox, or Google Drive when you can send files straight to the recipient, instantly and privately, with no upload step?
 
@@ -54,7 +54,7 @@ Why use WeTransfer, Dropbox, or Google Drive when you can send files straight to
 
 - **No accounts** — no signup, no login, no email address required
 - **No cloud storage** — files go directly between devices; nothing is ever uploaded or stored on a server
-- **Receive in a browser** — recipients open a share link at [app.altersend.com](https://app.altersend.com) and download straight from the sender, no install
+- **Receive in a browser** — recipients open a share link at [app.ruqa.app](https://app.ruqa.app) and download straight from the sender, no install
 - **End-to-end encrypted** — only your devices can read your files, always
 - **No size limit P2P** — send a 100 MB photo or a 500 GB video archive, same experience
 - **Pair your devices** — pair a device once, then send to it without scanning or typing a code each time
@@ -65,22 +65,22 @@ Why use WeTransfer, Dropbox, or Google Drive when you can send files straight to
 
 ## Download
 
-Get the latest release from [altersend.com/download](https://altersend.com/download) or directly from the table below.
+Get the latest release from [ruqa.app/download](https://ruqa.app/download) or directly from the table below.
 
 | Platform    | Download                                                                                                                                                                                    |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Windows** | [Microsoft Store](https://apps.microsoft.com/detail/9NHLK9GLVDLW) (signed) · [EXE installer](https://github.com/denislupookov/altersend/releases/latest)                                    |
-| **macOS**   | [DMG — Apple Silicon](https://github.com/denislupookov/altersend/releases/latest) · [DMG — Intel](https://github.com/denislupookov/altersend/releases/latest) · [Homebrew](#macos-homebrew) |
-| **Linux**   | [AppImage](https://github.com/denislupookov/altersend/releases/latest) · [Flatpak](#linux-flatpak)                                                                                          |
-| **Android** | [Google Play](https://play.google.com/store/apps/details?id=com.altersend.mobile) · [APK](https://github.com/denislupookov/altersend/releases/latest)                                       |
-| **iOS**     | [App Store](https://apps.apple.com/us/app/altersend-file-transfer/id6772496271)                                                                                                             |
+| **Windows** | [Microsoft Store](https://apps.microsoft.com/detail/9NHLK9GLVDLW) (signed) · [EXE installer](https://github.com/iVINCi369/altersend/releases/latest)                                    |
+| **macOS**   | [DMG — Apple Silicon](https://github.com/iVINCi369/altersend/releases/latest) · [DMG — Intel](https://github.com/iVINCi369/altersend/releases/latest) · [Homebrew](#macos-homebrew) |
+| **Linux**   | [AppImage](https://github.com/iVINCi369/altersend/releases/latest) · [Flatpak](#linux-flatpak)                                                                                          |
+| **Android** | [Google Play](https://play.google.com/store/apps/details?id=com.ruqa.mobile) · [APK](https://github.com/iVINCi369/altersend/releases/latest)                                       |
+| **iOS**     | [App Store](https://apps.apple.com/us/app/ruqa-file-transfer/id6772496271)                                                                                                             |
 
 ### macOS Homebrew
 
-You can also install AlterSend on macOS using [Homebrew](https://brew.sh):
+You can also install Ruqa on macOS using [Homebrew](https://brew.sh):
 
 ```sh
-brew install --cask altersend
+brew install --cask ruqa
 ```
 
 ### Linux Flatpak
@@ -88,22 +88,22 @@ brew install --cask altersend
 You can build and install the included Flatpak manifest yourself (needs `flatpak-builder`):
 
 ```sh
-git clone https://github.com/denislupookov/altersend.git && cd altersend
-flatpak-builder --user --install --install-deps-from=flathub --force-clean build-dir flatpak/com.altersend.AlterSend.yaml
+git clone https://github.com/iVINCi369/altersend.git && cd ruqa
+flatpak-builder --user --install --install-deps-from=flathub --force-clean build-dir flatpak/com.ruqa.Ruqa.yaml
 ```
 
 ### Arch Linux
 
-AlterSend is available in the AUR as two packages: `altersend-bin` for official release binaries and `altersend-git` for the latest Git changes compiled from source.
+Ruqa is available in the AUR as two packages: `ruqa-bin` for official release binaries and `ruqa-git` for the latest Git changes compiled from source.
 
 ```sh
-yay -S altersend-bin
-yay -S altersend-git
+yay -S ruqa-bin
+yay -S ruqa-git
 ```
 
 ## How it works
 
-1. Open AlterSend on both devices
+1. Open Ruqa on both devices
 2. One device shows a **join code** (or QR)
 3. The other scans or types it
 4. Files transfer directly — peer to peer
@@ -125,7 +125,7 @@ yay -S altersend-git
 
 ### Under the hood
 
-AlterSend is built on [Hyperswarm](https://github.com/holepunchto/hyperswarm), a Kademlia DHT at its core. Behind those four steps:
+Ruqa is built on [Hyperswarm](https://github.com/holepunchto/hyperswarm), a Kademlia DHT at its core. Behind those four steps:
 
 1. **A random 32-byte key is generated** for each transfer (`crypto.randomBytes(32)`). That 64-char hex string _is_ the join code you share.
 2. **Peers rendezvous on a hash of that key, not the key itself.** Both sides compute the same discovery key — a BLAKE2b hash derived from the join code — and join the DHT on that. The raw key never leaves your device, only its hash is published.
@@ -147,8 +147,8 @@ AlterSend is built on [Hyperswarm](https://github.com/holepunchto/hyperswarm), a
 ### Setup
 
 ```sh
-git clone https://github.com/denislupookov/altersend.git
-cd altersend
+git clone https://github.com/iVINCi369/altersend.git
+cd ruqa
 npm install
 
 cp apps/desktop/.env.example apps/desktop/.env
@@ -192,7 +192,7 @@ See [docs/architecture.md](docs/architecture.md) for data flow and inter-process
 
 ### Internationalization
 
-Desktop and mobile share translation catalogs through `@altersend/locales`, currently covering 13 locales. See [docs/i18n.md](docs/i18n.md) for the translation workflow.
+Desktop and mobile share translation catalogs through `@ruqa/locales`, currently covering 13 locales. See [docs/i18n.md](docs/i18n.md) for the translation workflow.
 
 ### Tech stack
 
@@ -206,7 +206,7 @@ Crash reporting via [Sentry](https://sentry.io) is opt-in and off by default.
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=denislupookov/altersend)](https://github.com/denislupookov/altersend/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=iVINCi369/altersend)](https://github.com/iVINCi369/altersend/graphs/contributors)
 
 ## Contributing
 
@@ -218,4 +218,4 @@ Found a vulnerability? Follow the disclosure process in [SECURITY.md](SECURITY.m
 
 ## License
 
-[Apache-2.0](LICENSE) © AlterSend
+[Apache-2.0](LICENSE) © Ruqa

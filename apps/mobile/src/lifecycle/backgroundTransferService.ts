@@ -6,7 +6,7 @@ import {
   type RateSample,
   type TransferActivity,
   type TransferSessionState
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { AppState } from 'react-native'
 import {
   isTransferServiceAvailable,

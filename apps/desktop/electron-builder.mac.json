@@ -1,5 +1,5 @@
 {
-  "appId": "com.altersend.desktop",
+  "appId": "com.ruqa.desktop",
   "electronVersion": "40.2.1",
   "icon": "build/icon.icns",
   "asar": false,
@@ -30,7 +30,7 @@
     "entitlements": "build/entitlements.mac.plist",
     "entitlementsInherit": "build/entitlements.mac.plist",
     "extendInfo": {
-      "NSCameraUsageDescription": "AlterSend uses your camera to scan a sender's connection QR code.",
+      "NSCameraUsageDescription": "Ruqa uses your camera to scan a sender's connection QR code.",
       "UIDesignRequiresCompatibility": true,
       "CFBundleDocumentTypes": [
         {

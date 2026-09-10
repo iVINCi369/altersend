@@ -1,4 +1,4 @@
-# @altersend/drive
+# @ruqa/drive
 
 Chunked file transfer over a caller-supplied channel. The sender reads byte
 ranges from the source, the receiver writes them to offsets in the
@@ -7,7 +7,7 @@ destination. Neither side makes an intermediate copy.
 ## Usage
 
 ```ts
-import { sendFile, receiveFile } from '@altersend/drive'
+import { sendFile, receiveFile } from '@ruqa/drive'
 
 const savedTo = await receiveFile(destPath, channelB)
 await sendFile(srcPath, channelA)

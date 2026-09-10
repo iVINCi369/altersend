@@ -8,7 +8,7 @@ export interface DeviceCapabilities {
   canBackground: boolean
 }
 
-const DEVICE_AUTH_CONTEXT = b4a.from('altersend-device-auth-v1')
+const DEVICE_AUTH_CONTEXT = b4a.from('ruqa-device-auth-v1')
 const SIGNATURE_LEN = 64
 
 function deviceAuthChallenge(handshakeHash: Uint8Array): Uint8Array {

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { isValidJoinCode } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { isValidJoinCode } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { connect, connectErrorCode, type Connection } from './transfer'
 import { shouldZip, isInAppBrowser, ZipDownload } from './transfer/storage'
 import type { FileOffer, TextOffer } from './transfer/peerProtocol'
@@ -183,7 +183,7 @@ export function useReceiveViewModel(): ReceiveViewModel {
     let zipDl: ZipDownload | null = null
     if (zip) {
       const count = connectionRef.current?.offers.length ?? 0
-      zipDl = await ZipDownload.open(`altersend-${count}-files.zip`)
+      zipDl = await ZipDownload.open(`ruqa-${count}-files.zip`)
     }
     while (queue.current.length > 0) {
       const id = queue.current.shift()

@@ -1,13 +1,13 @@
 import { useCallback, useEffect } from 'react'
 import { router } from 'expo-router'
 import { useShareIntent } from 'expo-share-intent'
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import {
   getLeaveSessionMessage,
   toSelectedFiles,
   useExternalFileHandoff,
   useTransferStore
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { ConfirmDialog } from '@/src/components'
 
 export function ShareIntentHandler() {

@@ -1,6 +1,6 @@
-import { Modal } from '@altersend/components'
-import { buildPairUrl, useCopiedFlag } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Modal } from '@ruqa/components'
+import { buildPairUrl, useCopiedFlag } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { QRCode } from '../QRCode'
 import { TopicCopyButton } from '../../pages/SendPage/TopicCopyButton'
 

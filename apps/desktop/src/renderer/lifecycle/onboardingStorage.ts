@@ -1,4 +1,4 @@
-const KEY = 'altersend.onboarding.completed'
+const KEY = 'ruqa.onboarding.completed'
 
 export function isOnboardingCompleted(): boolean {
   try {

@@ -1,6 +1,6 @@
-import { useTheme } from '@altersend/components'
-import { CheckIcon } from '@altersend/components/icons'
-import type { PlanCell } from '@altersend/domain'
+import { useTheme } from '@ruqa/components'
+import { CheckIcon } from '@ruqa/components/icons'
+import type { PlanCell } from '@ruqa/domain'
 
 interface Props {
   cell: PlanCell

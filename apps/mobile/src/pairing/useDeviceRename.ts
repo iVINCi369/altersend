@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import type { DeviceRenameTarget } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import type { DeviceRenameTarget } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { useToast } from '@/src/components/Toast'
 
 export const SHEET_TRANSITION_MS = 250

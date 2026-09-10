@@ -8,19 +8,15 @@ import {
   getSystemTheme,
   resolveThemePreference,
   type ThemePreference
-} from '@altersend/components'
+} from '@ruqa/components'
 import {
   getLocaleFontFamily,
   initI18n,
   isSupportedLocaleCode,
   resolveLocalePreference,
   useTranslation
-} from '@altersend/locales'
-import {
-  bindTransferApi,
-  startBackgroundReconnectEffect,
-  startPeerWatchdog
-} from '@altersend/domain'
+} from '@ruqa/locales'
+import { bindTransferApi, startBackgroundReconnectEffect, startPeerWatchdog } from '@ruqa/domain'
 import App from './App.js'
 import { bridgeApi, hasBridge } from './api/bridgeApi'
 import { startDeepLinkHandler } from './lifecycle/deepLinkHandler'
@@ -44,7 +40,7 @@ function DesktopCrashScreen({ error }: { error: Error }) {
       onRestart={() => bridgeApi.appRestart?.()}
       title={t('errors:crash.title')}
       description={t('errors:crash.desktopDescription')}
-      restartLabel={t('errors:crash.restartAlterSend')}
+      restartLabel={t('errors:crash.restartRuqa')}
     />
   )
 }

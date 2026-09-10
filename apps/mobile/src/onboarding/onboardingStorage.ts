@@ -1,6 +1,6 @@
 import { Directory, File, Paths } from 'expo-file-system'
 
-const MARKER_DIRNAME = 'altersend'
+const MARKER_DIRNAME = 'ruqa'
 const MARKER_FILENAME = 'onboarding.completed'
 
 function getMarkerFile(): File | null {

@@ -1,11 +1,11 @@
 import Protomux from 'protomux'
 import c from 'compact-encoding'
-import { DRIVE_PROTOCOL, chunkEncoding } from '@altersend/drive/transport'
-import { CONTROL_PROTOCOL, PROTOCOL_VERSION } from '@altersend/core/protocol'
-import type { ChunkHeader, ControlMessage as DriveMessage, DriveChannel } from '@altersend/drive'
+import { DRIVE_PROTOCOL, chunkEncoding } from '@ruqa/drive/transport'
+import { CONTROL_PROTOCOL, PROTOCOL_VERSION } from '@ruqa/core/protocol'
+import type { ChunkHeader, ControlMessage as DriveMessage, DriveChannel } from '@ruqa/drive'
 
-export type { FileOffer, TextOffer } from '@altersend/core'
-import type { TransferOffer } from '@altersend/core'
+export type { FileOffer, TextOffer } from '@ruqa/core'
+import type { TransferOffer } from '@ruqa/core'
 
 export interface TransferReady {
   type: 'transfer-ready'

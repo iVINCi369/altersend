@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from 'react'
-import { Button, SegmentedProgress, ThemeType, useTheme } from '@altersend/components'
-import { onboardingSlides, type OnboardingSlide } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Button, SegmentedProgress, ThemeType, useTheme } from '@ruqa/components'
+import { onboardingSlides, type OnboardingSlide } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { useRouter } from 'expo-router'
 import {
   FlatList,
@@ -16,8 +16,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { SlideView } from '@/src/onboarding/SlideView'
 import { markOnboardingCompleted } from '@/src/onboarding/onboardingStorage'
 import { requestNotificationPermission } from '@/src/lifecycle/notificationPermission'
-import logoOnLight from '../../../assets/altersend-logo-dark.png'
-import logoOnDark from '../../../assets/altersend-logo.png'
+import logoOnLight from '../../../assets/ruqa-logo-dark.png'
+import logoOnDark from '../../../assets/ruqa-logo.png'
 
 const MAX_HERO_HEIGHT = 190
 const HERO_HEIGHT_RATIO = 0.24

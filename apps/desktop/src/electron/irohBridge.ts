@@ -12,7 +12,7 @@ import { isWindows } from 'which-runtime'
  * Главный процесс поднимает отдельный бинарник и передаёт воркл ету порт его
  * локального моста через `--iroh-bridge=`.
  *
- * Выключено по умолчанию: без флага `--iroh` (или ALTERSEND_IROH=1) приложение
+ * Выключено по умолчанию: без флага `--iroh` (или RUQA_IROH=1) приложение
  * работает ровно как раньше, на одном hyperswarm.
  */
 
@@ -57,7 +57,7 @@ function pickFreePort(): Promise<number> {
 }
 
 export function irohRequested(cliArgs: string[]): boolean {
-  return cliArgs.includes('--iroh') || process.env.ALTERSEND_IROH === '1'
+  return cliArgs.includes('--iroh') || process.env.RUQA_IROH === '1'
 }
 
 export function getIrohBridgePort(): number | null {

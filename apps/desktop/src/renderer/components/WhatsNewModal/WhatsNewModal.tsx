@@ -1,7 +1,7 @@
-import { Button, Modal } from '@altersend/components'
-import { CloseIcon } from '@altersend/components/icons'
-import { highlightsForPlatform, type ReleaseNote } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Button, Modal } from '@ruqa/components'
+import { CloseIcon } from '@ruqa/components/icons'
+import { highlightsForPlatform, type ReleaseNote } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import updateSvg from '../../../../../../assets/update.svg'
 
 interface WhatsNewModalProps {

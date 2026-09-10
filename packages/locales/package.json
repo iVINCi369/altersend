@@ -1,5 +1,5 @@
 {
-  "name": "@altersend/locales",
+  "name": "@ruqa/locales",
   "version": "2.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,10 +12,10 @@
   },
   "private": true,
   "license": "Apache-2.0",
-  "author": "AlterSend",
+  "author": "Ruqa",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denislupookov/altersend.git"
+    "url": "git+https://github.com/iVINCi369/altersend.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",

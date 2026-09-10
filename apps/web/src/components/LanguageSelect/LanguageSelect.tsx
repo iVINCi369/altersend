@@ -1,6 +1,6 @@
 import { useState, type ChangeEvent } from 'react'
-import { useTheme } from '@altersend/components'
-import { ChevronDownIcon, GlobeIcon } from '@altersend/components/icons'
+import { useTheme } from '@ruqa/components'
+import { ChevronDownIcon, GlobeIcon } from '@ruqa/components/icons'
 import {
   DEFAULT_LOCALE,
   LOCALE_OPTIONS,
@@ -10,7 +10,7 @@ import {
   resolveLocalePreference,
   useTranslation,
   type LocalePreference
-} from '@altersend/locales'
+} from '@ruqa/locales'
 import {
   getBrowserLocales,
   getSavedLocalePreference,

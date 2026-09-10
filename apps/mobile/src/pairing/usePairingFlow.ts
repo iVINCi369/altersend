@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react'
 import { router, useLocalSearchParams } from 'expo-router'
-import {
-  forgetPeer,
-  renamePeer,
-  usePairingSession,
-  type DeviceRenameTarget
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { forgetPeer, renamePeer, usePairingSession, type DeviceRenameTarget } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { useToast } from '@/src/components/Toast'
 import { SHEET_TRANSITION_MS, useDeviceRename } from './useDeviceRename'
 import { useDeviceRemove } from './useDeviceRemove'

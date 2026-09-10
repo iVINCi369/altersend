@@ -1,7 +1,7 @@
 import { Platform } from 'react-native'
 import { File } from 'expo-file-system'
 import { Asset, requestPermissionsAsync } from 'expo-media-library'
-import type { SaveDestination } from '@altersend/domain'
+import type { SaveDestination } from '@ruqa/domain'
 import { isMediaStoreAvailable, saveToDownloads } from '@/modules/media-store'
 import { isSaveMediaToPhotos } from '@/src/lifecycle/downloadPreferenceStorage'
 

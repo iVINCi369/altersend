@@ -1,4 +1,4 @@
-const ASK_KEY = 'altersend.downloads.askEveryTime'
+const ASK_KEY = 'ruqa.downloads.askEveryTime'
 
 export function isAskEveryTime(): boolean {
   try {

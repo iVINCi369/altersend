@@ -1,7 +1,7 @@
 {
   "app": {
-    "name": "AlterSend",
-    "welcome": "Bienvenue dans AlterSend",
+    "name": "Ruqa",
+    "welcome": "Bienvenue dans Ruqa",
     "loadingTagline": "Les fichiers passent directement entre vos appareils.\nAucun serveur, aucune copie, aucun intermédiaire."
   },
   "actions": {
@@ -56,8 +56,8 @@
     "photos": "Photothèque",
     "files": "Fichiers",
     "downloads": "Fichiers › Téléchargements",
-    "photosAndAlterSend": "Photos + dossier AlterSend",
-    "alterSendFolder": "Dossier AlterSend",
+    "photosAndRuqa": "Photos + dossier Ruqa",
+    "ruqaFolder": "Dossier Ruqa",
     "text": "Texte",
     "items_one": "{{count}} élément",
     "items_other": "{{count}} éléments",
@@ -76,7 +76,7 @@
     "notNow": "Plus tard"
   },
   "whatsNew": {
-    "heading": "Nouveautés d'AlterSend {{version}}",
+    "heading": "Nouveautés d'Ruqa {{version}}",
     "subtitle_one": "Une chose à savoir.",
     "subtitle_other": "{{count}} choses à savoir.",
     "releases": {

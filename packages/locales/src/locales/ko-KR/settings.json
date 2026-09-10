@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "충돌 보고서",
-    "description": "AlterSend 개선을 위해 익명 충돌 데이터 공유"
+    "description": "Ruqa 개선을 위해 익명 충돌 데이터 공유"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "AlterSend 릴레이",
-        "caption": "직접 연결이 실패하면 전송이 AlterSend 릴레이를 통해 이루어집니다. 파일은 종단 간 암호화가 유지됩니다."
+      "ruqa": {
+        "label": "Ruqa 릴레이",
+        "caption": "직접 연결이 실패하면 전송이 Ruqa 릴레이를 통해 이루어집니다. 파일은 종단 간 암호화가 유지됩니다."
       },
       "custom": {
         "label": "셀프 호스팅 릴레이",
-        "caption": "AlterSend 대신 내 릴레이 서버를 사용합니다."
+        "caption": "Ruqa 대신 내 릴레이 서버를 사용합니다."
       },
       "off": {
         "label": "릴레이 없음",
@@ -43,8 +43,8 @@
           "label": "내 릴레이만 사용",
           "caption": "릴레이에 연결할 수 없으면 전송이 대기합니다."
         },
-        "altersend": {
-          "label": "필요하면 AlterSend 릴레이 사용",
+        "ruqa": {
+          "label": "필요하면 Ruqa 릴레이 사용",
           "caption": "릴레이가 중단돼도 전송이 계속됩니다."
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "커뮤니티에 가입하세요",
     "github": "GitHub",
-    "sponsor": "AlterSend 후원하기",
+    "sponsor": "Ruqa 후원하기",
     "privacyPolicy": "개인 정보 보호 정책",
-    "privacyPolicyHint": "AlterSend가 데이터를 처리하는 방법",
+    "privacyPolicyHint": "Ruqa가 데이터를 처리하는 방법",
     "terms": "서비스 약관",
-    "termsHint": "AlterSend 사용 규칙",
+    "termsHint": "Ruqa 사용 규칙",
     "website": "웹사이트",
     "connection": "릴레이"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "초대 코드가 아직 유효한지 확인하세요.",
     "couldNotJoinQrHint": "다른 기기에 QR 코드가 아직 열려 있는지 확인하세요.",
     "unsupportedQr": "지원되지 않는 QR 코드",
-    "unsupportedQrHint": "AlterSend 페어링 코드를 스캔하세요.",
+    "unsupportedQrHint": "Ruqa 페어링 코드를 스캔하세요.",
     "noQrFound": "QR 코드를 찾을 수 없습니다",
-    "noQrFoundHint": "AlterSend 페어링 코드가 있는 이미지를 선택하세요.",
+    "noQrFoundHint": "Ruqa 페어링 코드가 있는 이미지를 선택하세요.",
     "importFromImage": "이미지에서 가져오기",
     "cameraAccessNeeded": "카메라 액세스 필요",
     "cameraAccessText": "페어링 QR 코드를 스캔하려면 카메라 액세스를 허용하세요.",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "사진 및 동영상을 갤러리에 저장",
     "destinationPhotos": "사진 및 동영상을 사진 앱으로",
     "destinationFiles": "사진 및 동영상을 파일 앱으로",
-    "mediaToPhotosDescription": "끄면 파일 앱의 AlterSend 폴더에 저장됩니다.",
+    "mediaToPhotosDescription": "끄면 파일 앱의 Ruqa 폴더에 저장됩니다.",
     "mediaToGalleryDescription": "끄면 다운로드 폴더에 저장됩니다.",
     "destinationGallery": "사진 및 동영상을 갤러리로",
     "destinationDownloads": "사진 및 동영상을 다운로드로"
@@ -177,10 +177,10 @@
     "copied": "복사됨",
     "copyFailed": "코드를 복사하지 못했습니다. 로그아웃하기 전에 직접 복사하세요.",
     "saveCode": "코드를 파일로 저장",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "계정 코드",
     "codeFileSaved": "저장됨",
-    "codeFileWarning": "이 코드가 곧 구독입니다. 어떤 기기에서든 AlterSend에 입력하면 Pro를 복원할 수 있습니다. 저희는 저장하지 않으며 복구해 드릴 수 없습니다.",
+    "codeFileWarning": "이 코드가 곧 구독입니다. 어떤 기기에서든 Ruqa에 입력하면 Pro를 복원할 수 있습니다. 저희는 저장하지 않으며 복구해 드릴 수 없습니다.",
     "subscriptionRow": "구독",
     "manageSubscription": "관리",
     "untilDate": "{{date}}까지",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "공유 메뉴",
-    "description": "macOS 공유 메뉴에 AlterSend를 추가합니다"
+    "description": "macOS 공유 메뉴에 Ruqa를 추가합니다"
   }
 }

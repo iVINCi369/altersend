@@ -1,13 +1,8 @@
 import { useEffect } from 'react'
 import { Linking, Platform, StyleSheet, View } from 'react-native'
-import { Button, ExternalLink, LinkRow, useTheme } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
-import {
-  planComparisonRows,
-  planRows,
-  privacyPolicyUrl,
-  termsOfServiceUrl
-} from '@altersend/domain'
+import { Button, ExternalLink, LinkRow, useTheme } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
+import { planComparisonRows, planRows, privacyPolicyUrl, termsOfServiceUrl } from '@ruqa/domain'
 import { HeroBackdrop, Layout } from '@/src/components'
 import { IconButton } from '@/src/components/IconButton'
 import { Text } from '@/src/components/ThemedText'

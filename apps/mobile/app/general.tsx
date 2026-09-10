@@ -1,9 +1,9 @@
 import { StyleSheet, View } from 'react-native'
 import { useCallback, useState } from 'react'
 import { useFocusEffect } from 'expo-router'
-import { ToggleSwitch, useTheme } from '@altersend/components'
-import { useAutoAcceptSetting } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { ToggleSwitch, useTheme } from '@ruqa/components'
+import { useAutoAcceptSetting } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { Layout } from '@/src/components'
 import { autoAcceptStoragePort } from '@/src/lifecycle/autoAcceptStorage'
 import {

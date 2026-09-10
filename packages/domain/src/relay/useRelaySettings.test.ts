@@ -9,8 +9,8 @@ describe('deriveRelayMode', () => {
     expect(deriveRelayMode(false, { kind: 'org', keyHex: KEY })).toBe('off')
   })
 
-  it('maps enabled without custom to altersend', () => {
-    expect(deriveRelayMode(true, null)).toBe('altersend')
+  it('maps enabled without custom to ruqa', () => {
+    expect(deriveRelayMode(true, null)).toBe('ruqa')
   })
 
   it('maps enabled with custom to custom', () => {

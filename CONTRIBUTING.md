@@ -1,4 +1,4 @@
-# Contributing to AlterSend
+# Contributing to Ruqa
 
 Thanks for your interest in contributing! This guide covers everything from first-time setup to opening a PR. For a deep dive into how the system is wired, read [docs/architecture.md](docs/architecture.md).
 
@@ -12,8 +12,8 @@ Thanks for your interest in contributing! This guide covers everything from firs
 ## Setup
 
 ```sh
-git clone https://github.com/denislupookov/altersend.git
-cd altersend
+git clone https://github.com/iVINCi369/altersend.git
+cd ruqa
 npm install
 
 cp apps/desktop/.env.example apps/desktop/.env

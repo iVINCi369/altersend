@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode
 } from 'react'
-import { AlertCircleIcon, CheckIcon } from '@altersend/components/icons'
+import { AlertCircleIcon, CheckIcon } from '@ruqa/components/icons'
 import { zLayer } from '../../zLayer'
 
 interface ShowToastInput {

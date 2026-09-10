@@ -1,7 +1,7 @@
 {
   "app": {
-    "name": "AlterSend",
-    "welcome": "AlterSend에 오신 것을 환영합니다",
+    "name": "Ruqa",
+    "welcome": "Ruqa에 오신 것을 환영합니다",
     "loadingTagline": "파일은 기기 간에 직접 이동합니다.\n서버도 복사본도 중간자도 없습니다."
   },
   "actions": {
@@ -56,8 +56,8 @@
     "photos": "사진",
     "files": "파일",
     "downloads": "파일 › 다운로드",
-    "photosAndAlterSend": "사진 + AlterSend 폴더",
-    "alterSendFolder": "AlterSend 폴더",
+    "photosAndRuqa": "사진 + Ruqa 폴더",
+    "ruqaFolder": "Ruqa 폴더",
     "text": "텍스트",
     "items_one": "{{count}}개",
     "items_other": "{{count}}개",
@@ -76,7 +76,7 @@
     "notNow": "나중에"
   },
   "whatsNew": {
-    "heading": "AlterSend {{version}}의 새로운 기능",
+    "heading": "Ruqa {{version}}의 새로운 기능",
     "subtitle_one": "알아 두면 좋은 한 가지.",
     "subtitle_other": "알아 두면 좋은 {{count}}가지.",
     "releases": {

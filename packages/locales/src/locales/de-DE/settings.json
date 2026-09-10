@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "Absturzberichte",
-    "description": "Teilen Sie anonyme Absturzdaten, um AlterSend zu verbessern"
+    "description": "Teilen Sie anonyme Absturzdaten, um Ruqa zu verbessern"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "AlterSend-Relay",
-        "caption": "Wenn keine direkte Verbindung möglich ist, läuft die Übertragung über das Relay von AlterSend. Dateien bleiben Ende-zu-Ende-verschlüsselt."
+      "ruqa": {
+        "label": "Ruqa-Relay",
+        "caption": "Wenn keine direkte Verbindung möglich ist, läuft die Übertragung über das Relay von Ruqa. Dateien bleiben Ende-zu-Ende-verschlüsselt."
       },
       "custom": {
         "label": "Selbst gehostetes Relay",
-        "caption": "Eigenen Relay-Server statt dem von AlterSend verwenden."
+        "caption": "Eigenen Relay-Server statt dem von Ruqa verwenden."
       },
       "off": {
         "label": "Kein Relay",
@@ -43,8 +43,8 @@
           "label": "Bei meinem Relay bleiben",
           "caption": "Ist dein Relay nicht erreichbar, wartet die Übertragung."
         },
-        "altersend": {
-          "label": "Bei Bedarf AlterSend-Relay nutzen",
+        "ruqa": {
+          "label": "Bei Bedarf Ruqa-Relay nutzen",
           "caption": "Übertragungen laufen weiter, wenn dein Relay ausfällt."
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "Treten Sie der Community bei",
     "github": "GitHub",
-    "sponsor": "AlterSend unterstützen",
+    "sponsor": "Ruqa unterstützen",
     "privacyPolicy": "Datenschutzrichtlinie",
-    "privacyPolicyHint": "Wie AlterSend mit Ihren Daten umgeht",
+    "privacyPolicyHint": "Wie Ruqa mit Ihren Daten umgeht",
     "terms": "Nutzungsbedingungen",
-    "termsHint": "Regeln für die Verwendung von AlterSend",
+    "termsHint": "Regeln für die Verwendung von Ruqa",
     "website": "Webseite",
     "connection": "Relay"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "Stellen Sie sicher, dass der Einladungscode noch aktiv ist.",
     "couldNotJoinQrHint": "Stellen Sie sicher, dass der QR-Code auf dem anderen Gerät noch geöffnet ist.",
     "unsupportedQr": "Nicht unterstützter QR-Code",
-    "unsupportedQrHint": "Scannen Sie einen AlterSend-Kopplungscode.",
+    "unsupportedQrHint": "Scannen Sie einen Ruqa-Kopplungscode.",
     "noQrFound": "Kein QR-Code gefunden",
-    "noQrFoundHint": "Wählen Sie ein Bild mit einem AlterSend-Kopplungscode.",
+    "noQrFoundHint": "Wählen Sie ein Bild mit einem Ruqa-Kopplungscode.",
     "importFromImage": "Aus Bild importieren",
     "cameraAccessNeeded": "Kamerazugriff erforderlich",
     "cameraAccessText": "Erlauben Sie den Kamerazugriff, um einen Kopplungs-QR-Code zu scannen.",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "Fotos & Videos in der Galerie speichern",
     "destinationPhotos": "Fotos & Videos in Fotos",
     "destinationFiles": "Fotos & Videos in Dateien",
-    "mediaToPhotosDescription": "Wenn deaktiviert, werden sie im AlterSend-Ordner in Dateien gespeichert.",
+    "mediaToPhotosDescription": "Wenn deaktiviert, werden sie im Ruqa-Ordner in Dateien gespeichert.",
     "mediaToGalleryDescription": "Wenn deaktiviert, werden sie im Download-Ordner gespeichert.",
     "destinationGallery": "Fotos & Videos in die Galerie",
     "destinationDownloads": "Fotos & Videos in Downloads"
@@ -177,10 +177,10 @@
     "copied": "Kopiert",
     "copyFailed": "Ihr Code konnte nicht kopiert werden – kopieren Sie ihn manuell, bevor Sie sich abmelden.",
     "saveCode": "Code als Datei speichern",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "Kontocode",
     "codeFileSaved": "Gespeichert",
-    "codeFileWarning": "Dieser Code ist Ihr Abo. Geben Sie ihn in AlterSend auf einem beliebigen Gerät ein, um Pro wiederherzustellen. Wir haben ihn nie gespeichert und können ihn nicht für Sie wiederherstellen.",
+    "codeFileWarning": "Dieser Code ist Ihr Abo. Geben Sie ihn in Ruqa auf einem beliebigen Gerät ein, um Pro wiederherzustellen. Wir haben ihn nie gespeichert und können ihn nicht für Sie wiederherstellen.",
     "subscriptionRow": "Abo",
     "manageSubscription": "Verwalten",
     "untilDate": "bis {{date}}",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "Teilen-Menü",
-    "description": "AlterSend zum Teilen-Menü von macOS hinzufügen"
+    "description": "Ruqa zum Teilen-Menü von macOS hinzufügen"
   }
 }

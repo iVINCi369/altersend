@@ -1,9 +1,4 @@
-import {
-  API,
-  type RendererTransferEvent,
-  type TransferMethod,
-  type TransferRPC
-} from '@altersend/core'
+import { API, type RendererTransferEvent, type TransferMethod, type TransferRPC } from '@ruqa/core'
 
 function requireBridge(): Bridge {
   if (typeof window === 'undefined' || !window.bridge) {

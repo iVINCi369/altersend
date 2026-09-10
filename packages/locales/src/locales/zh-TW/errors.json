@@ -1,14 +1,14 @@
 {
   "crash": {
     "title": "出了點問題",
-    "desktopDescription": "AlterSend 遇到意外錯誤，需要重新啟動。傳輸服務可能不穩定，因此重新啟動是最安全的選擇。",
-    "mobileDescription": "AlterSend 遇到意外錯誤。請重試，或者如果問題仍然存在，請關閉並重新開啟應用程式。",
-    "restartAlterSend": "重新啟動 AlterSend",
+    "desktopDescription": "Ruqa 遇到意外錯誤，需要重新啟動。傳輸服務可能不穩定，因此重新啟動是最安全的選擇。",
+    "mobileDescription": "Ruqa 遇到意外錯誤。請重試，或者如果問題仍然存在，請關閉並重新開啟應用程式。",
+    "restartRuqa": "重新啟動 Ruqa",
     "tryAgain": "再試一次"
   },
   "bridgeUnavailable": {
     "title": "桌面連線無法使用",
-    "description": "此視窗未連接到桌面應用程式。請從桌面應用程式重新啟動 AlterSend。",
+    "description": "此視窗未連接到桌面應用程式。請從桌面應用程式重新啟動 Ruqa。",
     "status": "桌面連線無法使用"
   },
   "transfer": {

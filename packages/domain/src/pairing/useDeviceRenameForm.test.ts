@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { MAX_DISPLAY_NAME_LEN } from '@altersend/core'
+import { MAX_DISPLAY_NAME_LEN } from '@ruqa/core'
 import { isRenameSubmittable } from './useDeviceRenameForm'
 
 describe('isRenameSubmittable', () => {

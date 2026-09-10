@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import type { RendererTransferEvent } from '@altersend/core'
+import type { RendererTransferEvent } from '@ruqa/core'
 import { bindTransferApi, discardPendingProgress } from './binding'
 import { initialTransferSessionState } from './reducer'
 import { transferStore } from './store'

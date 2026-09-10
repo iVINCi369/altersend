@@ -1,5 +1,5 @@
 import { StyleSheet, View } from 'react-native'
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import { IconButton } from '@/src/components/IconButton'
 import { HEADER_TOP } from './constants'
 

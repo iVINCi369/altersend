@@ -4,7 +4,7 @@ import { receiveExternalFiles } from './externalFiles'
 import { initialTransferSessionState } from './reducer'
 import { transferStore } from './store'
 import type { TransferApi } from './binding'
-import { MAX_FILES_PER_TRANSFER, type TransferRPC } from '@altersend/core'
+import { MAX_FILES_PER_TRANSFER, type TransferRPC } from '@ruqa/core'
 import type { SelectedFile } from '../send/draftTypes'
 
 const file = (name: string): SelectedFile => ({ name, path: `/tmp/${name}` })

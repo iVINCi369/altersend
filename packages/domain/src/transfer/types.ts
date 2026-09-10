@@ -5,7 +5,7 @@ import {
   type RendererTransferEvent,
   type TransferErrorCode,
   type TransferRole
-} from '@altersend/core'
+} from '@ruqa/core'
 import type {
   DownloadItemState,
   ReceiveDownloadStatusEvent,

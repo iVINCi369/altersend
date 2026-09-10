@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import QRCodeLib from 'qrcode'
-import { qrColors } from '@altersend/components'
+import { qrColors } from '@ruqa/components'
 
 interface QRCodeProps {
   value: string

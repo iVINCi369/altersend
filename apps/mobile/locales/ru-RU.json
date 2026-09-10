@@ -1,12 +1,12 @@
 {
   "ios": {
-    "CFBundleDisplayName": "AlterSend",
-    "NSCameraUsageDescription": "AlterSend использует вашу камеру для сканирования QR-кодов подключения.",
-    "NSLocalNetworkUsageDescription": "AlterSend использует вашу локальную сеть для обнаружения ближайших устройств для одноранговой передачи файлов.",
-    "NSPhotoLibraryUsageDescription": "AlterSend читает вашу библиотеку фотографий, чтобы вы могли выбирать фото и видео для отправки на другое устройство.",
-    "NSPhotoLibraryAddUsageDescription": "AlterSend сохраняет полученные изображения и видео в вашу библиотеку фотографий."
+    "CFBundleDisplayName": "Ruqa",
+    "NSCameraUsageDescription": "Ruqa использует вашу камеру для сканирования QR-кодов подключения.",
+    "NSLocalNetworkUsageDescription": "Ruqa использует вашу локальную сеть для обнаружения ближайших устройств для одноранговой передачи файлов.",
+    "NSPhotoLibraryUsageDescription": "Ruqa читает вашу библиотеку фотографий, чтобы вы могли выбирать фото и видео для отправки на другое устройство.",
+    "NSPhotoLibraryAddUsageDescription": "Ruqa сохраняет полученные изображения и видео в вашу библиотеку фотографий."
   },
   "android": {
-    "app_name": "AlterSend"
+    "app_name": "Ruqa"
   }
 }

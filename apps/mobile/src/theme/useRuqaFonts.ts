@@ -1,6 +1,6 @@
 import { useFonts } from 'expo-font'
 
-import { BUNDLED_FONT_FAMILIES } from '@altersend/components'
+import { BUNDLED_FONT_FAMILIES } from '@ruqa/components'
 import japaneseRegularFont from '../../../../assets/fonts/NotoSans-JP-Regular.ttf'
 import japaneseBoldFont from '../../../../assets/fonts/NotoSans-JP-Bold.ttf'
 import koreanRegularFont from '../../../../assets/fonts/NotoSans-KR-Regular.ttf'
@@ -10,7 +10,7 @@ import simplifiedChineseBoldFont from '../../../../assets/fonts/NotoSans-SC-Bold
 import traditionalChineseRegularFont from '../../../../assets/fonts/NotoSans-TC-Regular.ttf'
 import traditionalChineseBoldFont from '../../../../assets/fonts/NotoSans-TC-Bold.ttf'
 
-export function useAlterSendFonts() {
+export function useRuqaFonts() {
   return useFonts({
     [BUNDLED_FONT_FAMILIES.japanese.cssFamily]: japaneseRegularFont,
     [`${BUNDLED_FONT_FAMILIES.japanese.cssFamily} Bold`]: japaneseBoldFont,

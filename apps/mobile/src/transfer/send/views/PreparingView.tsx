@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native'
-import { WaitingState } from '@altersend/components'
-import { SendIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { WaitingState } from '@ruqa/components'
+import { SendIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 
 export function PreparingView() {
   const { t } = useTranslation(['send'])

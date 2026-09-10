@@ -1,7 +1,7 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native'
 import { BottomSheetModal, BottomSheetView } from '@expo/ui/community/bottom-sheet'
-import { useTheme } from '@altersend/components'
+import { useTheme } from '@ruqa/components'
 import { BottomSheetHeader } from '../BottomSheetHeader'
 
 interface BottomSheetProps {

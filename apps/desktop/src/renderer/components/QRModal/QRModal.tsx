@@ -1,6 +1,6 @@
-import { buildJoinUrl } from '@altersend/domain'
-import { Modal } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { buildJoinUrl } from '@ruqa/domain'
+import { Modal } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { QRCode } from '../QRCode'
 
 interface QRModalProps {

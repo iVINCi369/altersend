@@ -10,16 +10,16 @@
     "allowJs": true,
     "moduleSuffixes": [".web", ""],
     "paths": {
-      "@altersend/core": ["./src/stubs/altersend-core.ts"],
-      "@altersend/core/topic-auth": ["../../packages/core/src/worklet/transfer/topic-auth.ts"],
-      "@altersend/core/protocol": ["../../packages/core/src/worklet/transfer/protocol.ts"],
-      "@altersend/drive": ["../../packages/drive/src/index.ts"],
-      "@altersend/drive/transport": ["../../packages/drive/src/transport.ts"],
-      "@altersend/domain": ["../../packages/domain/src"],
-      "@altersend/locales": ["../../packages/locales/src"],
-      "@altersend/components": ["../../packages/components/src"],
-      "@altersend/components/icons": ["../../packages/components/src/icons"],
-      "@altersend/components/theme": ["../../packages/components/src/theme"]
+      "@ruqa/core": ["./src/stubs/ruqa-core.ts"],
+      "@ruqa/core/topic-auth": ["../../packages/core/src/worklet/transfer/topic-auth.ts"],
+      "@ruqa/core/protocol": ["../../packages/core/src/worklet/transfer/protocol.ts"],
+      "@ruqa/drive": ["../../packages/drive/src/index.ts"],
+      "@ruqa/drive/transport": ["../../packages/drive/src/transport.ts"],
+      "@ruqa/domain": ["../../packages/domain/src"],
+      "@ruqa/locales": ["../../packages/locales/src"],
+      "@ruqa/components": ["../../packages/components/src"],
+      "@ruqa/components/icons": ["../../packages/components/src/icons"],
+      "@ruqa/components/theme": ["../../packages/components/src/theme"]
     }
   },
   "include": ["src/**/*", "../../packages/core/src/types.d.ts"],

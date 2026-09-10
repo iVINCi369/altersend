@@ -1,12 +1,7 @@
 import b4a from 'b4a'
 import c from 'compact-encoding'
-import {
-  sendFile,
-  type ChunkHeader,
-  type ControlMessage,
-  type DriveChannel
-} from '@altersend/drive'
-import { chunkEncoding, type ChunkFrame } from '@altersend/drive/transport'
+import { sendFile, type ChunkHeader, type ControlMessage, type DriveChannel } from '@ruqa/drive'
+import { chunkEncoding, type ChunkFrame } from '@ruqa/drive/transport'
 import type { PeerDriveLike } from '../transport'
 import type { BridgeSocket, BridgeStream, IrohBridge } from './bridge'
 

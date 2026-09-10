@@ -7,8 +7,8 @@ import {
   useTransferStore,
   useWhatsNew,
   type IncomingInvite
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi, hasBridge } from './api/bridgeApi'
 import {
   ConfirmDialog,

@@ -1,8 +1,8 @@
 import { useRouter } from 'expo-router'
 import { Button, Host } from '@expo/ui/swift-ui'
 import { buttonStyle, controlSize, font, padding } from '@expo/ui/swift-ui/modifiers'
-import { ThemeType, useTheme } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { ThemeType, useTheme } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 
 export function UpgradeButton() {
   const { t } = useTranslation(['settings'])

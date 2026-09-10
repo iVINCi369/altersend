@@ -2,10 +2,10 @@ import {
   SYSTEM_LOCALE_PREFERENCE,
   normalizeLocalePreference,
   type LocalePreference
-} from '@altersend/locales'
+} from '@ruqa/locales'
 import { Directory, File, Paths } from 'expo-file-system'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const FILENAME = 'locale.preference'
 const listeners = new Set<(preference: LocalePreference) => void>()
 let localePreferenceSnapshot: LocalePreference = SYSTEM_LOCALE_PREFERENCE

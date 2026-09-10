@@ -1,8 +1,8 @@
 {
   "permissions": {
-    "camera": "AlterSend utilizza la fotocamera per scansionare i codici di connessione QR.",
-    "localNetwork": "AlterSend utilizza la tua rete locale per trovare dispositivi nelle vicinanze e trasferire file direttamente.",
-    "photoRead": "AlterSend legge la tua libreria fotografica così puoi scegliere foto e video da inviare a un altro dispositivo.",
-    "photoSave": "AlterSend salva le immagini e i video ricevuti nella tua libreria di foto."
+    "camera": "Ruqa utilizza la fotocamera per scansionare i codici di connessione QR.",
+    "localNetwork": "Ruqa utilizza la tua rete locale per trovare dispositivi nelle vicinanze e trasferire file direttamente.",
+    "photoRead": "Ruqa legge la tua libreria fotografica così puoi scegliere foto e video da inviare a un altro dispositivo.",
+    "photoSave": "Ruqa salva le immagini e i video ricevuti nella tua libreria di foto."
   }
 }

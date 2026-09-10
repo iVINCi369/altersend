@@ -6,9 +6,9 @@ import {
   nextRadioIndex,
   useTheme,
   type ThemePreference
-} from '@altersend/components'
-import { MonitorIcon, MoonIcon, SunIcon, type IconComponent } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components'
+import { MonitorIcon, MoonIcon, SunIcon, type IconComponent } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 
 const OPTION_ICONS: Record<ThemePreference, IconComponent> = {
   [ThemeType.Light]: SunIcon,

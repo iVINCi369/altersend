@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
-import { Button } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { Button } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { useFocusEffect, useRouter } from 'expo-router'
 import {
   JOIN_CODE_PATTERN,
@@ -10,8 +10,8 @@ import {
   isSessionOverStep,
   useReceiveDownloads,
   useTransferStore
-} from '@altersend/domain'
-import { clearSession, joinSession } from '@altersend/domain'
+} from '@ruqa/domain'
+import { clearSession, joinSession } from '@ruqa/domain'
 import {
   ReceiveConnectingView,
   ReceiveInterruptedView,

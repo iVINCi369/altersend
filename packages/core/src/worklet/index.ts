@@ -65,7 +65,7 @@ function pipeLog(level: 'log' | 'warn' | 'error', args: unknown[]) {
 
 // rpc must be created before the console hijack installs — pipeLog reads it.
 const providedName = readArg('--device-name=')?.trim()
-const displayName = providedName || os.hostname().replace(/\.local$/, '') || 'AlterSend Device'
+const displayName = providedName || os.hostname().replace(/\.local$/, '') || 'Ruqa Device'
 const providedType = readArg('--device-type=')
 const deviceType = isDeviceType(providedType) ? providedType : undefined
 

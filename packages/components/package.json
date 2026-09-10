@@ -1,9 +1,9 @@
 {
-  "name": "@altersend/components",
+  "name": "@ruqa/components",
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Shared AlterSend UI theme and React Strict DOM setup",
+  "description": "Shared Ruqa UI theme and React Strict DOM setup",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,10 +36,10 @@
     "./package.json": "./package.json"
   },
   "license": "Apache-2.0",
-  "author": "AlterSend",
+  "author": "Ruqa",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denislupookov/altersend.git"
+    "url": "git+https://github.com/iVINCi369/altersend.git"
   },
   "sideEffects": false,
   "scripts": {
@@ -73,7 +73,7 @@
     }
   },
   "dependencies": {
-    "@altersend/domain": "2.0.0",
+    "@ruqa/domain": "2.0.0",
     "react-strict-dom": "^0.0.55"
   },
   "devDependencies": {

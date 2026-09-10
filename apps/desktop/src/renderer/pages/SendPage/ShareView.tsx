@@ -10,8 +10,8 @@ import {
   groupSelectedFiles,
   useCopiedFlag,
   useShareViewModel
-} from '@altersend/domain'
-import { Button, LinkCard, LinkRow, WaitingRadar, useTheme } from '@altersend/components'
+} from '@ruqa/domain'
+import { Button, LinkCard, LinkRow, WaitingRadar, useTheme } from '@ruqa/components'
 import {
   ChevronsUpDownIcon,
   deviceIcon,
@@ -19,8 +19,8 @@ import {
   MessageSquareIcon,
   QrCodeIcon,
   ShareIcon
-} from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { Popover, QRCode, QRModal, useToast } from '../../components'
 import { CopyLinkButton } from './CopyLinkButton'
 import { TopicCopyButton } from './TopicCopyButton'

@@ -5,7 +5,7 @@ import { initialTransferSessionState } from './reducer'
 import { transferStore } from './store'
 import type { TransferApi } from './binding'
 import type { IncomingInvite } from './types'
-import type { RememberedPeer, TransferRPC } from '@altersend/core'
+import type { RememberedPeer, TransferRPC } from '@ruqa/core'
 
 const KEY = 'a'.repeat(64)
 const TOPIC = 'b'.repeat(64)

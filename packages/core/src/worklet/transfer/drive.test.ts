@@ -5,7 +5,7 @@ import { join } from 'node:path'
 import SecretStream from '@hyperswarm/secret-stream'
 import Protomux from 'protomux'
 import { Duplex } from 'streamx'
-import { SenderSession, ReceiverSession, DiskReader, DiskWriter } from '@altersend/drive'
+import { SenderSession, ReceiverSession, DiskReader, DiskWriter } from '@ruqa/drive'
 import type { PeerSocket } from 'hyperswarm'
 import { PeerDrive } from './drive'
 

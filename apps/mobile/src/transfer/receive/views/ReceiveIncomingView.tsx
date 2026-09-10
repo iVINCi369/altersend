@@ -1,6 +1,6 @@
 import { Linking, View, StyleSheet } from 'react-native'
 import * as Clipboard from 'expo-clipboard'
-import { DownloadRow, ReceivedTextRow, RowGroup, rowKey, useTheme } from '@altersend/components'
+import { DownloadRow, ReceivedTextRow, RowGroup, rowKey, useTheme } from '@ruqa/components'
 import {
   formatTransferRate,
   getDownloadRowLabels,
@@ -8,8 +8,8 @@ import {
   useCopiedFlag,
   useReceiveActions,
   useReceiveDownloads
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { lightTap } from '@/src/haptics'
 import { openCompletedFile } from '../utils/openCompletedFile'
 import { Text } from '@/src/components/ThemedText'

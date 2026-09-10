@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react'
-import { linkifyText } from '@altersend/domain'
+import { linkifyText } from '@ruqa/domain'
 import { CheckIcon, CopyIcon, MessageSquareIcon } from '../../icons'
 import { useTheme } from '../../theme'
 import { Button } from '../Button'

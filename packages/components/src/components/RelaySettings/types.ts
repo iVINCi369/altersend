@@ -6,7 +6,7 @@ import type {
   RelaySettingsError,
   RelaySettingsLabels,
   RelayTestState
-} from '@altersend/domain'
+} from '@ruqa/domain'
 
 export interface RelaySettingsFormState {
   selected: RelayMode

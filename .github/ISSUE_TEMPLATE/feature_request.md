@@ -12,7 +12,7 @@ assignees: ''
 
 ## Proposed solution
 
-<!-- What should AlterSend do? Be specific. -->
+<!-- What should Ruqa do? Be specific. -->
 
 ## Alternatives considered
 

@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import QrScanner from 'qr-scanner'
-import { Button } from '@altersend/components'
+import { Button } from '@ruqa/components'
 import {
   extractJoinCode,
   getDisplayError,
   getTransferErrorCode,
   joinSession,
   TRANSFER_ERROR_CODES
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi } from '../../api/bridgeApi'
 import { Select } from '../../components'
 

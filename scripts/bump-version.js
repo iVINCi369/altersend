@@ -26,11 +26,11 @@ const packages = [
 ]
 
 const internalPackages = [
-  '@altersend/core',
-  '@altersend/locales',
-  '@altersend/domain',
-  '@altersend/components',
-  '@altersend/drive'
+  '@ruqa/core',
+  '@ruqa/locales',
+  '@ruqa/domain',
+  '@ruqa/components',
+  '@ruqa/drive'
 ]
 
 for (const rel of packages) {

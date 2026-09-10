@@ -1,6 +1,6 @@
-import { AppleIcon, DownloadIcon, WindowsIcon } from '@altersend/components/icons'
-import type { IconComponent } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { AppleIcon, DownloadIcon, WindowsIcon } from '@ruqa/components/icons'
+import type { IconComponent } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { OS_DISPLAY, platform, type OS } from './platform'
 
 const OS_ICON: Partial<Record<OS, IconComponent>> = {

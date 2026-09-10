@@ -12,7 +12,7 @@ import {
   useTransferStore,
   type SelectedFile,
   type SendComposeMode
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import {
   DropZoneLink,
   ErrorBanner,
@@ -24,9 +24,9 @@ import {
   Textarea,
   Button,
   useTheme
-} from '@altersend/components'
-import { MessageSquareIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components'
+import { MessageSquareIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 
 export function SelectFilesView() {
   const { t } = useTranslation(['send', 'common'])

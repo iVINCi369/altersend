@@ -1,4 +1,4 @@
-import { MenuGroup, MenuItem, useTheme } from '@altersend/components'
+import { MenuGroup, MenuItem, useTheme } from '@ruqa/components'
 import {
   ArrowUpRightIcon,
   DiscordIcon,
@@ -8,10 +8,10 @@ import {
   HeartIcon,
   LockIcon,
   XIcon
-} from '@altersend/components/icons'
-import type { IconComponent } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
-import { aboutLinkGroups, type AboutLinkKey } from '@altersend/domain'
+} from '@ruqa/components/icons'
+import type { IconComponent } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
+import { aboutLinkGroups, type AboutLinkKey } from '@ruqa/domain'
 import logo from '../../../../../../../assets/logo.png'
 import { bridgeApi } from '../../../api/bridgeApi'
 import { SectionShell } from './SectionShell'
@@ -45,7 +45,7 @@ export function AboutSection({ version }: { version: string }) {
             isLast
             iconSize={36}
             icon={<img src={logo} alt='' aria-hidden className='h-9 w-9 rounded-md object-cover' />}
-            label='AlterSend'
+            label='Ruqa'
             value={`v${version}`}
           />
         </MenuGroup>
@@ -70,7 +70,7 @@ export function AboutSection({ version }: { version: string }) {
       </div>
 
       <p className='m-0 mt-4 text-center text-[12px] text-text-muted'>
-        © {new Date().getFullYear()} AlterSend
+        © {new Date().getFullYear()} Ruqa
       </p>
     </SectionShell>
   )

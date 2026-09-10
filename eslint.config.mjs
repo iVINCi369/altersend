@@ -8,7 +8,7 @@ const NO_RAW_COLORS = {
     {
       selector: "Literal[value=/^#[0-9a-fA-F]{3,8}$/]",
       message:
-        'Color literals are banned. Use a token from @altersend/components/theme (tokens.colorXxx, theme.colors.colorXxx, or Tailwind utility e.g. bg-success).',
+        'Color literals are banned. Use a token from @ruqa/components/theme (tokens.colorXxx, theme.colors.colorXxx, or Tailwind utility e.g. bg-success).',
     },
     {
       selector: "Literal[value=/^rgba?\\(/]",

@@ -9,7 +9,7 @@ import Svg, {
   Rect,
   Stop
 } from 'react-native-svg'
-import { heroBackdrop, useTheme, withAlpha, type HeroBackdropStop } from '@altersend/components'
+import { heroBackdrop, useTheme, withAlpha, type HeroBackdropStop } from '@ruqa/components'
 
 interface HeroBackdropProps {
   height?: number

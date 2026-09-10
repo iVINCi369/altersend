@@ -16,8 +16,8 @@ describe('font family tokens', () => {
   it('uses the native Latin stack for default sans and display UI text', () => {
     expect(rawTokens.fontFamily.fontFamilySans).toBe(LATIN_FONT_FAMILY_CSS)
     expect(rawTokens.fontFamily.fontFamilyDisplay).toBe(LATIN_FONT_FAMILY_CSS)
-    expect(rawTokens.fontFamily.fontFamilySans).not.toContain('AlterSend Sans')
-    expect(rawTokens.fontFamily.fontFamilyDisplay).not.toContain('AlterSend Sans')
+    expect(rawTokens.fontFamily.fontFamilySans).not.toContain('Ruqa Sans')
+    expect(rawTokens.fontFamily.fontFamilyDisplay).not.toContain('Ruqa Sans')
   })
 
   it('uses a true monospace stack for mono UI text', () => {
@@ -42,7 +42,7 @@ describe('font family tokens', () => {
     expect(getNativeFontFamilyName('latin')).toBeUndefined()
 
     for (const font of Object.values(BUNDLED_FONT_FAMILIES).filter((item) => item.assetFileName)) {
-      expect(font.cssFamily).toMatch(/^AlterSend Sans/)
+      expect(font.cssFamily).toMatch(/^Ruqa Sans/)
       expect(font.assetFileName).toMatch(/\.(ttf|otf)$/)
       expect(
         existsSync(new URL(`../../../../assets/fonts/${font.assetFileName}`, import.meta.url))
@@ -110,7 +110,7 @@ describe('font family tokens', () => {
       'utf8'
     )
 
-    expect(metroSource).toContain("'@altersend/components'")
+    expect(metroSource).toContain("'@ruqa/components'")
     expect(metroSource).toContain('packages/components/src/index.ts')
     expect(metroSource).toContain('resolveRequest')
   })
@@ -122,22 +122,22 @@ describe('font family tokens', () => {
       'utf8'
     )
 
-    expect(webFontThemeSource).toContain('fontFamilySans: \'"AlterSend Sans KR"\'')
+    expect(webFontThemeSource).toContain('fontFamilySans: \'"Ruqa Sans KR"\'')
     expect(webFontThemeSource).toContain('fontFamilyMono:\n    \'ui-monospace, "SFMono-Regular"')
     expect(webFontThemeSource).not.toContain('MONO_FONT_FAMILY_CSS')
-    expect(nativeFontThemeSource).toContain("fontFamilySans: 'AlterSend Sans KR'")
+    expect(nativeFontThemeSource).toContain("fontFamilySans: 'Ruqa Sans KR'")
     expect(nativeFontThemeSource).toContain("fontFamilyMono: 'monospace'")
     expect(nativeFontThemeSource).not.toContain('nativeMonoFontFamily')
-    expect(nativeFontThemeSource).not.toContain('fontFamilySans: \'"AlterSend Sans KR"\'')
+    expect(nativeFontThemeSource).not.toContain('fontFamilySans: \'"Ruqa Sans KR"\'')
   })
 
   it('exposes Korean CSS variables for Tailwind and plain DOM text', () => {
     const expectedFamilies = {
       latin: LATIN_FONT_FAMILY_CSS,
-      japanese: 'AlterSend Sans JP',
-      korean: 'AlterSend Sans KR',
-      simplifiedChinese: 'AlterSend Sans SC',
-      traditionalChinese: 'AlterSend Sans TC'
+      japanese: 'Ruqa Sans JP',
+      korean: 'Ruqa Sans KR',
+      simplifiedChinese: 'Ruqa Sans SC',
+      traditionalChinese: 'Ruqa Sans TC'
     } as const
 
     for (const [fontFamilyKey, cssFamily] of Object.entries(expectedFamilies)) {

@@ -53,7 +53,7 @@
     "inviteFailedToast": "{{name}} に接続できませんでした",
     "inviteFailedHint": "オンラインであることを確認してもう一度お試しください",
     "deviceConnected": "{{name}} が接続しました",
-    "peerOutdated": "接続できません — このデバイスには新しいバージョンの AlterSend が必要です。",
+    "peerOutdated": "接続できません — このデバイスには新しいバージョンの Ruqa が必要です。",
     "updateRequired": "接続するには更新"
   },
   "connection": {
@@ -61,7 +61,7 @@
     "copyLabel": "接続コードをコピー",
     "showQrLabel": "QRコードを表示",
     "qrCodeLabel": "接続キーのQRコード",
-    "qrModalDescription": "別の端末で AlterSend を開き、このコードをスキャンしてください",
+    "qrModalDescription": "別の端末で Ruqa を開き、このコードをスキャンしてください",
     "copiedToast": "クリップボードにコピーしました",
     "scanToConnect": "スキャンして接続",
     "orScan": "またはスキャン",
@@ -71,7 +71,7 @@
     "qrCode": "QRコード",
     "copyLink": "リンクをコピー",
     "shareLink": "リンクを共有",
-    "shareMessage": "{{items}} が AlterSend で共有されました。リンクを開くとダウンロードできます。\n\n{{link}}",
+    "shareMessage": "{{items}} が Ruqa で共有されました。リンクを開くとダウンロードできます。\n\n{{link}}",
     "linkHint": "1 回の転送につき最大 {{limit}}",
     "connectedViaBrowser": "ブラウザで接続"
   },

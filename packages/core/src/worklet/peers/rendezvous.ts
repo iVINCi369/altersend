@@ -6,7 +6,7 @@ export const RENDEZVOUS_TOPIC_LEN = 32
 export const HANDSHAKE_HASH_LEN = 64
 const MIN_HANDSHAKE_HASH_LEN = 32
 
-const RENDEZVOUS_CONTEXT = b4a.from('altersend-rendezvous-v1')
+const RENDEZVOUS_CONTEXT = b4a.from('ruqa-rendezvous-v1')
 
 function assertLen(name: string, value: Uint8Array, len: number): void {
   if (!value || value.byteLength !== len) {

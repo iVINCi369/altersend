@@ -1,7 +1,7 @@
 {
   "app": {
-    "name": "AlterSend",
-    "welcome": "AlterSend へようこそ",
+    "name": "Ruqa",
+    "welcome": "Ruqa へようこそ",
     "loadingTagline": "ファイルは端末間で直接転送されます。\nサーバーもコピーも仲介もありません。"
   },
   "actions": {
@@ -56,8 +56,8 @@
     "photos": "写真",
     "files": "ファイル",
     "downloads": "ファイル › ダウンロード",
-    "photosAndAlterSend": "写真 + AlterSend フォルダ",
-    "alterSendFolder": "AlterSend フォルダ",
+    "photosAndRuqa": "写真 + Ruqa フォルダ",
+    "ruqaFolder": "Ruqa フォルダ",
     "text": "テキスト",
     "items_one": "{{count}} 個",
     "items_other": "{{count}} 個",
@@ -76,7 +76,7 @@
     "notNow": "後で"
   },
   "whatsNew": {
-    "heading": "AlterSend {{version}} の新機能",
+    "heading": "Ruqa {{version}} の新機能",
     "subtitle_one": "知っておきたいことが 1 つ。",
     "subtitle_other": "知っておきたいことが {{count}} つ。",
     "releases": {

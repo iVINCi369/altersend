@@ -6,9 +6,9 @@
   IgnorableNamespaces="rescap"
 >
   <!-- Version is rewritten at build time from package.json by the preMake hook in forge.config.cjs; this placeholder is ignored. -->
-  <Identity Name="Devaprime.Altersend" Version="0.0.0.0" Publisher="CN=FC1060C4-5ABD-47BF-A2C3-DBA96C1D853C" ProcessorArchitecture="x64" />
+  <Identity Name="iVINCi369.Ruqa" Version="0.0.0.0" Publisher="CN=FC1060C4-5ABD-47BF-A2C3-DBA96C1D853C" ProcessorArchitecture="x64" />
   <Properties>
-    <DisplayName>AlterSend</DisplayName>
+    <DisplayName>Ruqa</DisplayName>
     <PublisherDisplayName>Devaprime</PublisherDisplayName>
     <Description>Peer-to-peer file transfer. No servers, no accounts.</Description>
     <Logo>assets\StoreLogo.png</Logo>
@@ -23,14 +23,14 @@
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
   <Applications>
-    <Application Id="App" Executable="app\AlterSend.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="AlterSend" Description="Peer-to-peer file transfer. No servers, no accounts." Square150x150Logo="assets\Square150x150Logo.png" Square44x44Logo="assets\Square44x44Logo.png" BackgroundColor="transparent">
+    <Application Id="App" Executable="app\Ruqa.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Ruqa" Description="Peer-to-peer file transfer. No servers, no accounts." Square150x150Logo="assets\Square150x150Logo.png" Square44x44Logo="assets\Square44x44Logo.png" BackgroundColor="transparent">
         <uap:DefaultTile Square71x71Logo="assets\Square71x71Logo.png" />
       </uap:VisualElements>
       <Extensions>
         <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="altersend">
-            <uap:DisplayName>AlterSend</uap:DisplayName>
+          <uap:Protocol Name="ruqa">
+            <uap:DisplayName>Ruqa</uap:DisplayName>
           </uap:Protocol>
         </uap:Extension>
       </Extensions>

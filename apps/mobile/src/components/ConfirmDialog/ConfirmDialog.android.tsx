@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 import { AlertDialog, Host, Text, TextButton } from '@expo/ui/jetpack-compose'
-import { useTheme } from '@altersend/components'
+import { useTheme } from '@ruqa/components'
 import type { ConfirmDialogProps } from './ConfirmDialog.types'
 
 export function ConfirmDialog({

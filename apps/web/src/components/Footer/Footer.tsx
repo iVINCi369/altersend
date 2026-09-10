@@ -1,4 +1,4 @@
-import { ExternalLink } from '@altersend/components'
+import { ExternalLink } from '@ruqa/components'
 import {
   discordUrl,
   downloadUrl,
@@ -7,8 +7,8 @@ import {
   supportEmail,
   termsOfServiceUrl,
   xUrl
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { BLOCK_WIDTH } from '../Card'
 
 const XGlyph = () => (
@@ -43,7 +43,7 @@ export function Footer() {
       className={`mt-auto flex ${BLOCK_WIDTH} flex-col items-start gap-5 pt-6 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:pt-14`}
     >
       <div className='flex min-w-0 flex-wrap items-center gap-x-5 gap-y-2 text-[13px] text-text-faint'>
-        <span>© {new Date().getFullYear()} AlterSend</span>
+        <span>© {new Date().getFullYear()} Ruqa</span>
         <ExternalLink href={downloadUrl}>{t('web:footer.getApp')}</ExternalLink>
         <ExternalLink href={privacyPolicyUrl}>{t('web:footer.privacy')}</ExternalLink>
         <ExternalLink href={termsOfServiceUrl}>{t('web:footer.terms')}</ExternalLink>

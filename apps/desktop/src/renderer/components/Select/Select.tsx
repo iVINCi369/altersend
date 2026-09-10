@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react'
 import { flushSync } from 'react-dom'
-import { ChevronDownIcon } from '@altersend/components/icons'
+import { ChevronDownIcon } from '@ruqa/components/icons'
 import {
   chooseSelectOption,
   getInitialHighlightedIndex,

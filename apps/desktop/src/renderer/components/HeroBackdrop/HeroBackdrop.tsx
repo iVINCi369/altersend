@@ -1,4 +1,4 @@
-import { heroBackdrop, type HeroBackdropStop } from '@altersend/components'
+import { heroBackdrop, type HeroBackdropStop } from '@ruqa/components'
 
 const tint = (alpha: number) =>
   `color-mix(in oklab, var(--as-color-info) ${alpha * 100}%, transparent)`

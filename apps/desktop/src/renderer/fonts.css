@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'AlterSend Sans JP';
+  font-family: 'Ruqa Sans JP';
   src: url('../../../../assets/fonts/NotoSans-JP-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 100 500;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans JP';
+  font-family: 'Ruqa Sans JP';
   src: url('../../../../assets/fonts/NotoSans-JP-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 600 900;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans KR';
+  font-family: 'Ruqa Sans KR';
   src: url('../../../../assets/fonts/NotoSans-KR-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 100 500;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans KR';
+  font-family: 'Ruqa Sans KR';
   src: url('../../../../assets/fonts/NotoSans-KR-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 600 900;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans SC';
+  font-family: 'Ruqa Sans SC';
   src: url('../../../../assets/fonts/NotoSans-SC-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 100 500;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans SC';
+  font-family: 'Ruqa Sans SC';
   src: url('../../../../assets/fonts/NotoSans-SC-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 600 900;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans TC';
+  font-family: 'Ruqa Sans TC';
   src: url('../../../../assets/fonts/NotoSans-TC-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 100 500;
@@ -55,7 +55,7 @@
 }
 
 @font-face {
-  font-family: 'AlterSend Sans TC';
+  font-family: 'Ruqa Sans TC';
   src: url('../../../../assets/fonts/NotoSans-TC-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 600 900;

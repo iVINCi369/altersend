@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { RememberedPeer } from '@altersend/core'
+import type { RememberedPeer } from '@ruqa/core'
 import {
   formatFileSize,
   formatRelativeTime,

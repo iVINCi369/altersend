@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "Crash reports",
-    "description": "Share anonymous crash data to help improve AlterSend"
+    "description": "Share anonymous crash data to help improve Ruqa"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "AlterSend relay",
-        "caption": "When a direct connection fails, the transfer falls back to AlterSend's relay. Files stay end-to-end encrypted."
+      "ruqa": {
+        "label": "Ruqa relay",
+        "caption": "When a direct connection fails, the transfer falls back to Ruqa's relay. Files stay end-to-end encrypted."
       },
       "custom": {
         "label": "Self-hosted relay",
-        "caption": "Use your own relay server instead of AlterSend's."
+        "caption": "Use your own relay server instead of Ruqa's."
       },
       "off": {
         "label": "No relay",
@@ -43,8 +43,8 @@
           "label": "Stay on my relay",
           "caption": "If your relay is unreachable, the transfer waits."
         },
-        "altersend": {
-          "label": "Use AlterSend's relay if needed",
+        "ruqa": {
+          "label": "Use Ruqa's relay if needed",
           "caption": "Keeps transfers working when your relay is down."
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "Join the community",
     "github": "GitHub",
-    "sponsor": "Support AlterSend",
+    "sponsor": "Support Ruqa",
     "privacyPolicy": "Privacy policy",
-    "privacyPolicyHint": "How AlterSend handles your data",
+    "privacyPolicyHint": "How Ruqa handles your data",
     "terms": "Terms of service",
-    "termsHint": "Rules for using AlterSend",
+    "termsHint": "Rules for using Ruqa",
     "website": "Website",
     "connection": "Relay"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "Make sure the invite code is still active.",
     "couldNotJoinQrHint": "Make sure the QR code is still open on the other device.",
     "unsupportedQr": "Unsupported QR code",
-    "unsupportedQrHint": "Scan an AlterSend pairing code.",
+    "unsupportedQrHint": "Scan an Ruqa pairing code.",
     "noQrFound": "No QR code found",
-    "noQrFoundHint": "Choose an image with an AlterSend pairing code.",
+    "noQrFoundHint": "Choose an image with an Ruqa pairing code.",
     "importFromImage": "Import From Image",
     "cameraAccessNeeded": "Camera access needed",
     "cameraAccessText": "Allow camera access to scan a pairing QR code.",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "Save photos & videos to Gallery",
     "destinationPhotos": "Photos & videos to Photos",
     "destinationFiles": "Photos & videos to Files",
-    "mediaToPhotosDescription": "When off, they're saved to the AlterSend folder in Files.",
+    "mediaToPhotosDescription": "When off, they're saved to the Ruqa folder in Files.",
     "mediaToGalleryDescription": "When off, they're saved to your Downloads folder.",
     "destinationGallery": "Photos & videos to Gallery",
     "destinationDownloads": "Photos & videos to Downloads"
@@ -177,10 +177,10 @@
     "copied": "Copied",
     "copyFailed": "Couldn't copy your code — copy it manually before logging out.",
     "saveCode": "Save code to a file",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "Account code",
     "codeFileSaved": "Saved",
-    "codeFileWarning": "This code is your subscription. Enter it in AlterSend on any device to restore Pro. We never stored it and cannot recover it for you.",
+    "codeFileWarning": "This code is your subscription. Enter it in Ruqa on any device to restore Pro. We never stored it and cannot recover it for you.",
     "subscriptionRow": "Subscription",
     "manageSubscription": "Manage",
     "untilDate": "until {{date}}",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "Share menu",
-    "description": "Add AlterSend to the macOS Share menu"
+    "description": "Add Ruqa to the macOS Share menu"
   }
 }

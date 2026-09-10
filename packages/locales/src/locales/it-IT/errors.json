@@ -1,14 +1,14 @@
 {
   "crash": {
     "title": "Qualcosa è andato storto",
-    "desktopDescription": "AlterSend ha riscontrato un errore imprevisto ed è necessario riavviarlo. Il servizio di trasferimento potrebbe essere instabile, quindi un riavvio è l'opzione più sicura.",
-    "mobileDescription": "AlterSend ha riscontrato un errore imprevisto. Riprova oppure chiudi e riapri l'app se il problema persiste.",
-    "restartAlterSend": "Riavvia AlterSend",
+    "desktopDescription": "Ruqa ha riscontrato un errore imprevisto ed è necessario riavviarlo. Il servizio di trasferimento potrebbe essere instabile, quindi un riavvio è l'opzione più sicura.",
+    "mobileDescription": "Ruqa ha riscontrato un errore imprevisto. Riprova oppure chiudi e riapri l'app se il problema persiste.",
+    "restartRuqa": "Riavvia Ruqa",
     "tryAgain": "Riprova"
   },
   "bridgeUnavailable": {
     "title": "Connessione desktop non disponibile",
-    "description": "Questa finestra non è collegata all'app desktop. Riavvia AlterSend dall'app desktop.",
+    "description": "Questa finestra non è collegata all'app desktop. Riavvia Ruqa dall'app desktop.",
     "status": "Connessione desktop non disponibile"
   },
   "transfer": {

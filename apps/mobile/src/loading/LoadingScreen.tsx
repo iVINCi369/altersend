@@ -1,5 +1,5 @@
-import { useTheme } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { useTheme } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { Image, StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import LoadingSvg from '../../../../assets/loading.svg'
@@ -29,9 +29,7 @@ export function LoadingScreen({ progress = 0 }: LoadingScreenProps) {
     >
       <View style={styles.header}>
         <Image source={brandLogo} style={styles.brandLogo} resizeMode='contain' />
-        <Text style={[styles.brandWordmark, { color: theme.colors.colorTextPrimary }]}>
-          AlterSend
-        </Text>
+        <Text style={[styles.brandWordmark, { color: theme.colors.colorTextPrimary }]}>Ruqa</Text>
       </View>
 
       <View style={styles.content}>

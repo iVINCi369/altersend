@@ -1,7 +1,7 @@
 import { Platform } from 'react-native'
 import { Directory, File, Paths } from 'expo-file-system'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const FILENAME = 'media-to-photos.disabled'
 
 export const MEDIA_DESTINATION_KEYS =

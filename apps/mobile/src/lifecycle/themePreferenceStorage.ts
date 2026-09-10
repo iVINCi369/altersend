@@ -2,10 +2,10 @@ import {
   SYSTEM_THEME_PREFERENCE,
   normalizeThemePreference,
   type ThemePreference
-} from '@altersend/components'
+} from '@ruqa/components'
 import { Directory, File, Paths } from 'expo-file-system'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const FILENAME = 'theme.preference'
 let themePreferenceSnapshot: ThemePreference = SYSTEM_THEME_PREFERENCE
 

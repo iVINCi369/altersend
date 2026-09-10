@@ -102,7 +102,7 @@ function ThemeOverview() {
           Theme Setup
         </html.p>
         <html.h1 style={[styles.title, { color: theme.colors.colorTextPrimary }]}>
-          AlterSend UI foundation
+          Ruqa UI foundation
         </html.h1>
         <html.p style={[styles.description, { color: theme.colors.colorTextSecondary }]}>
           React Strict DOM, generated design tokens, and light/dark themes. Current theme:{' '}

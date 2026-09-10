@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>AlterSend</string>
+	<string>Ruqa</string>
 	<key>CFBundleExecutable</key>
-	<string>AlterSendShare</string>
+	<string>RuqaShare</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.altersend.desktop.ShareExtension</string>
+	<string>com.ruqa.desktop.ShareExtension</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>AlterSend</string>
+	<string>Ruqa</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
@@ -39,7 +39,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.share-services</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>AlterSendShare.ShareViewController</string>
+		<string>RuqaShare.ShareViewController</string>
 	</dict>
 </dict>
 </plist>

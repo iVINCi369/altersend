@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useNavigation } from 'expo-router'
 import { usePreventRemove } from 'expo-router/react-navigation'
-import { getLeaveSessionMessage, useTransferStore } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { getLeaveSessionMessage, useTransferStore } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import type { ConfirmDialogProps } from '@/src/components/ConfirmDialog'
 
 const USER_BACK_ACTIONS = new Set(['GO_BACK', 'POP'])

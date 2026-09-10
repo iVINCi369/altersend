@@ -1,6 +1,6 @@
-import { useTheme } from '@altersend/components'
-import { CheckIcon, RotateCwIcon, UnlinkIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { useTheme } from '@ruqa/components'
+import { CheckIcon, RotateCwIcon, UnlinkIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { ScreenIntro, StatusCard } from '../../components'
 import type { TransferFile } from '../../types'
 

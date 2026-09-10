@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import type { IncomingFileOffer } from '@altersend/core'
+import type { IncomingFileOffer } from '@ruqa/core'
 import {
   groupReceiveRows,
   applyDownloadMessage,

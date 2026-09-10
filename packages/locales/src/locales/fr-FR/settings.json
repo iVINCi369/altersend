@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "Rapports d'erreur",
-    "description": "Partagez des données anonymes sur les accidents pour contribuer à améliorer AlterSend"
+    "description": "Partagez des données anonymes sur les accidents pour contribuer à améliorer Ruqa"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "Relais AlterSend",
-        "caption": "Quand la connexion directe échoue, le transfert passe par le relais d'AlterSend. Les fichiers restent chiffrés de bout en bout."
+      "ruqa": {
+        "label": "Relais Ruqa",
+        "caption": "Quand la connexion directe échoue, le transfert passe par le relais d'Ruqa. Les fichiers restent chiffrés de bout en bout."
       },
       "custom": {
         "label": "Relais auto-hébergé",
-        "caption": "Utilisez votre propre serveur relais au lieu de celui d'AlterSend."
+        "caption": "Utilisez votre propre serveur relais au lieu de celui d'Ruqa."
       },
       "off": {
         "label": "Aucun relais",
@@ -43,8 +43,8 @@
           "label": "Rester sur mon relais",
           "caption": "Si votre relais est injoignable, le transfert attend."
         },
-        "altersend": {
-          "label": "Utiliser le relais d'AlterSend si besoin",
+        "ruqa": {
+          "label": "Utiliser le relais d'Ruqa si besoin",
           "caption": "Les transferts continuent si votre relais est en panne."
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "Rejoignez la communauté",
     "github": "GitHub",
-    "sponsor": "Soutenir AlterSend",
+    "sponsor": "Soutenir Ruqa",
     "privacyPolicy": "Politique de confidentialité",
-    "privacyPolicyHint": "Comment AlterSend gère vos données",
+    "privacyPolicyHint": "Comment Ruqa gère vos données",
     "terms": "Conditions d'utilisation",
-    "termsHint": "Règles d'utilisation de AlterSend",
+    "termsHint": "Règles d'utilisation de Ruqa",
     "website": "Site Web",
     "connection": "Relais"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "Assurez-vous que le code d’invitation est toujours actif.",
     "couldNotJoinQrHint": "Assurez-vous que le code QR est toujours ouvert sur l’autre appareil.",
     "unsupportedQr": "Code QR non pris en charge",
-    "unsupportedQrHint": "Scannez un code d’association AlterSend.",
+    "unsupportedQrHint": "Scannez un code d’association Ruqa.",
     "noQrFound": "Aucun code QR trouvé",
-    "noQrFoundHint": "Choisissez une image avec un code d’association AlterSend.",
+    "noQrFoundHint": "Choisissez une image avec un code d’association Ruqa.",
     "importFromImage": "Importer depuis une image",
     "cameraAccessNeeded": "Accès à la caméra requis",
     "cameraAccessText": "Autorisez l’accès à la caméra pour scanner un code QR d’association.",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "Enregistrer photos et vidéos dans la Galerie",
     "destinationPhotos": "Photos et vidéos vers Photos",
     "destinationFiles": "Photos et vidéos vers Fichiers",
-    "mediaToPhotosDescription": "Si désactivé, elles sont enregistrées dans le dossier AlterSend de Fichiers.",
+    "mediaToPhotosDescription": "Si désactivé, elles sont enregistrées dans le dossier Ruqa de Fichiers.",
     "mediaToGalleryDescription": "Si désactivé, elles sont enregistrées dans votre dossier Téléchargements.",
     "destinationGallery": "Photos et vidéos vers la Galerie",
     "destinationDownloads": "Photos et vidéos vers Téléchargements"
@@ -177,10 +177,10 @@
     "copied": "Copié",
     "copyFailed": "Impossible de copier votre code : copiez-le manuellement avant de vous déconnecter.",
     "saveCode": "Enregistrer le code dans un fichier",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "Code de compte",
     "codeFileSaved": "Enregistré",
-    "codeFileWarning": "Ce code est votre abonnement. Saisissez-le dans AlterSend sur n’importe quel appareil pour restaurer Pro. Nous ne l’avons jamais conservé et ne pouvons pas le récupérer pour vous.",
+    "codeFileWarning": "Ce code est votre abonnement. Saisissez-le dans Ruqa sur n’importe quel appareil pour restaurer Pro. Nous ne l’avons jamais conservé et ne pouvons pas le récupérer pour vous.",
     "subscriptionRow": "Abonnement",
     "manageSubscription": "Gérer",
     "untilDate": "jusqu'au {{date}}",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "Menu Partager",
-    "description": "Ajouter AlterSend au menu Partager de macOS"
+    "description": "Ajouter Ruqa au menu Partager de macOS"
   }
 }

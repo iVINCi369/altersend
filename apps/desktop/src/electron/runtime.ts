@@ -4,12 +4,7 @@ import os from 'os'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import PearRuntime from 'pear-runtime'
-import {
-  API,
-  type RendererTransferEvent,
-  type TransferMethod,
-  type WorkerClient
-} from '@altersend/core'
+import { API, type RendererTransferEvent, type TransferMethod, type WorkerClient } from '@ruqa/core'
 import { migrateLegacyStore, writeFileViaTemp } from './store/index.js'
 import { isMac, isLinux, isWindows } from 'which-runtime'
 import { command, flag, sloppy } from 'paparam'

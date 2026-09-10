@@ -1,4 +1,4 @@
-import type { ChunkWriter } from '@altersend/drive'
+import type { ChunkWriter } from '@ruqa/drive'
 import { request } from './opfsClient'
 import { DL_PREFIX } from './opfsProtocol'
 import { triggerDownload } from './saveFile'

@@ -1,15 +1,15 @@
 import { useMemo } from 'react'
 import { Linking } from 'react-native'
-import { Button, RelaySettingsCard } from '@altersend/components'
-import { ClipboardIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, RelaySettingsCard } from '@ruqa/components'
+import { ClipboardIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import {
   relayErrorText,
   relaySettingsLabels,
   relayTestText,
   selfHostSetupUrl,
   useRelaySettings
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { Layout } from '@/src/components'
 import { relayStoragePort } from '@/src/lifecycle/relayStorage'
 import { usePasteFromClipboard } from '@/src/hooks/usePasteFromClipboard'

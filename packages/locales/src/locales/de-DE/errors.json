@@ -1,14 +1,14 @@
 {
   "crash": {
     "title": "Etwas ist schief gelaufen",
-    "desktopDescription": "AlterSend ist auf einen unerwarteten Fehler gestoßen und muss neu gestartet werden. Der Übertragungsdienst ist möglicherweise instabil, daher ist ein Neustart die sicherste Option.",
-    "mobileDescription": "AlterSend hat einen unerwarteten Fehler festgestellt. Versuchen Sie es erneut oder schließen Sie die App und öffnen Sie sie erneut, wenn das Problem weiterhin besteht.",
-    "restartAlterSend": "Starten Sie AlterSend neu",
+    "desktopDescription": "Ruqa ist auf einen unerwarteten Fehler gestoßen und muss neu gestartet werden. Der Übertragungsdienst ist möglicherweise instabil, daher ist ein Neustart die sicherste Option.",
+    "mobileDescription": "Ruqa hat einen unerwarteten Fehler festgestellt. Versuchen Sie es erneut oder schließen Sie die App und öffnen Sie sie erneut, wenn das Problem weiterhin besteht.",
+    "restartRuqa": "Starten Sie Ruqa neu",
     "tryAgain": "Versuchen Sie es erneut"
   },
   "bridgeUnavailable": {
     "title": "Desktop-Verbindung nicht verfügbar",
-    "description": "Dieses Fenster ist nicht mit der Desktop-App verbunden. Starten Sie AlterSend über die Desktop-App neu.",
+    "description": "Dieses Fenster ist nicht mit der Desktop-App verbunden. Starten Sie Ruqa über die Desktop-App neu.",
     "status": "Desktop-Verbindung nicht verfügbar"
   },
   "transfer": {

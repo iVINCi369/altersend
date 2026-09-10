@@ -28,26 +28,26 @@ export const BUNDLED_FONT_FAMILIES: Record<FontFamilyKey, BundledFontFamily> = {
     cssFamily: LATIN_FONT_FAMILY_CSS
   },
   japanese: {
-    cssFamily: 'AlterSend Sans JP',
-    nativeFamily: 'AlterSend Sans JP',
+    cssFamily: 'Ruqa Sans JP',
+    nativeFamily: 'Ruqa Sans JP',
     assetFileName: 'NotoSans-JP-Regular.ttf',
     boldAssetFileName: 'NotoSans-JP-Bold.ttf'
   },
   korean: {
-    cssFamily: 'AlterSend Sans KR',
-    nativeFamily: 'AlterSend Sans KR',
+    cssFamily: 'Ruqa Sans KR',
+    nativeFamily: 'Ruqa Sans KR',
     assetFileName: 'NotoSans-KR-Regular.ttf',
     boldAssetFileName: 'NotoSans-KR-Bold.ttf'
   },
   simplifiedChinese: {
-    cssFamily: 'AlterSend Sans SC',
-    nativeFamily: 'AlterSend Sans SC',
+    cssFamily: 'Ruqa Sans SC',
+    nativeFamily: 'Ruqa Sans SC',
     assetFileName: 'NotoSans-SC-Regular.ttf',
     boldAssetFileName: 'NotoSans-SC-Bold.ttf'
   },
   traditionalChinese: {
-    cssFamily: 'AlterSend Sans TC',
-    nativeFamily: 'AlterSend Sans TC',
+    cssFamily: 'Ruqa Sans TC',
+    nativeFamily: 'Ruqa Sans TC',
     assetFileName: 'NotoSans-TC-Regular.ttf',
     boldAssetFileName: 'NotoSans-TC-Bold.ttf'
   }

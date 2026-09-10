@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MAX_DISPLAY_NAME_LEN } from '@altersend/core'
+import { MAX_DISPLAY_NAME_LEN } from '@ruqa/core'
 import { reportError } from '../transfer/binding'
 
 export interface DeviceRenameTarget {

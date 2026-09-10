@@ -1,6 +1,6 @@
-import { LinkRow, Modal, useTheme } from '@altersend/components'
-import { FileIcon, FolderIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { LinkRow, Modal, useTheme } from '@ruqa/components'
+import { FileIcon, FolderIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 
 interface AddFilesModalProps {
   open: boolean

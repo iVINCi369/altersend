@@ -1,4 +1,4 @@
-import { isPairUrl } from '@altersend/domain'
+import { isPairUrl } from '@ruqa/domain'
 import { getShareExtensionKey } from 'expo-share-intent'
 
 const JOIN_PATH = /(?:\/join\/|\/r[/#])[a-fA-F0-9]{64}/

@@ -1,5 +1,5 @@
-import { Badge, Button, LinkRow, RowGroup, Spinner, useTheme } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { Badge, Button, LinkRow, RowGroup, Spinner, useTheme } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { Card, CardFooter, CardStatusRow, ScreenIntro } from '../../components'
 import { useIsCompact } from '../../useIsCompact'
 

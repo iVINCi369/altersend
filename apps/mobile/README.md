@@ -1,4 +1,4 @@
-# AlterSend Mobile
+# Ruqa Mobile
 
 React Native / Expo app for peer-to-peer file transfer on iOS and Android.
 
@@ -18,7 +18,7 @@ cd apps/mobile && npm run android
 
 ## Architecture
 
-The mobile app embeds a **Bare worklet** via `react-native-bare-kit`. The worklet runs the same `packages/core` P2P code that the desktop app uses — Hyperswarm discovery and chunked file transfer via `@altersend/drive` (with Hyperdrive as the fallback for older peers). React Native communicates with the worklet over RPC.
+The mobile app embeds a **Bare worklet** via `react-native-bare-kit`. The worklet runs the same `packages/core` P2P code that the desktop app uses — Hyperswarm discovery and chunked file transfer via `@ruqa/drive` (with Hyperdrive as the fallback for older peers). React Native communicates with the worklet over RPC.
 
 ```
 React Native UI ─── RPC ─── Bare worklet

@@ -1,12 +1,12 @@
 import { AppState, Linking } from 'react-native'
 import * as SecureStore from 'expo-secure-store'
-import { accountApiUrl, createAccountRuntime, type AccountStorage } from '@altersend/domain'
+import { accountApiUrl, createAccountRuntime, type AccountStorage } from '@ruqa/domain'
 import { mobileApi } from '@/src/api/mobileApi'
 import { purchaseAdapter, purchasesReady } from './purchases'
 import { isRelayEnabled } from './relayStorage'
 
-const CODE_KEY = 'altersend.account.code'
-const TOKEN_KEY = 'altersend.account.token'
+const CODE_KEY = 'ruqa.account.code'
+const TOKEN_KEY = 'ruqa.account.token'
 
 const accountStorage: AccountStorage = {
   async read() {

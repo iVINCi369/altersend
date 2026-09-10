@@ -9,10 +9,10 @@ import {
   UserIcon,
   WaypointsIcon,
   type IconProps
-} from '@altersend/components/icons'
-import { loadPeers, useSubscriptionStore } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
-import { ListItem, Modal } from '@altersend/components'
+} from '@ruqa/components/icons'
+import { loadPeers, useSubscriptionStore } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
+import { ListItem, Modal } from '@ruqa/components'
 import { DevicesSection } from './sections/DevicesSection'
 import { GeneralSection } from './sections/GeneralSection'
 import { LanguageSection } from './sections/LanguageSection'

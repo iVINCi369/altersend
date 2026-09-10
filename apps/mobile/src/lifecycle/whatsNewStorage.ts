@@ -1,7 +1,7 @@
 import { Directory, File, Paths } from 'expo-file-system'
-import type { WhatsNewStorage } from '@altersend/domain'
+import type { WhatsNewStorage } from '@ruqa/domain'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const FILENAME = 'whats-new.version'
 
 function getMarkerFile(): File | null {

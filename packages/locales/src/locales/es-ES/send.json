@@ -53,7 +53,7 @@
     "inviteFailedToast": "No se pudo contactar con {{name}}",
     "inviteFailedHint": "Asegúrate de que esté en línea e inténtalo de nuevo",
     "deviceConnected": "{{name}} conectado",
-    "peerOutdated": "No se puede conectar: este dispositivo necesita una versión más reciente de AlterSend.",
+    "peerOutdated": "No se puede conectar: este dispositivo necesita una versión más reciente de Ruqa.",
     "updateRequired": "Actualiza para conectar"
   },
   "connection": {
@@ -61,7 +61,7 @@
     "copyLabel": "Copiar código de conexión",
     "showQrLabel": "Mostrar código QR",
     "qrCodeLabel": "Código QR para la clave de conexión",
-    "qrModalDescription": "Abre AlterSend en otro dispositivo y escanea este código",
+    "qrModalDescription": "Abre Ruqa en otro dispositivo y escanea este código",
     "copiedToast": "Copiado al portapapeles",
     "scanToConnect": "Escanea para conectar",
     "orScan": "o escanea",
@@ -71,7 +71,7 @@
     "qrCode": "Código QR",
     "copyLink": "Copiar enlace",
     "shareLink": "Compartir enlace",
-    "shareMessage": "{{items}} compartidos contigo con AlterSend: ábrelo para descargar:\n\n{{link}}",
+    "shareMessage": "{{items}} compartidos contigo con Ruqa: ábrelo para descargar:\n\n{{link}}",
     "linkHint": "Hasta {{limit}} por transferencia",
     "connectedViaBrowser": "Conectado por navegador"
   },

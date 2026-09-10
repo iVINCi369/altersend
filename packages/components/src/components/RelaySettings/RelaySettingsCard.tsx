@@ -6,12 +6,12 @@ import { ExternalLink } from '../ExternalLink'
 import { RadioGroup } from '../Radio'
 import type { RadioOption } from '../Radio'
 import { styles } from './styles'
-import type { RelayMode } from '@altersend/domain'
+import type { RelayMode } from '@ruqa/domain'
 import type { RelaySettingsCardProps } from './types'
 
-const MODES: RelayMode[] = ['altersend', 'custom', 'off']
+const MODES: RelayMode[] = ['ruqa', 'custom', 'off']
 
-type FallbackMode = 'stay' | 'altersend'
+type FallbackMode = 'stay' | 'ruqa'
 
 export function RelaySettingsCard({
   form,
@@ -34,9 +34,9 @@ export function RelaySettingsCard({
   const fallbackOptions: RadioOption<FallbackMode>[] = [
     { value: 'stay', label: labels.fallbackStay.label, description: labels.fallbackStay.caption },
     {
-      value: 'altersend',
-      label: labels.fallbackAltersend.label,
-      description: labels.fallbackAltersend.caption
+      value: 'ruqa',
+      label: labels.fallbackRuqa.label,
+      description: labels.fallbackRuqa.caption
     }
   ]
 
@@ -105,8 +105,8 @@ export function RelaySettingsCard({
       <RadioGroup
         bare
         options={fallbackOptions}
-        value={form.fallback ? 'altersend' : 'stay'}
-        onChange={(value) => form.setFallback(value === 'altersend')}
+        value={form.fallback ? 'ruqa' : 'stay'}
+        onChange={(value) => form.setFallback(value === 'ruqa')}
         aria-label={labels.fallbackTitle}
       />
     </>

@@ -6,7 +6,7 @@ import {
   isPairUrl,
   joinSession,
   webAppUrl
-} from '@altersend/domain'
+} from '@ruqa/domain'
 
 let started = false
 let subscription: { remove(): void } | null = null
@@ -37,7 +37,7 @@ export function markRouterReady(): void {
   if (code) openPairing(code)
 }
 
-const ALLOWED_SCHEMES = ['altersend://', 'com.altersend.mobile://']
+const ALLOWED_SCHEMES = ['ruqa://', 'com.ruqa.mobile://']
 const RECEIVE_LINK_PREFIX = `${webAppUrl}/r`
 
 function isAllowedUrl(url: string): boolean {

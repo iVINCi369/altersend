@@ -7,7 +7,7 @@ export interface CodeFileLabels {
   warning: string
 }
 
-export const ACCOUNT_CODE_FILE_NAME = 'altersend-pro-code.txt'
+export const ACCOUNT_CODE_FILE_NAME = 'ruqa-pro-code.txt'
 
 export function accountCodeFile(code: string, savedOn: string, labels: CodeFileLabels): string {
   return [

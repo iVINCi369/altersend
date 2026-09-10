@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Button } from '@altersend/components'
+import { Button } from '@ruqa/components'
 import { Card } from '../Card'
 
 const TONE_BG = {

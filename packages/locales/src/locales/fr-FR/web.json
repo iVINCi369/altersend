@@ -28,7 +28,7 @@
     "inAppWarning": "Ce navigateur ne peut pas enregistrer les téléchargements. Ouvrez le lien dans Safari ou Chrome pour recevoir vos fichiers."
   },
   "errors": {
-    "relayUnreachable": "Impossible de joindre le relais AlterSend. Vérifiez votre connexion et réessayez.",
+    "relayUnreachable": "Impossible de joindre le relais Ruqa. Vérifiez votre connexion et réessayez.",
     "senderNotFound": "Expéditeur introuvable — vérifiez qu’il est bien en train de partager.",
     "nothingShared": "Connecté, mais l’expéditeur n’a rien partagé.",
     "connectionFailed": "Connexion perdue — l’expéditeur a peut-être arrêté le partage. Réessayez."
@@ -40,14 +40,14 @@
     "help": "Aide"
   },
   "promo": {
-    "title": "Envoyé avec AlterSend",
+    "title": "Envoyé avec Ruqa",
     "subtitle": "Téléchargez l’app pour envoyer vos propres fichiers",
     "getFor": "Obtenir pour {{os}}",
     "getApp": "Télécharger l’app"
   },
   "disconnected": {
     "title": "L’expéditeur s’est déconnecté",
-    "description": "Les transferts AlterSend sont pair-à-pair : les deux côtés doivent être en ligne. Demandez à l’expéditeur de rouvrir le transfert, puis reconnectez-vous.",
+    "description": "Les transferts Ruqa sont pair-à-pair : les deux côtés doivent être en ligne. Demandez à l’expéditeur de rouvrir le transfert, puis reconnectez-vous.",
     "summary_complete": "Les {{total}} fichiers ont été téléchargés avant la coupure du lien.",
     "allReceived": "Tous les fichiers reçus",
     "completeTitle": "Transfert terminé",
@@ -60,13 +60,13 @@
   },
   "sendBack": {
     "title": "Envoyer des fichiers en retour ?",
-    "description": "Téléchargez l’app AlterSend pour envoyer des fichiers de toute taille — chiffrés de bout en bout, sans compte.",
+    "description": "Téléchargez l’app Ruqa pour envoyer des fichiers de toute taille — chiffrés de bout en bout, sans compte.",
     "maybeLater": "Plus tard"
   },
   "tooLarge": {
     "title": "Trop volumineux pour le navigateur",
     "description": "Certains transferts se reçoivent mieux dans l’app.",
-    "body": "Ouvrez-le dans l’app AlterSend pour le recevoir — sans compte.",
+    "body": "Ouvrez-le dans l’app Ruqa pour le recevoir — sans compte.",
     "openInApp": "Ouvrir dans l’app"
   }
 }

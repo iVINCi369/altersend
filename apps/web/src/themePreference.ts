@@ -2,9 +2,9 @@ import {
   SYSTEM_THEME_PREFERENCE,
   normalizeThemePreference,
   type ThemePreference
-} from '@altersend/components'
+} from '@ruqa/components'
 
-const KEY = 'altersend.theme.preference'
+const KEY = 'ruqa.theme.preference'
 
 export function getSavedThemePreference(): ThemePreference {
   try {

@@ -1,7 +1,7 @@
 import c, { type Encoding } from 'compact-encoding'
 import type { ChunkHeader } from './engine/types'
 
-export const DRIVE_PROTOCOL = 'altersend/drive'
+export const DRIVE_PROTOCOL = 'ruqa/drive'
 
 export interface ChunkFrame extends ChunkHeader {
   data: Uint8Array

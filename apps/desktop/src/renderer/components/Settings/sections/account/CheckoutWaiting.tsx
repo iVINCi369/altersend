@@ -1,6 +1,6 @@
-import { Button, WaitingState } from '@altersend/components'
-import { GlobeIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, WaitingState } from '@ruqa/components'
+import { GlobeIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { SectionShell } from '../SectionShell'
 import type { AccountPhaseProps } from './types'
 

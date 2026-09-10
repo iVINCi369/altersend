@@ -1,4 +1,4 @@
-import type { AccountModel } from '@altersend/domain'
+import type { AccountModel } from '@ruqa/domain'
 
 export interface AccountPhaseProps {
   model: AccountModel

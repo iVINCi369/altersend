@@ -48,7 +48,7 @@ describe('native metadata localization', () => {
       }
       const permissions = RESOURCES[locale.code].native.permissions
 
-      expect(metadata.ios.CFBundleDisplayName, locale.code).toBe('AlterSend')
+      expect(metadata.ios.CFBundleDisplayName, locale.code).toBe('Ruqa')
       expect(metadata.ios.NSCameraUsageDescription, locale.code).toBe(permissions.camera)
       expect(metadata.ios.NSLocalNetworkUsageDescription, locale.code).toBe(
         permissions.localNetwork
@@ -57,7 +57,7 @@ describe('native metadata localization', () => {
       expect(metadata.ios.NSPhotoLibraryAddUsageDescription, locale.code).toBe(
         permissions.photoSave
       )
-      expect(metadata.android.app_name, locale.code).toBe('AlterSend')
+      expect(metadata.android.app_name, locale.code).toBe('Ruqa')
     }
   })
 
@@ -68,7 +68,7 @@ describe('native metadata localization', () => {
       expect(existsSync(file), locale.code).toBe(true)
 
       const content = readFileSync(file, 'utf8')
-      expect(content, locale.code).toContain('"CFBundleDisplayName" = "AlterSend";')
+      expect(content, locale.code).toContain('"CFBundleDisplayName" = "Ruqa";')
       expect(content, locale.code).toContain(
         `"NSCameraUsageDescription" = "${RESOURCES[locale.code].native.permissions.camera}";`
       )
@@ -95,7 +95,7 @@ describe('native metadata localization', () => {
     const afterPack = require('../../../apps/desktop/scripts/afterPack.cjs') as {
       default: (context: unknown) => Promise<void>
     }
-    const tmp = mkdtempSync(join(tmpdir(), 'altersend-afterpack-'))
+    const tmp = mkdtempSync(join(tmpdir(), 'ruqa-afterpack-'))
 
     try {
       await afterPack.default({
@@ -104,12 +104,12 @@ describe('native metadata localization', () => {
         appOutDir: tmp,
         packager: {
           appInfo: {
-            productFilename: 'AlterSend'
+            productFilename: 'Ruqa'
           }
         }
       })
 
-      const resourcesDir = join(tmp, 'AlterSend.app', 'Contents', 'Resources')
+      const resourcesDir = join(tmp, 'Ruqa.app', 'Contents', 'Resources')
       expect(existsSync(join(resourcesDir, 'en.lproj', 'InfoPlist.strings'))).toBe(true)
       expect(existsSync(join(resourcesDir, 'ja.lproj', 'InfoPlist.strings'))).toBe(true)
       expect(existsSync(join(resourcesDir, 'ko.lproj', 'InfoPlist.strings'))).toBe(true)

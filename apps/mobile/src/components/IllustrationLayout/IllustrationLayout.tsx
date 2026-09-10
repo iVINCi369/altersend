@@ -7,9 +7,9 @@ import {
   Platform,
   type DimensionValue
 } from 'react-native'
-import { useTheme } from '@altersend/components'
-import { SettingsIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { useTheme } from '@ruqa/components'
+import { SettingsIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Text } from '@/src/components/ThemedText'
 

@@ -34,14 +34,14 @@ jobs:
             exit 1
           fi
           VERSION=$(node -p "require('./app.json').expo.version")
-          curl -L "$BUILD_URL" -o "altersend-${VERSION}.apk"
-          ls -la altersend-*.apk
+          curl -L "$BUILD_URL" -o "ruqa-${VERSION}.apk"
+          ls -la ruqa-*.apk
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: android-apk
-          path: apps/mobile/altersend-*.apk
+          path: apps/mobile/ruqa-*.apk
 
   release:
     needs: build-android-apk

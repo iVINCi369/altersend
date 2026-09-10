@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import { BottomSheet } from '@/src/components'
 import { QRSection } from './QRSection'
 

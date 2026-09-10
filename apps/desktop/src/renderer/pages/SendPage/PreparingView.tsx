@@ -1,7 +1,7 @@
-import { Button, WaitingState } from '@altersend/components'
-import { SendIcon } from '@altersend/components/icons'
-import { clearSenderFlow } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Button, WaitingState } from '@ruqa/components'
+import { SendIcon } from '@ruqa/components/icons'
+import { clearSenderFlow } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 
 export function PreparingView() {
   const { t } = useTranslation(['send', 'common'])

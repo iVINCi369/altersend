@@ -1,5 +1,5 @@
 import { AppState, type AppStateStatus } from 'react-native'
-import { setAppActive } from '@altersend/domain'
+import { setAppActive } from '@ruqa/domain'
 
 let started = false
 let subscription: { remove: () => void } | null = null

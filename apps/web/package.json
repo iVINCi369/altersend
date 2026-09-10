@@ -1,9 +1,9 @@
 {
-  "name": "@altersend/web",
+  "name": "@ruqa/web",
   "version": "2.0.0",
-  "description": "Browser receiver for AlterSend — no install, end-to-end encrypted.",
+  "description": "Browser receiver for Ruqa — no install, end-to-end encrypted.",
   "license": "Apache-2.0",
-  "author": "AlterSend",
+  "author": "Ruqa",
   "type": "module",
   "private": true,
   "scripts": {
@@ -14,9 +14,9 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@altersend/components": "2.0.0",
-    "@altersend/drive": "2.0.0",
-    "@altersend/locales": "2.0.0",
+    "@ruqa/components": "2.0.0",
+    "@ruqa/drive": "2.0.0",
+    "@ruqa/locales": "2.0.0",
     "@hyperswarm/dht-relay": "^0.4.3",
     "@noble/curves": "^2.2.0",
     "b4a": "^1.8.1",

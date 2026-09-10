@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, LinkRow, ListItem, useTheme } from '@altersend/components'
+import { Button, LinkRow, ListItem, useTheme } from '@ruqa/components'
 import {
   ClipboardIcon,
   MoreHorizontalIcon,
@@ -8,14 +8,9 @@ import {
   QrCodeIcon,
   TrashIcon,
   deviceIcon
-} from '@altersend/components/icons'
-import {
-  forgetPeer,
-  renamePeer,
-  usePairingSession,
-  type DeviceRenameTarget
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components/icons'
+import { forgetPeer, renamePeer, usePairingSession, type DeviceRenameTarget } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import syncDevicesSvg from '../../../../../../../assets/sync_devices.svg'
 import { useToast } from '../../Toast'
 import { ConfirmDialog } from '../../ConfirmDialog'

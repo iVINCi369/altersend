@@ -5,8 +5,8 @@ import {
   applyDocumentTheme,
   getSystemTheme,
   resolveThemePreference
-} from '@altersend/components'
-import { initI18n, resolveLocalePreference } from '@altersend/locales'
+} from '@ruqa/components'
+import { initI18n, resolveLocalePreference } from '@ruqa/locales'
 import App from './App'
 import { getBrowserLocales, getSavedLocalePreference } from './localePreference'
 import { getSavedThemePreference, setSavedThemePreference } from './themePreference'

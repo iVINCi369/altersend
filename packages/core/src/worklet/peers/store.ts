@@ -3,7 +3,7 @@ import definition from '../../../schema/spec/hyperdb/index.js'
 import { type RememberedPeer, mergeRememberedPeer, isValidRememberedPeer } from './remembered-peer'
 import { normalizeKey } from './normalize-key'
 
-const COLLECTION = '@altersend/remembered-peers'
+const COLLECTION = '@ruqa/remembered-peers'
 
 const OPEN_TIMEOUT_MS = 4000
 

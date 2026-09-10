@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "Informes de fallos",
-    "description": "Comparte datos anónimos sobre fallos para ayudar a mejorar AlterSend"
+    "description": "Comparte datos anónimos sobre fallos para ayudar a mejorar Ruqa"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "Relé de AlterSend",
-        "caption": "Cuando falla la conexión directa, la transferencia pasa por el relé de AlterSend. Los archivos siguen cifrados de extremo a extremo."
+      "ruqa": {
+        "label": "Relé de Ruqa",
+        "caption": "Cuando falla la conexión directa, la transferencia pasa por el relé de Ruqa. Los archivos siguen cifrados de extremo a extremo."
       },
       "custom": {
         "label": "Relé autoalojado",
-        "caption": "Usa tu propio servidor de relé en lugar del de AlterSend."
+        "caption": "Usa tu propio servidor de relé en lugar del de Ruqa."
       },
       "off": {
         "label": "Sin relé",
@@ -43,8 +43,8 @@
           "label": "Quedarse en mi relé",
           "caption": "Si tu relé no está disponible, la transferencia espera."
         },
-        "altersend": {
-          "label": "Usar el relé de AlterSend si hace falta",
+        "ruqa": {
+          "label": "Usar el relé de Ruqa si hace falta",
           "caption": "Las transferencias siguen funcionando si tu relé falla."
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "Únete a la comunidad",
     "github": "GitHub",
-    "sponsor": "Apoyar AlterSend",
+    "sponsor": "Apoyar Ruqa",
     "privacyPolicy": "Política de privacidad",
-    "privacyPolicyHint": "Cómo AlterSend maneja tus datos",
+    "privacyPolicyHint": "Cómo Ruqa maneja tus datos",
     "terms": "Términos de servicio",
-    "termsHint": "Reglas para usar AlterSend",
+    "termsHint": "Reglas para usar Ruqa",
     "website": "Sitio web",
     "connection": "Relé"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "Asegúrate de que el código de invitación siga activo.",
     "couldNotJoinQrHint": "Asegúrate de que el código QR siga abierto en el otro dispositivo.",
     "unsupportedQr": "Código QR no compatible",
-    "unsupportedQrHint": "Escanea un código de emparejamiento de AlterSend.",
+    "unsupportedQrHint": "Escanea un código de emparejamiento de Ruqa.",
     "noQrFound": "No se encontró ningún código QR",
-    "noQrFoundHint": "Elige una imagen con un código de emparejamiento de AlterSend.",
+    "noQrFoundHint": "Elige una imagen con un código de emparejamiento de Ruqa.",
     "importFromImage": "Importar desde imagen",
     "cameraAccessNeeded": "Se necesita acceso a la cámara",
     "cameraAccessText": "Permite el acceso a la cámara para escanear un código QR de emparejamiento.",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "Guardar fotos y vídeos en la Galería",
     "destinationPhotos": "Fotos y vídeos en Fotos",
     "destinationFiles": "Fotos y vídeos en Archivos",
-    "mediaToPhotosDescription": "Si está desactivado, se guardan en la carpeta AlterSend de Archivos.",
+    "mediaToPhotosDescription": "Si está desactivado, se guardan en la carpeta Ruqa de Archivos.",
     "mediaToGalleryDescription": "Si está desactivado, se guardan en tu carpeta de Descargas.",
     "destinationGallery": "Fotos y vídeos en la Galería",
     "destinationDownloads": "Fotos y vídeos en Descargas"
@@ -177,10 +177,10 @@
     "copied": "Copiado",
     "copyFailed": "No se pudo copiar tu código: cópialo manualmente antes de cerrar sesión.",
     "saveCode": "Guardar el código en un archivo",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "Código de cuenta",
     "codeFileSaved": "Guardado",
-    "codeFileWarning": "Este código es tu suscripción. Introdúcelo en AlterSend en cualquier dispositivo para restaurar Pro. Nunca lo hemos guardado y no podemos recuperarlo por ti.",
+    "codeFileWarning": "Este código es tu suscripción. Introdúcelo en Ruqa en cualquier dispositivo para restaurar Pro. Nunca lo hemos guardado y no podemos recuperarlo por ti.",
     "subscriptionRow": "Suscripción",
     "manageSubscription": "Gestionar",
     "untilDate": "hasta {{date}}",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "Menú Compartir",
-    "description": "Añade AlterSend al menú Compartir de macOS"
+    "description": "Añade Ruqa al menú Compartir de macOS"
   }
 }

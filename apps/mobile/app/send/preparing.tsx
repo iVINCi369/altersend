@@ -1,6 +1,6 @@
 import { useCallback, useEffect } from 'react'
-import { getSendStep, isShareStep, useTransferStore } from '@altersend/domain'
-import { clearSenderFlow } from '@altersend/domain'
+import { getSendStep, isShareStep, useTransferStore } from '@ruqa/domain'
+import { clearSenderFlow } from '@ruqa/domain'
 import { ConfirmDialog, Layout } from '@/src/components'
 import { useLeaveSessionConfirm } from '@/src/hooks/useLeaveSessionConfirm'
 import { PreparingView } from '@/src/transfer/send'

@@ -1,4 +1,4 @@
-import { ReceiverSession } from '@altersend/drive'
+import { ReceiverSession } from '@ruqa/drive'
 import { createSink, type WebSink } from './storage'
 import type { FileOffer, PeerProtocol } from './peerProtocol'
 import type { DownloadHandlers } from './types'

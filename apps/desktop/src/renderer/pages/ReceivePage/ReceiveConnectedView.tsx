@@ -1,6 +1,6 @@
-import { Button } from '@altersend/components'
-import { DownloadIcon, PlayIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button } from '@ruqa/components'
+import { DownloadIcon, PlayIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi } from '../../api/bridgeApi'
 import { useToast } from '../../components/Toast'
 import { isAskEveryTime } from '../../lifecycle/downloadLocationStorage'
@@ -10,7 +10,7 @@ import {
   getPrimaryDownloadLabel,
   useReceiveActions,
   useReceiveDownloads
-} from '@altersend/domain'
+} from '@ruqa/domain'
 
 function toSafeFileName(name: string): string {
   const base = name.split(/[/\\]/).pop() ?? ''

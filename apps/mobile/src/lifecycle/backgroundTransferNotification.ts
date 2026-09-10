@@ -8,8 +8,8 @@ import {
   type RateSample,
   type SenderUploadItem,
   type TransferActivity
-} from '@altersend/domain'
-import { translate } from '@altersend/locales'
+} from '@ruqa/domain'
+import { translate } from '@ruqa/locales'
 import {
   INDETERMINATE_PROGRESS,
   type TransferNotificationContent

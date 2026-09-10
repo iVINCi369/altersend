@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native'
-import { Button, Input } from '@altersend/components'
-import { useDeviceRenameForm } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Button, Input } from '@ruqa/components'
+import { useDeviceRenameForm } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { BottomSheet } from '../BottomSheet'
 
 interface DeviceRenameSheetProps {

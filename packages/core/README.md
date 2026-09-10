@@ -1,8 +1,8 @@
-# @altersend/core
+# @ruqa/core
 
-The peer-to-peer protocol and transfer orchestration for AlterSend. Hosts a [Bare](https://bare.pears.com/) worklet that owns Hyperswarm peer discovery, file transfer, and the wire protocol — isolated from Electron and React Native renderers.
+The peer-to-peer protocol and transfer orchestration for Ruqa. Hosts a [Bare](https://bare.pears.com/) worklet that owns Hyperswarm peer discovery, file transfer, and the wire protocol — isolated from Electron and React Native renderers.
 
-Bytes move over `@altersend/drive`: the sender reads chunks from the original file and the receiver writes them straight to the destination. Hyperdrive remains wired up as a fallback for peers on older builds that don't offer a drive channel — `worklet/transfer/receiver.ts` picks per file.
+Bytes move over `@ruqa/drive`: the sender reads chunks from the original file and the receiver writes them straight to the destination. Hyperdrive remains wired up as a fallback for peers on older builds that don't offer a drive channel — `worklet/transfer/receiver.ts` picks per file.
 
 ## Architecture
 
@@ -38,7 +38,7 @@ This package has two halves:
 ### From the host (renderer / main process)
 
 ```ts
-import { createTransferWorkerClient } from '@altersend/core';
+import { createTransferWorkerClient } from '@ruqa/core';
 
 const client = createTransferWorkerClient(workerProcess, {
   onEvent: (event) => {
@@ -74,7 +74,7 @@ Exported types describe every message that crosses the IPC boundary between host
 - `HostReply`, `JoinReply`, `ShareFilesReply`, `DownloadFilesReply`, `DisconnectReply` — RPC reply DTOs
 - `DownloadFileRequest`, `DownloadFileResult`, `IncomingFileOffer` — request and result DTOs
 
-Anything not re-exported from `@altersend/core` (the wire-format codecs, command-id constants, validation error class, peer-channel types) is internal and may change without notice.
+Anything not re-exported from `@ruqa/core` (the wire-format codecs, command-id constants, validation error class, peer-channel types) is internal and may change without notice.
 
 ### Utilities
 

@@ -8,10 +8,10 @@ import {
   ThemeType,
   ToggleSwitch,
   useTheme
-} from '@altersend/components'
-import { FolderIcon } from '@altersend/components/icons'
-import { useAutoAcceptSetting } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components'
+import { FolderIcon } from '@ruqa/components/icons'
+import { useAutoAcceptSetting } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi } from '../../../api/bridgeApi'
 import { autoAcceptStoragePort } from '../../../lifecycle/autoAcceptStorage'
 import { useToast } from '../../Toast'

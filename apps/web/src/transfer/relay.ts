@@ -11,7 +11,7 @@ export function connectErrorCode(error: unknown): ConnectErrorCode | null {
   return CONNECT_ERROR_CODES.find((code) => code === message) ?? null
 }
 
-const DEFAULT_RELAYS = ['wss://relay.altersend.com', 'wss://relay-sg.altersend.com']
+const DEFAULT_RELAYS = ['wss://relay.ruqa.app', 'wss://relay-sg.ruqa.app']
 
 export function relayUrls(): string[] {
   const configured = import.meta.env.VITE_RELAY_URL as string | undefined

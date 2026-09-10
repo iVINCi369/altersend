@@ -1,5 +1,5 @@
 import * as Clipboard from 'expo-clipboard'
-import { formatAccountCode, useCopiedFlag } from '@altersend/domain'
+import { formatAccountCode, useCopiedFlag } from '@ruqa/domain'
 import { lightTap } from '@/src/haptics'
 
 const COPY_ID = 'account-code'

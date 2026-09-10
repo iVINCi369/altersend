@@ -1,6 +1,6 @@
 import { useState, type ChangeEvent } from 'react'
-import { Button, Input, LinkRow, useTheme } from '@altersend/components'
-import { ClipboardIcon, DownloadIcon, QrCodeIcon } from '@altersend/components/icons'
+import { Button, Input, LinkRow, useTheme } from '@ruqa/components'
+import { ClipboardIcon, DownloadIcon, QrCodeIcon } from '@ruqa/components/icons'
 import {
   getDisplayError,
   getTransferErrorCode,
@@ -9,8 +9,8 @@ import {
   TRANSFER_ERROR_CODES,
   type TransferErrorCode,
   useTransferStore
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi } from '../../api/bridgeApi'
 import { WebcamScanView } from './WebcamScanView'
 

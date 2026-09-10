@@ -4,7 +4,7 @@ import type { Translate } from '../i18n'
 
 export const JOIN_CODE_PATTERN = /^[a-fA-F0-9]{64}$/
 
-export const JOIN_URL_SCHEME = 'altersend'
+export const JOIN_URL_SCHEME = 'ruqa'
 
 export function buildJoinUrl(topic: string): string {
   return `${JOIN_URL_SCHEME}://join/${topic}`

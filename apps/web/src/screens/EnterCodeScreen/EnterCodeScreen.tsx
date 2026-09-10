@@ -1,7 +1,7 @@
 import type { ChangeEvent } from 'react'
-import { Button, Input } from '@altersend/components'
-import { ClipboardIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, Input } from '@ruqa/components'
+import { ClipboardIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { Card, ScreenIntro, SentWithBanner } from '../../components'
 import { useIsCompact } from '../../useIsCompact'
 

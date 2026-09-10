@@ -1,4 +1,4 @@
-import { useTheme } from '@altersend/components'
+import { useTheme } from '@ruqa/components'
 import { Button, Host } from '@expo/ui/swift-ui'
 import {
   buttonStyle,

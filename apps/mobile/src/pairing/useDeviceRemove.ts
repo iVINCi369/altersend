@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import type { DeviceRenameTarget } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import type { DeviceRenameTarget } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { useToast } from '@/src/components/Toast'
 import type { ConfirmDialogProps } from '@/src/components/ConfirmDialog'
 import { SHEET_TRANSITION_MS } from './useDeviceRename'

@@ -28,7 +28,7 @@
     "inAppWarning": "此瀏覽器無法儲存下載內容。請在 Safari 或 Chrome 中開啟連結以接收檔案。"
   },
   "errors": {
-    "relayUnreachable": "無法連線至 AlterSend 中繼。請檢查網路連線後重試。",
+    "relayUnreachable": "無法連線至 Ruqa 中繼。請檢查網路連線後重試。",
     "senderNotFound": "找不到寄件者 — 請確認對方正在共享。",
     "nothingShared": "已連線，但寄件者未共享任何內容。",
     "connectionFailed": "連線已中斷——傳送方可能已停止共享。請重試。"
@@ -40,14 +40,14 @@
     "help": "說明"
   },
   "promo": {
-    "title": "透過 AlterSend 傳送",
+    "title": "透過 Ruqa 傳送",
     "subtitle": "取得應用程式，傳送你自己的檔案",
     "getFor": "取得 {{os}} 版",
     "getApp": "下載應用程式"
   },
   "disconnected": {
     "title": "寄件者已中斷連線",
-    "description": "AlterSend 傳輸是點對點的，雙方都需要在線。請寄件者重新開啟傳輸，然後重新連線。",
+    "description": "Ruqa 傳輸是點對點的，雙方都需要在線。請寄件者重新開啟傳輸，然後重新連線。",
     "summary_complete": "連線中斷前所有 {{total}} 個檔案皆已下載。",
     "allReceived": "已接收所有檔案",
     "completeTitle": "傳輸完成",
@@ -60,13 +60,13 @@
   },
   "sendBack": {
     "title": "想回傳檔案嗎？",
-    "description": "取得 AlterSend 應用程式，傳送任意大小的檔案——端對端加密，無需帳戶。",
+    "description": "取得 Ruqa 應用程式，傳送任意大小的檔案——端對端加密，無需帳戶。",
     "maybeLater": "稍後再說"
   },
   "tooLarge": {
     "title": "檔案太大，瀏覽器無法接收",
     "description": "有些傳輸更適合在應用程式中接收。",
-    "body": "在 AlterSend 應用程式中開啟即可接收，無需帳戶。",
+    "body": "在 Ruqa 應用程式中開啟即可接收，無需帳戶。",
     "openInApp": "在應用程式中開啟"
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Animated, Pressable, StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { useTheme } from '@altersend/components'
-import { AlertCircleIcon, CheckIcon } from '@altersend/components/icons'
+import { useTheme } from '@ruqa/components'
+import { AlertCircleIcon, CheckIcon } from '@ruqa/components/icons'
 import { Text } from '@/src/components/ThemedText'
 import type { ToastTone } from './Toast'
 

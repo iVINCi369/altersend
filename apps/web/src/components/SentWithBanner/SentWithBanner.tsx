@@ -1,5 +1,5 @@
-import { Button } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { Button } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { openDownload } from '../../downloadApp'
 import { BrandMark } from '../BrandMark'
 import { useDownloadCta } from '../../useDownloadCta'

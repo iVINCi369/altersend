@@ -9,7 +9,7 @@ import {
 } from 'electron'
 import { isMac } from 'which-runtime'
 import path from 'path'
-import { isPathSafe, type TransferMethod } from '@altersend/core'
+import { isPathSafe, type TransferMethod } from '@ruqa/core'
 import { takeQueuedExternalFiles } from './externalFiles.js'
 import { expandPaths } from './fileScan.js'
 import { assertAllowedPath, recordPickedPath } from './pathAccess.js'

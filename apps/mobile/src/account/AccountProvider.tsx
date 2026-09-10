@@ -1,5 +1,5 @@
 import { createContext, useContext, type ReactNode } from 'react'
-import { useAccount, type AccountModel } from '@altersend/domain'
+import { useAccount, type AccountModel } from '@ruqa/domain'
 import { accountAdapter } from '@/src/lifecycle/account'
 
 const AccountContext = createContext<AccountModel | null>(null)

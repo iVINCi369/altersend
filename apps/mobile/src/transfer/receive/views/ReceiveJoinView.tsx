@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 import * as Clipboard from 'expo-clipboard'
-import { Button, Input, LinkRow, useTheme } from '@altersend/components'
-import { ClipboardIcon, DownloadIcon, QrCodeIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, Input, LinkRow, useTheme } from '@ruqa/components'
+import { ClipboardIcon, DownloadIcon, QrCodeIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { Text } from '@/src/components/ThemedText'
 
 interface ReceiveJoinViewProps {

@@ -28,7 +28,7 @@
     "inAppWarning": "This browser can’t save downloads. Open the link in Safari or Chrome to receive your files."
   },
   "errors": {
-    "relayUnreachable": "Cannot reach the AlterSend relay. Check your connection and try again.",
+    "relayUnreachable": "Cannot reach the Ruqa relay. Check your connection and try again.",
     "senderNotFound": "Sender not found — make sure the sender is sharing.",
     "nothingShared": "Connected, but the sender did not share anything.",
     "connectionFailed": "Connection lost — the sender may have stopped sharing. Try again."
@@ -40,14 +40,14 @@
     "help": "Help"
   },
   "promo": {
-    "title": "Sent with AlterSend",
+    "title": "Sent with Ruqa",
     "subtitle": "Get the app to send files of your own",
     "getFor": "Get for {{os}}",
     "getApp": "Download the app"
   },
   "disconnected": {
     "title": "The sender disconnected",
-    "description": "AlterSend transfers are peer-to-peer, so the connection needs both sides online. Ask the sender to reopen the transfer, then reconnect.",
+    "description": "Ruqa transfers are peer-to-peer, so the connection needs both sides online. Ask the sender to reopen the transfer, then reconnect.",
     "summary_complete": "All {{total}} files were downloaded before the link dropped.",
     "allReceived": "All files received",
     "completeTitle": "Transfer complete",
@@ -60,13 +60,13 @@
   },
   "sendBack": {
     "title": "Want to send files back?",
-    "description": "Get the AlterSend app to send files of any size — end-to-end encrypted, no account needed.",
+    "description": "Get the Ruqa app to send files of any size — end-to-end encrypted, no account needed.",
     "maybeLater": "Maybe later"
   },
   "tooLarge": {
     "title": "Too big for the browser",
     "description": "Some transfers are better received in the app.",
-    "body": "Open it in the AlterSend app to receive it — no account needed.",
+    "body": "Open it in the Ruqa app to receive it — no account needed.",
     "openInApp": "Open in the app"
   }
 }

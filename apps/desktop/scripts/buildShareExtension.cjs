@@ -3,7 +3,7 @@ const { execFileSync } = require('child_process')
 const fs = require('fs')
 const path = require('path')
 
-const NAME = 'AlterSendShare'
+const NAME = 'RuqaShare'
 const SOURCE_DIR = path.join(__dirname, '..', 'macos', 'ShareExtension')
 const ENTITLEMENTS = path.join(__dirname, '..', 'build', 'entitlements.share.plist')
 const MIN_MACOS = '11.0'

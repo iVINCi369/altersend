@@ -1,4 +1,4 @@
-import type { OnboardingSlideKind } from '@altersend/domain'
+import type { OnboardingSlideKind } from '@ruqa/domain'
 import type { SvgProps } from 'react-native-svg'
 import PrivateSharingSvg from '../../../../assets/private-sharing.svg'
 import SyncDevicesSvg from '../../../../assets/sync_devices.svg'

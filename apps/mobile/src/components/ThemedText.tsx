@@ -4,7 +4,7 @@ import {
   type TextInputProps,
   type TextProps
 } from 'react-native'
-import { useTheme } from '@altersend/components'
+import { useTheme } from '@ruqa/components'
 
 export function Text({ style, ...props }: TextProps) {
   const { fontFamilyName } = useTheme()

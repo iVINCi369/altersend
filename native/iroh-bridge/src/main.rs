@@ -1,4 +1,4 @@
-//! iroh-bridge — транспортный сайдкар для AlterSend.
+//! iroh-bridge — транспортный сайдкар для Ruqa.
 //!
 //! Поднимает iroh Endpoint и мостит каждый QUIC bi-stream в отдельное локальное
 //! TCP-соединение, чтобы JS-сторона (Bare worklet / Electron main) могла говорить
@@ -30,8 +30,8 @@ use tokio::io::{AsyncBufReadExt, AsyncWriteExt, BufReader};
 use tokio::net::{TcpListener, TcpStream};
 use tokio::sync::{Mutex, broadcast, watch};
 
-const ALPN: &[u8] = b"altersend/drive/1";
-const BINDING_LABEL: &[u8] = b"altersend/channel-binding";
+const ALPN: &[u8] = b"ruqa/drive/1";
+const BINDING_LABEL: &[u8] = b"ruqa/channel-binding";
 
 struct Args {
     bridge_port: u16,

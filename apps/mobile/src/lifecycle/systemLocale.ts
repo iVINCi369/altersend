@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE } from '@altersend/locales'
+import { DEFAULT_LOCALE } from '@ruqa/locales'
 import { getLocales } from 'expo-localization'
 
 export function getMobileSystemLocales(): string[] {

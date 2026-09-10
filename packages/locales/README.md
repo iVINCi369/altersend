@@ -1,6 +1,6 @@
-# @altersend/locales
+# @ruqa/locales
 
-Shared internationalization infrastructure for AlterSend desktop and mobile.
+Shared internationalization infrastructure for Ruqa desktop and mobile.
 
 ## Contracts
 
@@ -27,7 +27,7 @@ Every locale must keep the same namespace and key set as `en-US`. Resource tests
 ## Usage
 
 ```tsx
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 
 function Header() {
   const { t } = useTranslation(['send'])
@@ -38,7 +38,7 @@ function Header() {
 Outside React, use `i18nextInstance` or the package helpers:
 
 ```ts
-import { changeI18nLanguage, initI18n, resolveLocalePreference } from '@altersend/locales'
+import { changeI18nLanguage, initI18n, resolveLocalePreference } from '@ruqa/locales'
 
 await initI18n(resolveLocalePreference(savedPreference, systemLocales))
 await changeI18nLanguage('en-US')

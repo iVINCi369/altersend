@@ -6,7 +6,7 @@ import { promisify } from 'util'
 
 const run = promisify(execFile)
 
-const SHARE_EXTENSION_BUNDLE_ID = 'com.altersend.desktop.ShareExtension'
+const SHARE_EXTENSION_BUNDLE_ID = 'com.ruqa.desktop.ShareExtension'
 
 const SETTINGS_URL =
   'x-apple.systempreferences:com.apple.ExtensionsPreferences?extensionPointIdentifier=com.apple.share-services'

@@ -1,4 +1,4 @@
-# AlterSend Desktop
+# Ruqa Desktop
 
 Electron app for peer-to-peer file transfer on macOS, Windows, and Linux.
 

@@ -4,9 +4,9 @@ import {
   parseCustomRelayString,
   type CustomRelayInput,
   type RelayStoragePort
-} from '@altersend/domain'
+} from '@ruqa/domain'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const MARKER_FILENAME = 'relay.disabled'
 const CUSTOM_FILENAME = 'relay.custom'
 

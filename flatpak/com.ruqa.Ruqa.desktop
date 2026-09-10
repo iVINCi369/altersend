@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Ruqa
+Comment=Peer-to-peer file transfer
+Exec=ruqa %U
+Icon=com.ruqa.Ruqa
+Categories=Network;
+MimeType=application/octet-stream;inode/directory;x-scheme-handler/ruqa;
+StartupNotify=true
+Terminal=false
+StartupWMClass=ruqa

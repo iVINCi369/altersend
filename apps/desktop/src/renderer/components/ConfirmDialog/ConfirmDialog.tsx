@@ -1,4 +1,4 @@
-import { Button, Modal } from '@altersend/components'
+import { Button, Modal } from '@ruqa/components'
 
 interface ConfirmDialogProps {
   open: boolean

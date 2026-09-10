@@ -11,7 +11,7 @@ import android.os.PowerManager
 import android.util.Log
 
 private const val LOG_TAG = "TransferService"
-private const val WAKE_LOCK_TAG = "AlterSend:transfer"
+private const val WAKE_LOCK_TAG = "Ruqa:transfer"
 private const val WAKE_LOCK_TIMEOUT_MS = 6L * 60 * 60 * 1000
 private const val IDLE_TIMEOUT_MS = 15L * 60 * 1000
 private const val TRANSFERRING_TIMEOUT_MS = 60L * 60 * 1000

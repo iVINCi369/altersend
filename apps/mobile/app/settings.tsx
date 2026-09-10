@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useFocusEffect, useRouter } from 'expo-router'
-import { LOCALE_OPTIONS, useTranslation, type LocalePreference } from '@altersend/locales'
-import { loadPeers, useSubscriptionStore, useTransferStore } from '@altersend/domain'
+import { LOCALE_OPTIONS, useTranslation, type LocalePreference } from '@ruqa/locales'
+import { loadPeers, useSubscriptionStore, useTransferStore } from '@ruqa/domain'
 import {
   AppearancePicker,
   MenuGroup,
@@ -10,7 +10,7 @@ import {
   SYSTEM_THEME_PREFERENCE,
   ThemeType,
   useTheme
-} from '@altersend/components'
+} from '@ruqa/components'
 import {
   GlobeIcon,
   InfoIcon,
@@ -19,7 +19,7 @@ import {
   SmartphoneIcon,
   UserIcon,
   WaypointsIcon
-} from '@altersend/components/icons'
+} from '@ruqa/components/icons'
 import { Layout } from '@/src/components'
 import {
   getLocalePreferenceSnapshot,

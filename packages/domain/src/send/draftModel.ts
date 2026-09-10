@@ -1,4 +1,4 @@
-import type { RendererTransferEvent } from '@altersend/core'
+import type { RendererTransferEvent } from '@ruqa/core'
 import type { SendDraftPhase } from './pageUi'
 import type { BrowserFileLike, SelectedFile, SenderUploadItem } from './draftTypes'
 

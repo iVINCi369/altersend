@@ -12,7 +12,7 @@ import {
   type PrimaryDownloadAction,
   type ReceiveRow,
   type TransferRate
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import type { TextOffer } from '../../transfer/peerProtocol'
 import type { TransferFile } from '../../types'
 import { toDownloadStates } from './downloadView'

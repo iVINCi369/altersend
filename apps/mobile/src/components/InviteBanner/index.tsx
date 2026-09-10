@@ -1,15 +1,15 @@
 import { Modal, StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { Button, useTheme } from '@altersend/components'
-import { CheckIcon, CloseIcon, deviceIcon } from '@altersend/components/icons'
+import { Button, useTheme } from '@ruqa/components'
+import { CheckIcon, CloseIcon, deviceIcon } from '@ruqa/components/icons'
 import {
   acceptInvite,
   formatFileSize,
   formatItemsCount,
   useIncomingInvite,
   type IncomingInvite
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { Text } from '@/src/components/ThemedText'
 import { autoAcceptStoragePort } from '@/src/lifecycle/autoAcceptStorage'
 import { useRouter } from 'expo-router'

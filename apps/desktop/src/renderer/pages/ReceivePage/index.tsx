@@ -1,6 +1,6 @@
-import { Button, Spinner } from '@altersend/components'
-import { InfoIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, Spinner } from '@ruqa/components'
+import { InfoIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { TransferActionGroup, TransferStatusPanel, TransferCardFrame } from '../../components'
 import { openSettingsPanel } from '../../components/Settings'
 import { ReceiveCompleteView } from './ReceiveCompleteView'
@@ -15,7 +15,7 @@ import {
   isSessionOverStep,
   useReceiveDownloads,
   useTransferStore
-} from '@altersend/domain'
+} from '@ruqa/domain'
 
 export default function ReceivePage() {
   const { t } = useTranslation(['receive', 'common'])

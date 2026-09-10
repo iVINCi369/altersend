@@ -12,7 +12,7 @@ import type {
   JoinReply,
   ShareFileRequest,
   ShareFilesReply
-} from '@altersend/core'
+} from '@ruqa/core'
 import type { IncomingInvite } from './types'
 
 const setError = (code: TransferErrorCode, error: unknown): void => {

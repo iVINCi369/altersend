@@ -5,7 +5,7 @@ import { usePressState } from '../../hooks/usePressState'
 import { fileTypeColors, useTheme } from '../../theme'
 import { FileKindIcon, getFileKind } from './fileKinds'
 import { styles } from './styles'
-import { formatFileSize } from '@altersend/domain'
+import { formatFileSize } from '@ruqa/domain'
 
 export type LinkRowStatusTone = 'muted' | 'active' | 'success'
 export type LinkRowProgressState = 'waiting' | 'uploading' | 'completed'

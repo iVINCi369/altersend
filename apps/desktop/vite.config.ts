@@ -121,19 +121,19 @@ export default defineConfig(async ({ mode }) => {
           replacement: resolve(workspaceRoot, 'node_modules/react-dom/client.js')
         },
         {
-          find: /^@altersend\/components\/theme$/,
+          find: /^@ruqa\/components\/theme$/,
           replacement: resolve(__dirname, '../../packages/components/src/theme/index.ts')
         },
         {
-          find: /^@altersend\/components\/icons$/,
+          find: /^@ruqa\/components\/icons$/,
           replacement: resolve(__dirname, '../../packages/components/src/icons/index.ts')
         },
         {
-          find: /^@altersend\/components$/,
+          find: /^@ruqa\/components$/,
           replacement: resolve(__dirname, '../../packages/components/src/index.ts')
         },
         {
-          find: /^@altersend\/domain$/,
+          find: /^@ruqa\/domain$/,
           replacement: resolve(__dirname, '../../packages/domain/src/index.ts')
         }
       ],

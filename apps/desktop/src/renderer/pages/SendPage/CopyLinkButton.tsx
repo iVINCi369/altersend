@@ -1,7 +1,7 @@
-import { useTranslation } from '@altersend/locales'
-import { Button, useTheme } from '@altersend/components'
-import { CheckIcon, LinkIcon } from '@altersend/components/icons'
-import { WEB_LINK_MAX_LABEL } from '@altersend/domain'
+import { useTranslation } from '@ruqa/locales'
+import { Button, useTheme } from '@ruqa/components'
+import { CheckIcon, LinkIcon } from '@ruqa/components/icons'
+import { WEB_LINK_MAX_LABEL } from '@ruqa/domain'
 import { openSettingsPanel } from '../../components/Settings/settingsControl'
 
 interface CopyLinkButtonProps {

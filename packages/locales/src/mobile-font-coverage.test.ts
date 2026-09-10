@@ -139,7 +139,7 @@ describe('mobile font coverage', () => {
       expo: { plugins: unknown[] }
     }
     const fontLoaderSource = readFileSync(
-      join(mobileRoot.pathname, 'src/theme/useAlterSendFonts.ts'),
+      join(mobileRoot.pathname, 'src/theme/useRuqaFonts.ts'),
       'utf8'
     )
 

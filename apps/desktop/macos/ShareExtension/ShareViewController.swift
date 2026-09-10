@@ -60,7 +60,7 @@ final class ShareViewController: NSViewController {
     }
 
     var components = URLComponents()
-    components.scheme = "altersend"
+    components.scheme = "ruqa"
     components.host = "share"
     components.queryItems = [URLQueryItem(name: "manifest", value: manifest)]
 
@@ -89,7 +89,7 @@ final class ShareViewController: NSViewController {
       try data.write(to: target, options: .atomic)
       return target.path
     } catch {
-      NSLog("AlterSend share extension: failed to write manifest — \(error)")
+      NSLog("Ruqa share extension: failed to write manifest — \(error)")
       return nil
     }
   }

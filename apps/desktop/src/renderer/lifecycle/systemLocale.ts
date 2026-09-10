@@ -1,4 +1,4 @@
-import { DEFAULT_LOCALE } from '@altersend/locales'
+import { DEFAULT_LOCALE } from '@ruqa/locales'
 
 export function getDesktopSystemLocales(): string[] {
   if (typeof navigator === 'undefined') return [DEFAULT_LOCALE]

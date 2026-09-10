@@ -1,13 +1,13 @@
-# @altersend/domain
+# @ruqa/domain
 
-State management for AlterSend's P2P file transfer flow. Translates worklet events into a typed Zustand store and exposes commands the UI calls directly.
+State management for Ruqa's P2P file transfer flow. Translates worklet events into a typed Zustand store and exposes commands the UI calls directly.
 
 Used by both the mobile and desktop apps so they share one source of truth for transfer state.
 
 ## Install
 
 ```sh
-npm install @altersend/domain
+npm install @ruqa/domain
 ```
 
 Peer dependencies (you must install these in your app):
@@ -21,7 +21,7 @@ npm install react zustand
 At app entry — once, before any component mounts:
 
 ```ts
-import { bindTransferApi } from '@altersend/domain'
+import { bindTransferApi } from '@ruqa/domain'
 import { mobileApi } from './api' // your platform's TransferApi implementation
 
 bindTransferApi(mobileApi, {
@@ -32,7 +32,7 @@ bindTransferApi(mobileApi, {
 In a component:
 
 ```tsx
-import { useTransferStore, joinSession, clearSession } from '@altersend/domain'
+import { useTransferStore, joinSession, clearSession } from '@ruqa/domain'
 
 function ReceiveButton() {
   const role = useTransferStore((s) => s.role)

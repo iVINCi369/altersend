@@ -1,7 +1,7 @@
-import { useTheme } from '@altersend/components'
-import { AlertCircleIcon } from '@altersend/components/icons'
-import { buildJoinUrl } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { useTheme } from '@ruqa/components'
+import { AlertCircleIcon } from '@ruqa/components/icons'
+import { buildJoinUrl } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { ScreenIntro, StatusCard } from '../../components'
 
 export interface TooLargeScreenProps {

@@ -4,7 +4,7 @@ import Foundation
 @available(iOS 26.0, *)
 final class ContinuedTransferTask {
   static let shared = ContinuedTransferTask()
-  static let identifier = "com.altersend.mobile.transfer"
+  static let identifier = "com.ruqa.mobile.transfer"
 
   private var task: BGContinuedProcessingTask?
   private var submitted = false

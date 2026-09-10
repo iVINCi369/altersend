@@ -3,7 +3,7 @@ import { getAppActive } from './effects/appActive'
 import { getTransferDebugMessage, getTransferErrorCode } from './errors'
 import { TRANSFER_ERROR_CODES } from './types'
 import type { SharingStatusEvent } from '../send/draftModel'
-import type { RendererTransferEvent, TransferRPC } from '@altersend/core'
+import type { RendererTransferEvent, TransferRPC } from '@ruqa/core'
 
 export interface TransferApi {
   worker: TransferRPC

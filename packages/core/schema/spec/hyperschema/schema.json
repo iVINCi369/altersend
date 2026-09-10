@@ -3,7 +3,7 @@
   "schema": [
     {
       "name": "remembered-peer",
-      "namespace": "altersend",
+      "namespace": "ruqa",
       "compact": false,
       "flagsPosition": 4,
       "fields": [

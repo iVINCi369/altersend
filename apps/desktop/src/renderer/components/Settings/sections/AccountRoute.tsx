@@ -1,4 +1,4 @@
-import { useAccount, useSubscriptionStore } from '@altersend/domain'
+import { useAccount, useSubscriptionStore } from '@ruqa/domain'
 import { accountAdapter } from '../../../lifecycle/account'
 import { AccountSection } from './AccountSection'
 import { ActiveAccountSection } from './ActiveAccountSection'

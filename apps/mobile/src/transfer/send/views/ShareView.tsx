@@ -11,8 +11,8 @@ import {
   useShareViewModel,
   WEB_LINK_MAX_LABEL,
   type DeviceRenameTarget
-} from '@altersend/domain'
-import { Button, Input, LinkCard, LinkRow, WaitingRadar, useTheme } from '@altersend/components'
+} from '@ruqa/domain'
+import { Button, Input, LinkCard, LinkRow, WaitingRadar, useTheme } from '@ruqa/components'
 import {
   CheckIcon,
   ChevronsUpDownIcon,
@@ -22,8 +22,8 @@ import {
   QrCodeIcon,
   LinkIcon,
   ShareIcon
-} from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { useRouter } from 'expo-router'
 import { useToast } from '@/src/components/Toast'
 import { mediumTap, successTap } from '@/src/haptics'

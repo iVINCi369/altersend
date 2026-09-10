@@ -1,13 +1,13 @@
 import Constants from 'expo-constants'
 import { Directory, File, Paths } from 'expo-file-system'
 import { useCallback, useEffect, useState } from 'react'
-import { isNewerVersion } from '@altersend/domain'
+import { isNewerVersion } from '@ruqa/domain'
 
-const CACHE_DIR = 'altersend'
+const CACHE_DIR = 'ruqa'
 const CACHE_FILE = 'update-check.json'
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000
 const FETCH_TIMEOUT_MS = 10_000
-const GITHUB_RELEASES_URL = 'https://api.github.com/repos/denislupookov/altersend/releases/latest'
+const GITHUB_RELEASES_URL = 'https://api.github.com/repos/iVINCi369/altersend/releases/latest'
 
 interface CacheEntry {
   version: string
@@ -52,7 +52,7 @@ async function fetchLatestRelease(): Promise<CacheEntry | null> {
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS)
   try {
     const res = await fetch(GITHUB_RELEASES_URL, {
-      headers: { 'User-Agent': 'AlterSend' },
+      headers: { 'User-Agent': 'Ruqa' },
       signal: controller.signal
     })
     if (!res.ok) return null

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Button, Modal } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { Button, Modal } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { bridgeApi } from '../../api/bridgeApi'
 import updateSvg from '../../../../../../assets/update.svg'
 

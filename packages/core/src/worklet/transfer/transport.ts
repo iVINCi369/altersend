@@ -1,4 +1,4 @@
-import type { DriveChannel } from '@altersend/drive'
+import type { DriveChannel } from '@ruqa/drive'
 import type { PeerControlMessage } from './control-channel'
 
 export type ConnectionType = 'direct' | 'relay'

@@ -1,4 +1,4 @@
-import { isValidHexKey, type CustomRelayInput } from '@altersend/core'
+import { isValidHexKey, type CustomRelayInput } from '@ruqa/core'
 
 export type { CustomRelayInput }
 

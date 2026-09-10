@@ -1,6 +1,6 @@
-import type { AutoAcceptStoragePort } from '@altersend/domain'
+import type { AutoAcceptStoragePort } from '@ruqa/domain'
 
-const KEY = 'altersend.devices.autoAccept'
+const KEY = 'ruqa.devices.autoAccept'
 
 function isAutoAcceptEnabled(): boolean {
   try {

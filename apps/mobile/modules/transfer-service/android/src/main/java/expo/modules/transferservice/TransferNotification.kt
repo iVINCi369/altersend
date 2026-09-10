@@ -80,7 +80,7 @@ class TransferNotification(private val context: Context) {
   }
 
   companion object {
-    const val CHANNEL_ID = "altersend.transfer"
+    const val CHANNEL_ID = "ruqa.transfer"
     const val NOTIFICATION_ID = 8341
     const val COMPLETED_ID_BASE = 8400
 

@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react'
-import type { IncomingFileOffer } from '@altersend/core'
+import type { IncomingFileOffer } from '@ruqa/core'
 import { useTransferStore } from '../transfer/store'
 import { downloadFiles, pauseDownload } from '../transfer/commands'
 import { useTransferRates } from '../transfer/useTransferRates'

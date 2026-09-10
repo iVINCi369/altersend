@@ -8,9 +8,9 @@ import {
   type LocaleOption,
   type LocalePreference,
   type SupportedLocaleCode
-} from '@altersend/locales'
-import { LinkCard, LinkRow, getNativeFontFamilyName, useTheme } from '@altersend/components'
-import { CheckIcon } from '@altersend/components/icons'
+} from '@ruqa/locales'
+import { LinkCard, LinkRow, getNativeFontFamilyName, useTheme } from '@ruqa/components'
+import { CheckIcon } from '@ruqa/components/icons'
 import { Layout } from '@/src/components'
 import {
   getLocalePreferenceSnapshot,

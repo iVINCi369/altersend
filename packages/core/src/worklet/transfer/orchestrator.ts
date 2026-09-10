@@ -57,7 +57,7 @@ import {
   type PeerDownloadStatus
 } from './download-events'
 import type { DownloadLifecycleEvent, DownloaderCallbacks } from './download-events'
-import type { DriveChannel } from '@altersend/drive'
+import type { DriveChannel } from '@ruqa/drive'
 import { PeerIdentityStore } from './peer-identity-store'
 import { TransferSender } from './sender'
 import { TransferReceiver } from './receiver'
@@ -421,7 +421,7 @@ export class TransferOrchestrator implements TransferRPC {
     const drive = peerKey ? this.swarm.getSession(peerKey)?.drive : null
     if (!drive) throw new Error('Lost the connection to the sender')
     if (!(await drive.supported.catch(() => false))) {
-      throw new Error('Sender is running an older version of AlterSend and needs to update')
+      throw new Error('Sender is running an older version of Ruqa and needs to update')
     }
     return drive.session(file.fileId)
   }

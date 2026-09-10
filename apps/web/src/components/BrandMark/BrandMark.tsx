@@ -1,4 +1,4 @@
-import mark from '../../assets/altersend-mark.png'
+import mark from '../../assets/ruqa-mark.png'
 
 type MarkSize = 'md' | 'lg'
 

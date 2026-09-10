@@ -14,17 +14,17 @@
   },
   "crashReports": {
     "label": "クラッシュレポート",
-    "description": "AlterSend 改善のため匿名のクラッシュデータを共有する"
+    "description": "Ruqa 改善のため匿名のクラッシュデータを共有する"
   },
   "relay": {
     "mode": {
-      "altersend": {
-        "label": "AlterSendリレー",
-        "caption": "直接接続できない場合、転送はAlterSendのリレーを経由します。ファイルはエンドツーエンドで暗号化されたままです。"
+      "ruqa": {
+        "label": "Ruqaリレー",
+        "caption": "直接接続できない場合、転送はRuqaのリレーを経由します。ファイルはエンドツーエンドで暗号化されたままです。"
       },
       "custom": {
         "label": "セルフホストリレー",
-        "caption": "AlterSendの代わりに自分のリレーサーバーを使用します。"
+        "caption": "Ruqaの代わりに自分のリレーサーバーを使用します。"
       },
       "off": {
         "label": "リレーなし",
@@ -43,8 +43,8 @@
           "label": "自分のリレーを使い続ける",
           "caption": "リレーに接続できない場合、転送は待機します。"
         },
-        "altersend": {
-          "label": "必要ならAlterSendのリレーを使う",
+        "ruqa": {
+          "label": "必要ならRuqaのリレーを使う",
           "caption": "リレーが停止しても転送は継続されます。"
         }
       },
@@ -62,11 +62,11 @@
     "x": "X",
     "discordHint": "コミュニティに参加",
     "github": "GitHub",
-    "sponsor": "AlterSendを支援する",
+    "sponsor": "Ruqaを支援する",
     "privacyPolicy": "プライバシーポリシー",
-    "privacyPolicyHint": "AlterSend のデータの扱い",
+    "privacyPolicyHint": "Ruqa のデータの扱い",
     "terms": "利用規約",
-    "termsHint": "AlterSend の利用ルール",
+    "termsHint": "Ruqa の利用ルール",
     "website": "Webサイト",
     "connection": "リレー"
   },
@@ -102,9 +102,9 @@
     "couldNotJoinHint": "招待コードがまだ有効か確認してください。",
     "couldNotJoinQrHint": "もう一方のデバイスでQRコードがまだ表示されているか確認してください。",
     "unsupportedQr": "サポートされていないQRコード",
-    "unsupportedQrHint": "AlterSendのペアリングコードをスキャンしてください。",
+    "unsupportedQrHint": "Ruqaのペアリングコードをスキャンしてください。",
     "noQrFound": "QRコードが見つかりません",
-    "noQrFoundHint": "AlterSendのペアリングコードが含まれる画像を選択してください。",
+    "noQrFoundHint": "Ruqaのペアリングコードが含まれる画像を選択してください。",
     "importFromImage": "画像から取り込む",
     "cameraAccessNeeded": "カメラへのアクセスが必要です",
     "cameraAccessText": "ペアリングQRコードをスキャンするためにカメラへのアクセスを許可してください。",
@@ -133,7 +133,7 @@
     "mediaToGalleryLabel": "写真と動画をギャラリーに保存",
     "destinationPhotos": "写真とビデオを「写真」へ",
     "destinationFiles": "写真とビデオを「ファイル」へ",
-    "mediaToPhotosDescription": "オフの場合、「ファイル」の AlterSend フォルダに保存されます。",
+    "mediaToPhotosDescription": "オフの場合、「ファイル」の Ruqa フォルダに保存されます。",
     "mediaToGalleryDescription": "オフの場合、ダウンロードフォルダに保存されます。",
     "destinationGallery": "写真と動画をギャラリーへ",
     "destinationDownloads": "写真と動画をダウンロードへ"
@@ -177,10 +177,10 @@
     "copied": "コピーしました",
     "copyFailed": "コードをコピーできませんでした。ログアウトする前に手動でコピーしてください。",
     "saveCode": "コードをファイルに保存",
-    "codeFileTitle": "AlterSend Pro",
+    "codeFileTitle": "Ruqa Pro",
     "codeFileCode": "アカウントコード",
     "codeFileSaved": "保存済み",
-    "codeFileWarning": "このコードがサブスクリプションそのものです。どの端末でも AlterSend に入力すれば Pro を復元できます。当社は保存しておらず、再発行はできません。",
+    "codeFileWarning": "このコードがサブスクリプションそのものです。どの端末でも Ruqa に入力すれば Pro を復元できます。当社は保存しておらず、再発行はできません。",
     "subscriptionRow": "サブスクリプション",
     "manageSubscription": "管理",
     "untilDate": "{{date}}まで",
@@ -215,6 +215,6 @@
   },
   "shareMenu": {
     "label": "共有メニュー",
-    "description": "macOS の共有メニューに AlterSend を追加します"
+    "description": "macOS の共有メニューに Ruqa を追加します"
   }
 }

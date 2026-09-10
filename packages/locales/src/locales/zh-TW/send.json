@@ -53,7 +53,7 @@
     "inviteFailedToast": "無法連線到 {{name}}",
     "inviteFailedHint": "請確認其在線後重試",
     "deviceConnected": "{{name}} 已連線",
-    "peerOutdated": "無法連線 — 此裝置需要較新版本的 AlterSend。",
+    "peerOutdated": "無法連線 — 此裝置需要較新版本的 Ruqa。",
     "updateRequired": "更新以連接"
   },
   "connection": {
@@ -61,7 +61,7 @@
     "copyLabel": "复制连接代码",
     "showQrLabel": "显示QR代码",
     "qrCodeLabel": "連接金鑰的 QR 代碼",
-    "qrModalDescription": "在另一個裝置上開啟 AlterSend 並掃描此程式碼",
+    "qrModalDescription": "在另一個裝置上開啟 Ruqa 並掃描此程式碼",
     "copiedToast": "已複製到剪貼簿",
     "scanToConnect": "掃描以連線",
     "orScan": "或掃描",
@@ -71,7 +71,7 @@
     "qrCode": "QR 碼",
     "copyLink": "複製連結",
     "shareLink": "分享連結",
-    "shareMessage": "透過 AlterSend 分享了 {{items}}——開啟連結即可下載：\n\n{{link}}",
+    "shareMessage": "透過 Ruqa 分享了 {{items}}——開啟連結即可下載：\n\n{{link}}",
     "linkHint": "每次傳輸最多 {{limit}}",
     "connectedViaBrowser": "透過瀏覽器連線"
   },

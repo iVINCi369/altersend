@@ -1,6 +1,6 @@
 import type { StyleProp, TextStyle } from 'react-native'
-import { CheckIcon } from '@altersend/components/icons'
-import type { PlanCell } from '@altersend/domain'
+import { CheckIcon } from '@ruqa/components/icons'
+import type { PlanCell } from '@ruqa/domain'
 import { Text } from '@/src/components/ThemedText'
 
 interface Props {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { initialTransferSessionState } from '../transfer/reducer'
 import type { IncomingInvite, TransferSessionState } from '../transfer/types'
-import type { RememberedPeer } from '@altersend/core'
+import type { RememberedPeer } from '@ruqa/core'
 import { canAutoAcceptInvite } from './autoAccept'
 
 const PUBKEY = 'a'.repeat(64)

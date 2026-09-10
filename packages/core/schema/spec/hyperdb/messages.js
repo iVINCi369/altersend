@@ -11,7 +11,7 @@ const VERSION = 1
 // eslint-disable-next-line no-unused-vars
 let version = VERSION
 
-// @altersend/remembered-peer
+// @ruqa/remembered-peer
 const encoding0 = {
   preencode(state, m) {
     c.string.preencode(state, m.remoteDevicePubkey)
@@ -54,7 +54,7 @@ const encoding0 = {
   }
 }
 
-// @altersend/remembered-peer/hyperdb#0
+// @ruqa/remembered-peer/hyperdb#0
 const encoding1 = {
   preencode(state, m) {
     c.string.preencode(state, m.rendezvousTopic)
@@ -117,9 +117,9 @@ function getEnum(name) {
 
 function getEncoding(name) {
   switch (name) {
-    case '@altersend/remembered-peer':
+    case '@ruqa/remembered-peer':
       return encoding0
-    case '@altersend/remembered-peer/hyperdb#0':
+    case '@ruqa/remembered-peer/hyperdb#0':
       return encoding1
     default:
       throw new Error('Encoder not found ' + name)

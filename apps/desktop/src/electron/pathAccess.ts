@@ -1,5 +1,5 @@
 import path from 'path'
-import { isPathSafe } from '@altersend/core'
+import { isPathSafe } from '@ruqa/core'
 import { getDownloadFolder } from './store/index.js'
 
 const pickedPaths = new Map<number, Set<string>>()

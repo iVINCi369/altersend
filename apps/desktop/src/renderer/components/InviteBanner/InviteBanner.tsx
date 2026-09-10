@@ -3,10 +3,10 @@ import {
   formatItemsCount,
   useIncomingInvite,
   type IncomingInvite
-} from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
-import { Button } from '@altersend/components'
-import { CheckIcon, CloseIcon, deviceIcon } from '@altersend/components/icons'
+} from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
+import { Button } from '@ruqa/components'
+import { CheckIcon, CloseIcon, deviceIcon } from '@ruqa/components/icons'
 import { autoAcceptStoragePort } from '../../lifecycle/autoAcceptStorage'
 import { zLayer } from '../../zLayer'
 

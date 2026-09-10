@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react'
-import { toSelectedFiles, useExternalFileHandoff } from '@altersend/domain'
+import { toSelectedFiles, useExternalFileHandoff } from '@ruqa/domain'
 import { bridgeApi, hasBridge } from '../api/bridgeApi'
 import { captureException } from '../sentry'
 

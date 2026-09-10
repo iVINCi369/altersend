@@ -31,15 +31,15 @@ declare global {
     relativePath?: string
   }
 
-  type DownloadFileRequest = import('@altersend/core').DownloadFileRequest
-  type DownloadFilesReply = import('@altersend/core').DownloadFilesReply
-  type DisconnectReply = import('@altersend/core').DisconnectReply
-  type HostReply = import('@altersend/core').HostReply
-  type JoinReply = import('@altersend/core').JoinReply
-  type RendererTransferEvent = import('@altersend/core').RendererTransferEvent
-  type ShareFilesReply = import('@altersend/core').ShareFilesReply
-  type TransferWorkerClient = import('@altersend/core').WorkerClient
-  type TransferMethod = import('@altersend/core').TransferMethod
+  type DownloadFileRequest = import('@ruqa/core').DownloadFileRequest
+  type DownloadFilesReply = import('@ruqa/core').DownloadFilesReply
+  type DisconnectReply = import('@ruqa/core').DisconnectReply
+  type HostReply = import('@ruqa/core').HostReply
+  type JoinReply = import('@ruqa/core').JoinReply
+  type RendererTransferEvent = import('@ruqa/core').RendererTransferEvent
+  type ShareFilesReply = import('@ruqa/core').ShareFilesReply
+  type TransferWorkerClient = import('@ruqa/core').WorkerClient
+  type TransferMethod = import('@ruqa/core').TransferMethod
   type TransferMethodArgs<T extends TransferMethod> = TransferWorkerClient[T] extends (
     ...args: infer Args
   ) => Promise<any>

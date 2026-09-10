@@ -1,4 +1,4 @@
-import { topicProof } from '@altersend/core/topic-auth'
+import { topicProof } from '@ruqa/core/topic-auth'
 import {
   createPeerProtocol,
   type FileOffer,

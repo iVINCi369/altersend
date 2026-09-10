@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import type { SetRelayConfigInput, TestCustomRelayReply } from '@altersend/core'
+import type { SetRelayConfigInput, TestCustomRelayReply } from '@ruqa/core'
 import {
   formatCustomRelayString,
   parseCustomRelayString,
   type CustomRelayInput
 } from './customRelay'
 
-export type RelayMode = 'off' | 'altersend' | 'custom'
+export type RelayMode = 'off' | 'ruqa' | 'custom'
 
-export const RELAY_MODES: RelayMode[] = ['altersend', 'custom', 'off']
+export const RELAY_MODES: RelayMode[] = ['ruqa', 'custom', 'off']
 
 export type RelaySettingsError = 'invalid' | 'failed' | 'unreachable'
 
@@ -25,7 +25,7 @@ export interface RelayStoragePort {
 
 export function deriveRelayMode(enabled: boolean, custom: CustomRelayInput | null): RelayMode {
   if (!enabled) return 'off'
-  return custom ? 'custom' : 'altersend'
+  return custom ? 'custom' : 'ruqa'
 }
 
 interface UseRelaySettingsArgs {
@@ -134,8 +134,8 @@ export function useRelaySettings({ storage, send, testConnection }: UseRelaySett
       return
     }
 
-    if (mode === 'altersend') {
-      applyMode('altersend', relayConfig(true, null), () => {
+    if (mode === 'ruqa') {
+      applyMode('ruqa', relayConfig(true, null), () => {
         rememberRelay(null)
         setCodeState('')
       })

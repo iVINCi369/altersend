@@ -1,4 +1,4 @@
-import { canJoinFromDeepLink, extractJoinCode, joinSession } from '@altersend/domain'
+import { canJoinFromDeepLink, extractJoinCode, joinSession } from '@ruqa/domain'
 import { bridgeApi, hasBridge } from '../api/bridgeApi'
 
 let started = false
@@ -10,7 +10,7 @@ export function startDeepLinkHandler(): () => void {
   started = true
 
   unsubscribe = bridgeApi.onDeepLink((url: string) => {
-    if (!url.startsWith('altersend://')) return
+    if (!url.startsWith('ruqa://')) return
     const code = extractJoinCode(url)
     if (!code) return
     if (!canJoinFromDeepLink(code)) {

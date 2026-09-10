@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Button, Tabs, TabsList, TabsTrigger } from '@altersend/components'
-import { SendIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, Tabs, TabsList, TabsTrigger } from '@ruqa/components'
+import { SendIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import {
   clearSenderFlow,
   continueShare,
@@ -13,7 +13,7 @@ import {
   isShareStep,
   useTransferStore,
   type SendComposeMode
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { TransferActionGroup, TransferCardFrame } from '../../components'
 import { PreparingView } from './PreparingView'
 import { SelectFilesView } from './SelectFilesView'

@@ -6,22 +6,22 @@ const monorepoRoot = path.resolve(projectRoot, '../..')
 
 const config = getDefaultConfig(projectRoot)
 const workspaceSourceAliases = new Map([
-  ['@altersend/core', path.resolve(monorepoRoot, 'packages/core/src/index.ts')],
-  ['@altersend/domain', path.resolve(monorepoRoot, 'packages/domain/src/index.ts')],
-  ['@altersend/components', path.resolve(monorepoRoot, 'packages/components/src/index.ts')],
+  ['@ruqa/core', path.resolve(monorepoRoot, 'packages/core/src/index.ts')],
+  ['@ruqa/domain', path.resolve(monorepoRoot, 'packages/domain/src/index.ts')],
+  ['@ruqa/components', path.resolve(monorepoRoot, 'packages/components/src/index.ts')],
   [
-    '@altersend/components/icons',
+    '@ruqa/components/icons',
     path.resolve(monorepoRoot, 'packages/components/src/icons/index.ts')
   ],
   [
-    '@altersend/components/theme',
+    '@ruqa/components/theme',
     path.resolve(monorepoRoot, 'packages/components/src/theme/index.ts')
   ],
   [
-    '@altersend/components/theme/raw',
+    '@ruqa/components/theme/raw',
     path.resolve(monorepoRoot, 'packages/components/src/theme/tokens.raw.ts')
   ],
-  ['@altersend/locales', path.resolve(monorepoRoot, 'packages/locales/src/index.ts')]
+  ['@ruqa/locales', path.resolve(monorepoRoot, 'packages/locales/src/index.ts')]
 ])
 
 config.watchFolders = [monorepoRoot]

@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Modal, StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { Button, useTheme } from '@altersend/components'
-import { CheckIcon, CloseIcon, deviceIcon } from '@altersend/components/icons'
-import { rememberVote, usePairingSessionStore, useTransferStore } from '@altersend/domain'
+import { Button, useTheme } from '@ruqa/components'
+import { CheckIcon, CloseIcon, deviceIcon } from '@ruqa/components/icons'
+import { rememberVote, usePairingSessionStore, useTransferStore } from '@ruqa/domain'
 import { lightTap } from '@/src/haptics'
 import { Text } from '@/src/components/ThemedText'
 

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
-import { DownloadRow, ReceivedTextRow, RowGroup, rowKey } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { DownloadRow, ReceivedTextRow, RowGroup, rowKey } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import {
   formatTransferRate,
   getDownloadRowLabels,
@@ -8,7 +8,7 @@ import {
   useCopiedFlag,
   useReceiveActions,
   useReceiveDownloads
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { TransferActionGroup } from '../../components'
 import { bridgeApi } from '../../api/bridgeApi'
 

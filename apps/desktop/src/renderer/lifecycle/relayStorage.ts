@@ -3,9 +3,9 @@ import {
   parseCustomRelayString,
   type CustomRelayInput,
   type RelayStoragePort
-} from '@altersend/domain'
+} from '@ruqa/domain'
 
-const KEY = 'altersend.relay.enabled'
+const KEY = 'ruqa.relay.enabled'
 
 export function isRelayEnabled(): boolean {
   try {
@@ -22,7 +22,7 @@ function setRelayEnabledStorage(value: boolean): void {
   } catch {}
 }
 
-const CUSTOM_KEY = 'altersend.relay.custom'
+const CUSTOM_KEY = 'ruqa.relay.custom'
 
 export function getCustomRelay(): CustomRelayInput | null {
   try {
@@ -39,7 +39,7 @@ function setCustomRelayStorage(value: CustomRelayInput | null): void {
   } catch {}
 }
 
-const FALLBACK_KEY = 'altersend.relay.fallback'
+const FALLBACK_KEY = 'ruqa.relay.fallback'
 
 export function getCustomRelayFallback(): boolean {
   try {

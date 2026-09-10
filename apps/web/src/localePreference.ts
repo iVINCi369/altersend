@@ -2,9 +2,9 @@ import {
   SYSTEM_LOCALE_PREFERENCE,
   normalizeLocalePreference,
   type LocalePreference
-} from '@altersend/locales'
+} from '@ruqa/locales'
 
-const KEY = 'altersend.locale.preference'
+const KEY = 'ruqa.locale.preference'
 
 export function getSavedLocalePreference(): LocalePreference {
   try {

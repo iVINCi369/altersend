@@ -13,8 +13,8 @@ import {
   type DownloadRowLabels,
   type ReceiveRow,
   type TransferRate
-} from '@altersend/domain'
-import type { IncomingFileOffer } from '@altersend/core'
+} from '@ruqa/domain'
+import type { IncomingFileOffer } from '@ruqa/core'
 import { LinkRow, type LinkRowStatus } from '../LinkRow'
 import { ChevronRightIcon, FolderIcon } from '../../icons'
 import { useTheme } from '../../theme'

@@ -1,4 +1,4 @@
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import logo from '../../../../../../assets/logo.png'
 import loadingSvg from '../../../../../../assets/loading.svg'
 
@@ -17,10 +17,8 @@ export default function LoadingPage({ progress = 0 }: LoadingPageProps) {
 
       <div className='mt-3 flex shrink-0 items-center px-6'>
         <div className='flex items-center gap-2.5'>
-          <img src={logo} alt='AlterSend' className='h-7 w-7 object-contain' />
-          <span className='text-[20px] font-bold tracking-[-0.02em] text-text-primary'>
-            AlterSend
-          </span>
+          <img src={logo} alt='Ruqa' className='h-7 w-7 object-contain' />
+          <span className='text-[20px] font-bold tracking-[-0.02em] text-text-primary'>Ruqa</span>
         </div>
       </div>
 

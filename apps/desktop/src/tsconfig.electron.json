@@ -4,12 +4,12 @@
     "outDir": "../dist",
     "rootDir": ".",
     "paths": {
-      "@altersend/core": ["../../../packages/core/dist"],
-      "@altersend/domain": ["../../../packages/domain/dist"],
-      "@altersend/components": ["../../../packages/components/dist"],
-      "@altersend/components/icons": ["../../../packages/components/dist/icons"],
-      "@altersend/components/theme": ["../../../packages/components/dist/theme"],
-      "@altersend/components/theme/raw": ["../../../packages/components/dist/theme/tokens.raw"]
+      "@ruqa/core": ["../../../packages/core/dist"],
+      "@ruqa/domain": ["../../../packages/domain/dist"],
+      "@ruqa/components": ["../../../packages/components/dist"],
+      "@ruqa/components/icons": ["../../../packages/components/dist/icons"],
+      "@ruqa/components/theme": ["../../../packages/components/dist/theme"],
+      "@ruqa/components/theme/raw": ["../../../packages/components/dist/theme/tokens.raw"]
     }
   },
   "include": ["./electron/**/*", "./workers/**/*", "./types.d.ts"]

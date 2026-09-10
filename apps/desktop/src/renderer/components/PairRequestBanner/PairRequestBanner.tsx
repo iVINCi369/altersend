@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { rememberVote, usePairingSessionStore, useTransferStore } from '@altersend/domain'
-import { Button } from '@altersend/components'
-import { CheckIcon, CloseIcon, deviceIcon } from '@altersend/components/icons'
+import { rememberVote, usePairingSessionStore, useTransferStore } from '@ruqa/domain'
+import { Button } from '@ruqa/components'
+import { CheckIcon, CloseIcon, deviceIcon } from '@ruqa/components/icons'
 import { zLayer } from '../../zLayer'
 
 export function PairRequestBanner() {

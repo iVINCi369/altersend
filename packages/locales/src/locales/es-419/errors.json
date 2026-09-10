@@ -1,14 +1,14 @@
 {
   "crash": {
     "title": "algo salió mal",
-    "desktopDescription": "AlterSend encontró un error inesperado y necesita reiniciarse. El servicio de transferencia puede estar inestable, por lo que reiniciar es la opción más segura.",
-    "mobileDescription": "AlterSend encontró un error inesperado. Inténtalo de nuevo o cierra y vuelve a abrir la aplicación si el problema persiste.",
-    "restartAlterSend": "Reiniciar AlterSend",
+    "desktopDescription": "Ruqa encontró un error inesperado y necesita reiniciarse. El servicio de transferencia puede estar inestable, por lo que reiniciar es la opción más segura.",
+    "mobileDescription": "Ruqa encontró un error inesperado. Inténtalo de nuevo o cierra y vuelve a abrir la aplicación si el problema persiste.",
+    "restartRuqa": "Reiniciar Ruqa",
     "tryAgain": "Inténtalo de nuevo"
   },
   "bridgeUnavailable": {
     "title": "Conexión de escritorio no disponible",
-    "description": "Esta ventana no está conectada a la app de escritorio. Reinicia AlterSend desde la app de escritorio.",
+    "description": "Esta ventana no está conectada a la app de escritorio. Reinicia Ruqa desde la app de escritorio.",
     "status": "Conexión de escritorio no disponible"
   },
   "transfer": {

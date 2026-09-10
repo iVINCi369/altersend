@@ -1,6 +1,6 @@
 import { Linking, Platform } from 'react-native'
-import type { SaveDestination } from '@altersend/domain'
-import { i18nextInstance } from '@altersend/locales'
+import type { SaveDestination } from '@ruqa/domain'
+import { i18nextInstance } from '@ruqa/locales'
 import { openDownloadsFolder } from '@/modules/media-store'
 import type { ShowToastInput } from '@/src/components/Toast'
 
@@ -34,8 +34,7 @@ export function buildCompletionToast({
   if (photosCount > 0 && nonPhotosCount > 0) {
     return {
       title: i18nextInstance.t('receive:summary.filesSaved', { count }),
-      hint:
-        Platform.OS === 'ios' ? i18nextInstance.t('common:files.photosAndAlterSend') : undefined,
+      hint: Platform.OS === 'ios' ? i18nextInstance.t('common:files.photosAndRuqa') : undefined,
       actionLabel:
         Platform.OS === 'android' ? i18nextInstance.t('receive:actions.viewPhotos') : undefined,
       onPress: openPhotos,
@@ -58,7 +57,7 @@ export function buildCompletionToast({
 
   return {
     title: i18nextInstance.t('receive:summary.savedInFiles', { count }),
-    hint: Platform.OS === 'ios' ? i18nextInstance.t('common:files.alterSendFolder') : undefined,
+    hint: Platform.OS === 'ios' ? i18nextInstance.t('common:files.ruqaFolder') : undefined,
     actionLabel: showDownloadsAction ? i18nextInstance.t('receive:actions.open') : undefined,
     onPress: showDownloadsAction
       ? () => void openDownloadsFolder().catch(() => {})

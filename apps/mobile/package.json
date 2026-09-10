@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@altersend/mobile",
+  "name": "@ruqa/mobile",
   "version": "2.0.0",
-  "description": "AlterSend mobile app (React Native / Expo)",
+  "description": "Ruqa mobile app (React Native / Expo)",
   "main": "expo-router/entry",
   "scripts": {
     "build:packages": "cd ../.. && npm run build:libs",
@@ -26,19 +26,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denislupookov/altersend.git"
+    "url": "git+https://github.com/iVINCi369/altersend.git"
   },
-  "author": "AlterSend",
+  "author": "Ruqa",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/denislupookov/altersend/issues"
+    "url": "https://github.com/iVINCi369/altersend/issues"
   },
-  "homepage": "https://github.com/denislupookov/altersend#readme",
+  "homepage": "https://github.com/iVINCi369/altersend#readme",
   "dependencies": {
-    "@altersend/components": "2.0.0",
-    "@altersend/core": "2.0.0",
-    "@altersend/domain": "2.0.0",
-    "@altersend/locales": "2.0.0",
+    "@ruqa/components": "2.0.0",
+    "@ruqa/core": "2.0.0",
+    "@ruqa/domain": "2.0.0",
+    "@ruqa/locales": "2.0.0",
     "@expo/ui": "~56.0.25",
     "@expo/vector-icons": "^15.0.2",
     "@sentry/react-native": "^8.21.0",

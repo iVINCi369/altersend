@@ -1,6 +1,6 @@
 import { Image, Linking, StyleSheet, View } from 'react-native'
 import Constants from 'expo-constants'
-import { MenuGroup, MenuItem, useTheme } from '@altersend/components'
+import { MenuGroup, MenuItem, useTheme } from '@ruqa/components'
 import {
   ArrowUpRightIcon,
   DiscordIcon,
@@ -10,10 +10,10 @@ import {
   HeartIcon,
   LockIcon,
   XIcon
-} from '@altersend/components/icons'
-import type { IconComponent } from '@altersend/components/icons'
-import { aboutLinkGroups, type AboutLinkKey } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components/icons'
+import type { IconComponent } from '@ruqa/components/icons'
+import { aboutLinkGroups, type AboutLinkKey } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { Layout } from '@/src/components'
 import { Text } from '@/src/components/ThemedText'
 import brandLogo from '@/assets/images/brand-logo.png'
@@ -45,7 +45,7 @@ export default function AboutScreen() {
       <View style={styles.content}>
         <View style={styles.brand}>
           <Image source={brandLogo} style={styles.brandLogo} resizeMode='contain' />
-          <Text style={[styles.brandName, { color: c.colorTextPrimary }]}>AlterSend</Text>
+          <Text style={[styles.brandName, { color: c.colorTextPrimary }]}>Ruqa</Text>
         </View>
 
         <View
@@ -81,7 +81,7 @@ export default function AboutScreen() {
         ))}
 
         <Text style={[styles.footer, { color: c.colorTextFaint }]}>
-          © {new Date().getFullYear()} AlterSend
+          © {new Date().getFullYear()} Ruqa
         </Text>
       </View>
     </Layout>

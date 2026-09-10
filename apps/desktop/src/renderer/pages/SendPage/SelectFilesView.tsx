@@ -7,9 +7,9 @@ import {
   LinkRow,
   Textarea,
   useTheme
-} from '@altersend/components'
-import { FolderIcon, MessageSquareIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+} from '@ruqa/components'
+import { FolderIcon, MessageSquareIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import {
   addSelectedFiles,
   type BrowserFileLike,
@@ -21,7 +21,7 @@ import {
   removeSelectedFile,
   useTransferStore,
   type SendComposeMode
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { AddFilesModal } from '../../components'
 import { bridgeApi } from '../../api/bridgeApi'
 

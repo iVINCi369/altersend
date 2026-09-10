@@ -1,4 +1,4 @@
-import { accountApiUrl, createAccountRuntime, type AccountStorage } from '@altersend/domain'
+import { accountApiUrl, createAccountRuntime, type AccountStorage } from '@ruqa/domain'
 import { bridgeApi } from '../api/bridgeApi'
 import { isRelayEnabled } from './relayStorage'
 

@@ -1,8 +1,8 @@
 {
   "permissions": {
-    "camera": "AlterSend 使用相机扫描连接 QR 码。",
-    "localNetwork": "AlterSend 使用本地网络寻找附近设备并直接传输文件。",
-    "photoRead": "AlterSend 会读取您的照片库，以便您可以选择照片和视频发送到其他设备。",
-    "photoSave": "AlterSend 将收到的图片和视频保存到您的照片库。"
+    "camera": "Ruqa 使用相机扫描连接 QR 码。",
+    "localNetwork": "Ruqa 使用本地网络寻找附近设备并直接传输文件。",
+    "photoRead": "Ruqa 会读取您的照片库，以便您可以选择照片和视频发送到其他设备。",
+    "photoSave": "Ruqa 将收到的图片和视频保存到您的照片库。"
   }
 }

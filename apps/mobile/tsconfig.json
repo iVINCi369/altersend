@@ -5,11 +5,11 @@
     "moduleSuffixes": [".native", ".ios", ""],
     "paths": {
       "@/*": ["./*"],
-      "@altersend/core": ["../../packages/core/src"],
-      "@altersend/domain": ["../../packages/domain/src"],
-      "@altersend/components": ["../../packages/components/src"],
-      "@altersend/components/icons": ["../../packages/components/src/icons"],
-      "@altersend/components/theme": ["../../packages/components/src/theme"]
+      "@ruqa/core": ["../../packages/core/src"],
+      "@ruqa/domain": ["../../packages/domain/src"],
+      "@ruqa/components": ["../../packages/components/src"],
+      "@ruqa/components/icons": ["../../packages/components/src/icons"],
+      "@ruqa/components/theme": ["../../packages/components/src/theme"]
     }
   },
   "include": [

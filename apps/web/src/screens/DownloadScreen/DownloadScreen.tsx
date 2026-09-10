@@ -7,16 +7,16 @@ import {
   rowKey,
   ToggleSwitch,
   useTheme
-} from '@altersend/components'
-import { ArrowLeftIcon, CheckIcon, DownloadIcon, PlayIcon } from '@altersend/components/icons'
+} from '@ruqa/components'
+import { ArrowLeftIcon, CheckIcon, DownloadIcon, PlayIcon } from '@ruqa/components/icons'
 import {
   formatTransferRate,
   getDownloadRowLabels,
   getPrimaryDownloadLabel,
   useCopiedFlag
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { useEffect, useState } from 'react'
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 import {
   BLOCK_WIDTH,
   Card,

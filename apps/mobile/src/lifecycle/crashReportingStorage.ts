@@ -1,6 +1,6 @@
 import { Directory, File, Paths } from 'expo-file-system'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const FILENAME = 'crash-reporting.enabled'
 
 function getMarkerFile(): File | null {

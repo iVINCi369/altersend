@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { Button, FeedbackTypeSelector, Textarea } from '@altersend/components'
-import { SendIcon } from '@altersend/components/icons'
-import type { FeedbackType } from '@altersend/components'
-import { submitFeedback } from '@altersend/domain'
-import { useTranslation } from '@altersend/locales'
+import { Button, FeedbackTypeSelector, Textarea } from '@ruqa/components'
+import { SendIcon } from '@ruqa/components/icons'
+import type { FeedbackType } from '@ruqa/components'
+import { submitFeedback } from '@ruqa/domain'
+import { useTranslation } from '@ruqa/locales'
 import { SectionShell } from './SectionShell'
 
 export function FeedbackSection({ version }: { version: string }) {

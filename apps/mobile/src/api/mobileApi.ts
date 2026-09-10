@@ -6,8 +6,8 @@ import {
   type TransferRPC,
   type TransferWorkerProcess,
   type WorkerClient
-} from '@altersend/core'
-import { isBackgroundTransferActive } from '@altersend/domain'
+} from '@ruqa/core'
+import { isBackgroundTransferActive } from '@ruqa/domain'
 import Constants from 'expo-constants'
 import { Directory, Paths } from 'expo-file-system'
 import * as SecureStore from 'expo-secure-store'
@@ -15,9 +15,9 @@ import { AppState, Platform, type AppStateStatus } from 'react-native'
 import { Worklet } from 'react-native-bare-kit'
 import { getCustomRelay, getCustomRelayFallback, isRelayEnabled } from '../lifecycle/relayStorage'
 
-const STORAGE_ROOT_DIRNAME = 'altersend'
-const IDENTITY_ROOT_DIRNAME = 'altersend-identity'
-const DEVICE_SECRET_KEY = 'altersend.device.secret'
+const STORAGE_ROOT_DIRNAME = 'ruqa'
+const IDENTITY_ROOT_DIRNAME = 'ruqa-identity'
+const DEVICE_SECRET_KEY = 'ruqa.device.secret'
 
 async function initDeviceKeychain(client: WorkerClient): Promise<void> {
   let sealed: string | null = null

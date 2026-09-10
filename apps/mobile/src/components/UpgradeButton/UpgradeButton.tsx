@@ -1,6 +1,6 @@
 import { useRouter } from 'expo-router'
 import { Button, Host } from '@expo/ui'
-import { useTranslation } from '@altersend/locales'
+import { useTranslation } from '@ruqa/locales'
 
 export function UpgradeButton() {
   const { t } = useTranslation(['settings'])

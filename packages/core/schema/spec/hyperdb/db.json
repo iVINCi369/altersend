@@ -4,13 +4,13 @@
   "schema": [
     {
       "name": "remembered-peers",
-      "namespace": "altersend",
+      "namespace": "ruqa",
       "id": 0,
       "type": 1,
       "version": 1,
       "versionField": null,
       "indexes": [],
-      "schema": "@altersend/remembered-peer",
+      "schema": "@ruqa/remembered-peer",
       "derived": false,
       "key": ["remoteDevicePubkey"],
       "trigger": null

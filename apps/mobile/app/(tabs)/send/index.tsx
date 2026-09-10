@@ -1,8 +1,8 @@
 import { useCallback, useEffect } from 'react'
 import { View } from 'react-native'
-import { Button, ErrorBanner } from '@altersend/components'
-import { SendIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, ErrorBanner } from '@ruqa/components'
+import { SendIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import { Layout } from '@/src/components'
 import { SelectFilesView } from '@/src/transfer/send'
 import { usePathname, useRouter } from 'expo-router'
@@ -12,8 +12,8 @@ import {
   getSendStep,
   isShareStep,
   useTransferStore
-} from '@altersend/domain'
-import { continueShare, exceedsFileCountLimit } from '@altersend/domain'
+} from '@ruqa/domain'
+import { continueShare, exceedsFileCountLimit } from '@ruqa/domain'
 
 const SEND_FLOW_PATHS = new Set(['/send', '/send/preparing', '/send/share'])
 

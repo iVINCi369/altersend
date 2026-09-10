@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react'
 import { Animated, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native'
 import QRCode from 'react-native-qrcode-svg'
-import { buildJoinUrl } from '@altersend/domain'
-import { qrColors, useTheme } from '@altersend/components'
-import { useTranslation } from '@altersend/locales'
+import { buildJoinUrl } from '@ruqa/domain'
+import { qrColors, useTheme } from '@ruqa/components'
+import { useTranslation } from '@ruqa/locales'
 import { Text } from '@/src/components/ThemedText'
 
 interface QRSectionProps {

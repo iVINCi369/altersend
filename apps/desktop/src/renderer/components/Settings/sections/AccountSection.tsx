@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react'
-import { useTranslation } from '@altersend/locales'
-import type { AccountModel, AccountPhase } from '@altersend/domain'
+import { useTranslation } from '@ruqa/locales'
+import type { AccountModel, AccountPhase } from '@ruqa/domain'
 import {
   CheckoutWaiting,
   CodeEntry,

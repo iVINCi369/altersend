@@ -1,7 +1,7 @@
 import { Directory, File, Paths } from 'expo-file-system'
-import type { AutoAcceptStoragePort } from '@altersend/domain'
+import type { AutoAcceptStoragePort } from '@ruqa/domain'
 
-const DIRNAME = 'altersend'
+const DIRNAME = 'ruqa'
 const FILENAME = 'devices.auto-accept'
 
 function markerFile(): File | null {

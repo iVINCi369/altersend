@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import { Button, LinkRow } from '@altersend/components'
-import { CheckIcon, FolderIcon } from '@altersend/components/icons'
-import { useTranslation } from '@altersend/locales'
+import { Button, LinkRow } from '@ruqa/components'
+import { CheckIcon, FolderIcon } from '@ruqa/components/icons'
+import { useTranslation } from '@ruqa/locales'
 import {
   clearSession,
   formatFileSize,
@@ -9,9 +9,9 @@ import {
   getParentDir,
   shortenHomePath,
   useTransferStore
-} from '@altersend/domain'
+} from '@ruqa/domain'
 import { bridgeApi } from '../../api/bridgeApi'
-import type { IncomingFileOffer } from '@altersend/core'
+import type { IncomingFileOffer } from '@ruqa/core'
 
 type FileOffer = Extract<IncomingFileOffer, { kind: 'file' }>
 

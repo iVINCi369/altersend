@@ -1,6 +1,6 @@
 import { Linking, Platform } from 'react-native'
 import * as Sharing from 'expo-sharing'
-import { transferStore } from '@altersend/domain'
+import { transferStore } from '@ruqa/domain'
 import { openDownload } from '@/modules/media-store'
 import { guessMimeType } from './downloadHandlers'
 

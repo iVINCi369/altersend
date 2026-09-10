@@ -1,4 +1,4 @@
-import { MAX_FILES_PER_TRANSFER } from '@altersend/core'
+import { MAX_FILES_PER_TRANSFER } from '@ruqa/core'
 
 export const WEB_LINK_MAX_BYTES = 10 * 1024 ** 3
 

@@ -1,4 +1,4 @@
-import type { RendererTransferEvent } from '@altersend/core'
+import type { RendererTransferEvent } from '@ruqa/core'
 import { toProgressPercent } from '../transfer/rate'
 
 export interface PeerEvent {

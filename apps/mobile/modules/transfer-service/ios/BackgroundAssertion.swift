@@ -15,7 +15,7 @@ final class BackgroundAssertion {
   func begin() {
     guard taskId == .invalid else { return }
 
-    taskId = UIApplication.shared.beginBackgroundTask(withName: "AlterSend.transfer") { [weak self] in
+    taskId = UIApplication.shared.beginBackgroundTask(withName: "Ruqa.transfer") { [weak self] in
       self?.expire()
     }
   }

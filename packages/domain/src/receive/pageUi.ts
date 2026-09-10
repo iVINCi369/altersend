@@ -1,4 +1,4 @@
-import type { TransferRole } from '@altersend/core'
+import type { TransferRole } from '@ruqa/core'
 import { formatFileSize, formatItemsCount } from '../format'
 import type { Translate } from '../i18n'
 
