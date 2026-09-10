@@ -5,7 +5,7 @@ import type {
   DownloadProgress,
   DownloadRequest
 } from './control-channel'
-import type { PeerSession } from './swarm'
+import type { TransportSession } from './transport'
 import type { DownloadFileRequest } from '../rpc/protocol'
 import { getFileName } from './utils'
 
@@ -84,7 +84,7 @@ export function createDownloadStartEvent(event: DownloadLifecycleEvent): Partial
 
 export function createPeerDownloadStatusEvent(
   message: DownloadRequest | DownloadProgress | DownloadComplete | DownloadFailed,
-  session: PeerSession
+  session: TransportSession
 ): Partial<StatusEvent> {
   return {
     peer: session.peerKey,
