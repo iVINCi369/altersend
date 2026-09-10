@@ -15,6 +15,7 @@ import { isMac, isLinux, isWindows } from 'which-runtime'
 import { command, flag, sloppy } from 'paparam'
 import { createRequire } from 'module'
 import { getAppPath, getWorkerClientPath, getWorkerEntryPath } from './workerPaths.js'
+import { getIrohBridgePort } from './irohBridge.js'
 import { RELAY_CONF_PUBKEY_HEX } from './relay-conf-pubkey.gen.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -207,10 +208,12 @@ export function createDesktopRuntime({ broadcast }: { broadcast: Broadcast }): D
     const identityRoot = path.join(path.dirname(pear.storage), 'identity')
     migrateIdentityIfNeeded(path.join(pear.storage, 'identities'), identityRoot)
 
+    const irohBridgePort = getIrohBridgePort()
     const worker = pear.run(workerPath, [
       `--storage=${pear.storage}`,
       `--identity=${identityRoot}`,
       '--device-type=desktop',
+      ...(irohBridgePort ? [`--iroh-bridge=${irohBridgePort}`] : []),
       ...(RELAY_CONF_PUBKEY_HEX ? [`--relay-conf-pubkey=${RELAY_CONF_PUBKEY_HEX}`] : []),
       ...cliArgs.filter((arg) => arg.startsWith('--relay-')),
       ...args
