@@ -172,7 +172,12 @@ export class TransferOrchestrator implements TransferRPC {
           this.sendStatus('connection-type', { peer: peerKey, connectionType })
         }
       },
-      { identityStore, drive: true, irohBridgePort: options.irohBridgePort }
+      {
+        identityStore,
+        drive: true,
+        irohBridgePort: options.irohBridgePort,
+        irohSession: 'transfer'
+      }
     )
     this.discovery = new DiscoveryCoordinator({
       deviceIdentityStore: this.deviceIdentityStore,
@@ -201,6 +206,7 @@ export class TransferOrchestrator implements TransferRPC {
 
     this.pairing = new PairingCoordinator({
       identityStore,
+      irohBridgePort: options.irohBridgePort,
       deviceIdentityStore: this.deviceIdentityStore,
       rememberedStore: this.rememberedStore,
       emit: (event) => this.emitIPC(event),
