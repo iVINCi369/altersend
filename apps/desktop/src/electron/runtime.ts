@@ -21,6 +21,13 @@ const pkg = _require(pkgPath)
 
 const { productName, version, upgrade } = pkg
 
+// Канал обновлений AlterSend выброшен при ребрендинге, своего у Ruqa пока нет.
+// PearRuntimeUpdater требует ссылку всегда, даже с выключенными обновлениями,
+// поэтому в package.json стоит заглушка — случайный ключ, за которым нет диска.
+// Пока она там, обновления принудительно выключены: иначе апдейтер будет
+// бесконечно искать в сети то, чего не существует.
+const UPGRADE_PLACEHOLDER = 'pear://9acz18yee74nradkyypgppxd6foq6sqt7oyxc9cpc5p8p85u8emy'
+
 type Broadcast = (name: string, data: unknown) => void
 
 interface WorkerHandle {
@@ -94,7 +101,10 @@ const isWindowsPortable =
   !fs.existsSync(path.resolve(path.dirname(process.execPath), '..', 'Update.exe'))
 
 const isFlatpak = !!process.env.FLATPAK_ID
-const updates = windowsStore || isWindowsPortable || isFlatpak ? false : cmd.flags.updates
+const updates =
+  windowsStore || isWindowsPortable || isFlatpak || upgrade === UPGRADE_PLACEHOLDER
+    ? false
+    : cmd.flags.updates
 
 function isTransferMethod(method: unknown): method is TransferMethod {
   return typeof method === 'string' && method in API.methods
