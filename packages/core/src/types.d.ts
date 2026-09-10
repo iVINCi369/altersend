@@ -135,11 +135,15 @@ declare module 'compact-encoding' {
   export const string: Encoding<string>
   export const uint: Encoding<number>
   export const raw: Encoding<Uint8Array>
+  export function encode<T>(encoding: Encoding<T>, value: T): Uint8Array
+  export function decode<T>(encoding: Encoding<T>, buffer: Uint8Array): T
   const _default: {
     json: typeof json
     string: typeof string
     uint: typeof uint
     raw: typeof raw
+    encode: typeof encode
+    decode: typeof decode
   }
   export default _default
 }
