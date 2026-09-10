@@ -1,8 +1,9 @@
 import { app, BrowserWindow, screen, shell } from 'electron'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { isLinux } from 'which-runtime'
+import { isLinux, isMac } from 'which-runtime'
 import { forgetPickedPaths } from './pathAccess.js'
+import { isQuitting, noteWindowHidden, trayActive } from './tray.js'
 import { applyThemeSource, loadThemeSource, windowBackgroundColor } from './theme.js'
 import type { PearRuntimeInstance } from './runtime.js'
 
@@ -82,6 +83,15 @@ export async function createMainWindow(pear: PearRuntimeInstance) {
 
   pear.updater.on('updating', onUpdating)
   pear.updater.on('updated', onUpdated)
+
+  // Окно закрыли, а передача идёт в воркл ете: процесс должен остаться жив,
+  // поэтому прячем окно и оставляем выход за значком в трее.
+  win.on('close', (evt) => {
+    if (isMac || isQuitting() || !trayActive()) return
+    evt.preventDefault()
+    win.hide()
+    void noteWindowHidden(app.name)
+  })
 
   const senderId = win.webContents.id
   win.on('closed', () => {

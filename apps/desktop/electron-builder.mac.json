@@ -44,5 +44,12 @@
   },
   "afterSign": "scripts/afterSign.cjs",
   "afterPack": "scripts/afterPack.cjs",
-  "dmg": {}
+  "dmg": {},
+  "extraResources": [
+    {
+      "from": "build/tray",
+      "to": "tray",
+      "filter": ["**/*"]
+    }
+  ]
 }

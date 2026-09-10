@@ -8,6 +8,7 @@ import { registerIpcHandlers } from './ipc.js'
 import { irohRequested, startIrohBridge, stopIrohBridge } from './irohBridge.js'
 import { cliArgs, createDesktopRuntime } from './runtime.js'
 import { updateSendToShortcut } from './sendToShortcut.js'
+import { isQuitting, setupTray, trayActive } from './tray.js'
 import { createMainWindow, sendToAllWindows, showOrCreateMainWindow } from './window.js'
 
 if (squirrelStartup) {
@@ -78,6 +79,7 @@ if (squirrelStartup) {
       takeFileArgs(cliArgs)
       // Сайдкар поднимаем до первого воркл ета: порт моста уезжает в его аргументы.
       if (irohRequested(cliArgs)) await startIrohBridge()
+      setupTray({ reveal: revealWindow, productName: runtime.metadata.productName })
       createMainWindow(runtime.getPear()).catch((err) => {
         console.error('Failed to create window:', err)
         app.quit()
@@ -87,9 +89,10 @@ if (squirrelStartup) {
     app.on('before-quit', stopIrohBridge)
 
     app.on('window-all-closed', () => {
-      if (process.platform !== 'darwin') {
-        app.quit()
-      }
+      if (process.platform === 'darwin') return
+      // Значок в трее держит приложение живым ради незавершённых передач.
+      if (trayActive() && !isQuitting()) return
+      app.quit()
     })
   }
 }
