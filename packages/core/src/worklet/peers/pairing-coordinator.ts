@@ -1,4 +1,5 @@
-import { TransferSwarm, type PeerSession } from '../transfer/swarm'
+import { createTransferTransport } from '../transfer/create'
+import type { TransferTransport, TransportSession } from '../transfer/transport'
 import type { PeerIdentityStore } from '../transfer/peer-identity-store'
 import type { PeerControlMessage } from '../transfer/control-channel'
 import { isValidHexKey } from '../transfer/utils'
@@ -27,7 +28,7 @@ export interface PairingCoordinatorDeps {
 }
 
 export class PairingCoordinator {
-  private readonly swarm: TransferSwarm
+  private readonly swarm: TransferTransport
   private readonly remember: RememberCoordinator
   private readonly emit: (event: TransferIPCMessage) => void
   private topic: string | null = null
@@ -35,7 +36,7 @@ export class PairingCoordinator {
 
   constructor(deps: PairingCoordinatorDeps) {
     this.emit = deps.emit
-    this.swarm = new TransferSwarm(
+    this.swarm = createTransferTransport(
       {
         onPeerConnected: (session) => this.onPeerConnected(session),
         onPeerDisconnected: (peerKey) => this.onPeerDisconnected(peerKey),
@@ -82,7 +83,7 @@ export class PairingCoordinator {
     return this.remember.vote(input)
   }
 
-  private onPeerConnected(session: PeerSession): void {
+  private onPeerConnected(session: TransportSession): void {
     this.emit(createPairingPeerConnectedEvent(session.peerKey))
     this.remember.onPeerConnected(session.peerKey)
     if (this.topic) {
@@ -99,7 +100,7 @@ export class PairingCoordinator {
     if (peerKey) this.remember.onPeerDisconnected(peerKey)
   }
 
-  private onControlMessage(message: PeerControlMessage, session: PeerSession): void {
+  private onControlMessage(message: PeerControlMessage, session: TransportSession): void {
     if (message.type === 'pairing-info') {
       void this.remember.handlePairingInfo(message, session)
       return
